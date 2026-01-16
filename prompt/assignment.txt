@@ -1,0 +1,32 @@
+You will receive a document and a topic hierarchy. Assign the document to the most relevant topics the hierarchy. Then, output the topic labels, assignment reasoning and supporting quotes from the document. DO NOT make up new topics or quotes.  
+
+[Topic Hierarchy]
+{tree}
+
+[Examples]
+Example 1: Assign "[1] HTTP Client Library" to the document
+Document: 
+A light-weight module that brings the Fetch API to Node.js
+
+Assignment:
+[1] HTTP Client Library: Mentions HTTP related words ("...Fetch API...")
+
+Example 2: Assigned "[1] Debugging" to the document
+Document: 
+A tiny JavaScript debugging utility modelled after Node.js core's debugging technique. Works in Node.js and web browsers
+
+Assignment: 
+[1] Debugging Utility: Mentions debugging as main functionality of the library ("...debugging utility...")
+
+[Instructions]
+1. Topic labels must be present in the provided topic hierarchy. You MUST NOT make up new topics. 
+2. The quote must be taken from the document. You MUST NOT make up quotes. 
+
+[Document]
+{Document}
+
+Double check that your assignment exists in the hierarchy!
+Your response should be in the following format:
+[Topic Level] Topic Label: Assignment reasoning (Supporting quote)
+
+Your response:
