@@ -25,12 +25,13 @@ The dataset features the following information:
 
 ---
 
-## Repository Structure
-
-```
-analysis.ipynb        # Analysis Jupyter notebook
-data/                 # Data used in the study
-figures/              # Generated figures
-prompt/               # TopicGPT prompt templates
-README.md             # This file
-```
+## Project Structure
+```text
+.
+├── scripts/            # Scripts used in the study
+├── data/               # Data used in the study
+├── prompt/             # TopicGPT prompt templates
+├── topicgpt_python/    # TopicGPT code
+├── figures/            # Figures used in study
+├── tests/              # Unit tests
+└── analysis.ipynb      # Jupyter Notebook to reproduce the results 
