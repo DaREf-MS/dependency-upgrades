@@ -32,6 +32,6 @@ The dataset features the following information:
 ├── data/               # Data used in the study
 ├── prompt/             # TopicGPT prompt templates
 ├── topicgpt_python/    # TopicGPT code
-├── figures/            # Figures used in study
+├── figures/            # Figures used in the study
 ├── tests/              # Unit tests
 └── analysis.ipynb      # Jupyter Notebook to reproduce the results 
