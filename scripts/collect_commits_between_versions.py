@@ -106,10 +106,18 @@ def collect_commit_titles_from_compare(compare_json: dict) -> List[str]:
 CHECKPOINT_FILE = "./data/processed_prs.json"
 
 
-def load_checkpoint() -> set:
-    if os.path.exists(CHECKPOINT_FILE):
-        with open(CHECKPOINT_FILE, "r") as f:
-            return set(json.load(f))
+def load_checkpoint(OUTPUT_FILE) -> set:
+    # if os.path.exists(CHECKPOINT_FILE):
+    #     with open(CHECKPOINT_FILE, "r") as f:
+    #         return set(json.load(f))
+    # return set()
+
+    if os.path.exists(OUTPUT_FILE):
+        df = pd.read_csv(OUTPUT_FILE)
+        df['repo_pr_id'] = df['repo'].str.cat(
+            df['id'].astype(int).astype(str), '&SEP&'
+        )
+        return set(df['repo_pr_id'].unique())
     return set()
 
 
@@ -150,7 +158,7 @@ def get_repo_description(lib_repo: str) -> Optional[str]:
 
 
 def process_rows(df: pd.DataFrame, output_path: str):
-    processed = load_checkpoint()
+    processed = load_checkpoint(output_path)
 
     # open CSV in append mode, write header only if file does not exist
     write_header = not os.path.exists(output_path)
@@ -159,7 +167,7 @@ def process_rows(df: pd.DataFrame, output_path: str):
         pgrs_bar = tqdm(total=len(df), initial=0, desc="Processing PRs")
         for _, row in df.iterrows():
             repo = row.get("repo")
-            pr_id = row.get("id")
+            pr_id = int(row.get("id"))
             repo_pr_id = f"{repo}&SEP&{pr_id}"
 
             # skip if already processed
@@ -219,7 +227,8 @@ def process_rows(df: pd.DataFrame, output_path: str):
 
 
 def main(output_path: str):
-    upgrades_df = pd.read_csv("./data/all_upgrades.csv")
+    upgrades_df = pd.read_csv("./data/unified_upgrades.csv")
+    upgrades_df['repo_pr_id'] = upgrades_df['repo'].str.cat(upgrades_df['pr_id'].astype(int).astype(str), "&SEP&")
 
     df = pd.read_csv("./data/base_prs.csv", dtype=str,
                      keep_default_na=False, na_values=[""])
@@ -243,6 +252,6 @@ if __name__ == "__main__":
     # ap.add_argument("--input", "-i", required=True,
     #                 help="Input CSV (must have repo,id,body,title columns)")
     ap.add_argument("--output", "-o",
-                    default="./data/commits_between_versions.csv", help="Output CSV")
+                    default="./data/commits_between_versions_all.csv", help="Output CSV")
     args = ap.parse_args()
     main(args.output)

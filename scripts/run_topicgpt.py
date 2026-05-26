@@ -1,8 +1,19 @@
-from topicgpt_python import *
+import sys
+from pathlib import Path
+
+# Add the project root to sys.path
+root_path = Path(__file__).resolve().parent.parent
+sys.path.append(str(root_path))
+
+# Now use an absolute import instead of a relative one
+from topicgpt_python import * 
+# Or: from topicgpt_python import *
+
 import yaml
 
-with open("config.yml", "r") as f:
+with open("readme_config.yml", "r") as f:
     config = yaml.safe_load(f)
+
 
 def run_inference():
     generate_topic_lvl1(
@@ -17,19 +28,19 @@ def run_inference():
     )
 
     # Optional: Refine topics if needed
-# if config["refining_topics"]:
-#     refine_topics(
-#         "ollama",
-#         "gpt-oss",
-#         config["refinement"]["prompt"],
-#         config["generation"]["output"],
-#         config["generation"]["topic_output"],
-#         config["refinement"]["topic_output"],
-#         config["refinement"]["output"],
-#         verbose=config["verbose"],
-#         remove=config["refinement"]["remove"],
-#         mapping_file=config["refinement"]["mapping_file"]
-#     )
+    if config["refining_topics"]:
+        refine_topics(
+            "ollama",
+            "gpt-oss",
+            config["refinement"]["prompt"],
+            config["generation"]["output"],
+            config["generation"]["topic_output"],
+            config["refinement"]["topic_output"],
+            config["refinement"]["output"],
+            verbose=config["verbose"],
+            remove=config["refinement"]["remove"],
+            mapping_file=config["refinement"]["mapping_file"]
+        )
 
     # Assignment
     assign_topics(
@@ -40,7 +51,8 @@ def run_inference():
         config["assignment"]["output"],
         config["generation"][
             "topic_output"
-        ],  # TODO: change to generation_2 if you have subtopics, or config['refinement']['topic_output'] if you refined topics
+            # TODO: change to generation_2 if you have subtopics, or config['refinement']['topic_output'] if you refined topics
+        ],
         verbose=config["verbose"],
     )
 
@@ -52,10 +64,12 @@ def run_inference():
         config["correction"]["prompt"],
         config["generation"][
             "topic_output"
-        ],  # TODO: change to generation_2 if you have subtopics, or config['refinement']['topic_output'] if you refined topics
+            # TODO: change to generation_2 if you have subtopics, or config['refinement']['topic_output'] if you refined topics
+        ],
         config["correction"]["output"],
         verbose=config["verbose"],
     )
+
 
 if __name__ == "__main__":
     run_inference()

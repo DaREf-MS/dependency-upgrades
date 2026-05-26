@@ -1,7 +1,6 @@
 # Replication Package for the Paper  
-**On the Time to Complete Dependabot-Suggested Dependency Upgrades**
 
-This repository contains the full replication package for the paper *"On the Time to Complete Dependabot-Suggested Dependency Upgrades"*. It includes all scripts, notebooks, data, and analysis artifacts needed to reproduce the results.
+This repository contains the full replication package for the paper **On the Time to Complete Dependabot-Suggested Dependency Upgrades**. It includes all scripts, notebooks, data, and analysis artifacts needed to reproduce the results.
 
 ---
 
@@ -17,12 +16,12 @@ The dataset used in this study contains projects with the following characterist
 
 | Metric | Min. | Median | Mean | Max. |
 | :--- | ---: | ---: | ---: | ---: |
-| **Commits** | 41 | 901 | 2,243.35 | 72,123 |
-| **Age (days)** | 336 | 2,613 | 2,737.24 | 5,910 |
-| **Dep. PRs** | 5 | 47 | 132.81 | 999 |
-| **PRs** | 14 | 373 | 806.99 | 17,558 |
-| **Stars** | 10 | 108 | 622.20 | 10,428 |
-| **Contributors** | 5 | 31 | 104.12 | 7,103 |
+| **Commits** | 41 | 818 | 2,080.46 | 72,123 |
+| **Age (days)** | 336 | 2,595.50 | 2,713.24 | 5,910 |
+| **Dep. PRs** | 1 | 36 | 116.75 | 978 |
+| **PRs** | 14 | 323.50 | 761.06 | 17,558 |
+| **Stars** | 10 | 95.50 | 565.03 | 10,428 |
+| **Contributors** | 5 | 22 | 55.22 | 2,761 |
 
 ---
 
@@ -79,4 +78,23 @@ The dataset used in this study contains projects with the following characterist
 
 - `scripts/retrieve_dep_types.py`: Retrieves the types of dependencies (e.g., `dependencies`, `devDependencies`) declared in `package.json` files.
 
+- `scripts/collect_readme_files.py`: Retrieves the ReadME.md file of the studied projects.
+
+- `scripts/readme_to_jsonl.py`: Parse the ReadME.md files jsonl for processing with TopicGPT framework.
+
+- `scripts/pr_classifier.py`: Construct the upgrades from the Dependabot pull requests.
+
+- `scripts/fetch_contributors.py`: Mine the number of contributors of the studied project.
+
+- `scripts/pr_metric_extractor.py`: Collect metrics for the confounding variables.
+
 - `scripts/run_topicgpt.py`: Runs the TopicGPT framework to analyze textual discussions related to upgrades.
+
+- `scripts/run_topicgpt_readme_files.py`: Runs the TopicGPT framework on the README.md files of the studied projects.
+
+## Additional notes
+
+- Ensure to download the upgrades CSV file using the [link](https://etsmtl365-my.sharepoint.com/:x:/r/personal/ali_arabat_1_ens_etsmtl_ca/Documents/Replication%20Package%20Data/unified_upgrades_server.csv?d=wb87f11e3128a47559b6d25986e92038c&csf=1&web=1&e=KQuArB) and place it in the `data/` folder.
+
+- `config.yml`: is the config file to run TopicGPT on the descriptions of dependencies suggested by Dependabot.
+- `readme_config.yml`: is the config file to run TopicGPT on the README.md files of the studied repositories.

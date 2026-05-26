@@ -1,0 +1,1619 @@
+commit_hash,repo,message,author,date,median_before,median_after,commit_url,changed_options,option,label,is_slow
+dd3ec3b4d9af3cebbc1281dae55edbbb00f4cba2,Agoric/agoric-sdk,chore(dependabot): ignore devDependencies,Ari Rubinstein,2022-05-06 17:46:35,21.47798611111111,341.9202893518519,Agoric/agoric-sdk/commit/dd3ec3b4d9af3cebbc1281dae55edbbb00f4cba2,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+a7c88a3f1871650c842d7042710485c0495b9e01,Apollon77/ioBroker.daikin-cloud,deps and updates,Ingo Fischer,2023-08-29 20:51:18,0.2063425925925926,150.0395081018519,Apollon77/ioBroker.daikin-cloud/commit/a7c88a3f1871650c842d7042710485c0495b9e01,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'removed', 'parent': 'assignees', 'path': 'updates[0].assignees'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",open-pull-requests-limit,Decrease limit,1
+b183ff640359b57c3b9780b04cc863bfb4d546ed,Apollon77/ioBroker.tuya,"* (Apollon77) Optimizations for Proxy mode to prevent certificate issues
+* delete full directory and not only cert.pem
+* path http-mitm-proxy ca to generate only 1 year valid certificates
+* migrate to adapter-dev
+* update stalebot, dependabot and gha",Ingo Fischer,2022-10-14 15:16:23,0.0831018518518518,111.2561458333333,Apollon77/ioBroker.tuya/commit/b183ff640359b57c3b9780b04cc863bfb4d546ed,"[{""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}]",open-pull-requests-limit,Decrease limit,1
+4761d394cb0e4bfd1ed0bd091ca975e321b8876e,Chia-Network/chialisp-web,Update Managed Files (#269),ChiaAutomation,2024-05-16 18:43:16,0.0499074074074074,68.92878472222222,Chia-Network/chialisp-web/commit/4761d394cb0e4bfd1ed0bd091ca975e321b8876e,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+7c745ac603b6466d60752f052a847f89f5925855,CircuitVerse/CircuitVerse,Add docker to dependabot,Aboobacker MK,2022-05-15 14:19:44,11.22340277777778,127.5114583333333,CircuitVerse/CircuitVerse/commit/7c745ac603b6466d60752f052a847f89f5925855,[],package-ecosystem,Other ecosystem,1
+43012662ec5711fc35fb3a59cb70ee1513f7c77e,Countly/countly-server,Update dependabot.yml,Arturs Sosins,2022-07-01 19:17:28,0.58625,8.801811342592593,Countly/countly-server/commit/43012662ec5711fc35fb3a59cb70ee1513f7c77e,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[1].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[2].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[3].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[4].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[5].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[6].directory'}, {'change_type': 'removed', 'parent': 'labels', 'path': 'updates[8].labels'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[8].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[9].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[10].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[11].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[12].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[13].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[14].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[15].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[16].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[17].directory'}, {'change_type': 'removed', 'parent': 'assignees', 'path': 'updates[18].assignees'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[18].reviewers'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[18].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[19].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[20].directory'}, {'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[21].reviewers[0]'}, {'change_type': 'modified', 'parent': 'assignees', 'path': 'updates[21].assignees[0]'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[21].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[22].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[23].directory'}, {'change_type': 'added', 'parent': 'assignees', 'path': 'updates[24].assignees'}, {'change_type': 'added', 'parent': 'reviewers', 'path': 'updates[24].reviewers'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[24].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[25].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[26].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[27].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[28].directory'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[29].directory'}, {'change_type': 'removed', 'parent': 'assignees', 'path': 'updates[30].assignees'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[30].reviewers'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[30].directory'}, {'change_type': 'removed', 'parent': 'assignees', 'path': 'updates[31].assignees'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[31].reviewers'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[31].directory'}, {'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[32].ignore'}, {'change_type': 'modified', 'parent': 'directory', 'path': 'updates[32].directory'}]",ignore,Unignore dependencies,1
+1255a8003aa1158cb856985c15599ef3e33dc4cd,EOX-A/EOxElements,chore(CI): add typescript dependabot group,silvester-pari,2023-11-28 08:05:04,0.1094502314814814,0.8041666666666667,EOX-A/EOxElements/commit/1255a8003aa1158cb856985c15599ef3e33dc4cd,"[{'change_type': 'added', 'parent': 'groups', 'path': 'updates[0].groups.typescript'}]",groups,Group matching name dependencies,1
+cae93f61ea553f8babe9d8c1e365c1ce5cece922,Madrapps/jacoco-report,"Update workflow to use latest versions of Actions (#131)
+
+* Update workflow_x000D_
+_x000D_
+* Update dependabot.yml",Saravana,2024-09-08 19:31:31,0.0277777777777777,13.37568865740741,Madrapps/jacoco-report/commit/cae93f61ea553f8babe9d8c1e365c1ce5cece922,[],package-ecosystem,Other ecosystem,1
+23e9d039ece2167e3ec168779dd22220c205a903,Maseshi/Shioru,📐 Arrange the code,Chaiwat Suwannarat,2024-05-23 12:40:10,0.1382349537037036,1.034050925925926,Maseshi/Shioru/commit/23e9d039ece2167e3ec168779dd22220c205a903,[{'change_type': 'unchanged'}],Styling,Fix typos,1
+0aafb06bd5479342a1fc1453984bbeca8a9a9711,MattiLehtinen/postgrator-cli,chore: run dependabot npm monthly,Julian Grinblat,2022-09-27 08:48:26,0.1470949074074074,0.3137905092592592,MattiLehtinen/postgrator-cli/commit/0aafb06bd5479342a1fc1453984bbeca8a9a9711,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+2e6c651be15e5b0c0dbe8a7f3d0012df32297ca6,RubyNepal/rubynepal.github.io,"Upgrade to GitHub-native Dependabot (#549)
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>",dependabot-preview[bot],2021-06-21 02:51:33,0.0033101851851851,10.2878125,RubyNepal/rubynepal.github.io/commit/2e6c651be15e5b0c0dbe8a7f3d0012df32297ca6,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+55cc89aaf2f0914da33ec7c8db87e3ef6dde85c7,WFCD/warframe-items,ci: dependabot config update,Matt,2024-02-09 20:58:30,0.0222800925925925,0.0533101851851851,WFCD/warframe-items/commit/55cc89aaf2f0914da33ec7c8db87e3ef6dde85c7,"[{'change_type': 'modified', 'parent': 'commit-message', 'path': 'updates[0].commit-message.prefix'}, {'change_type': 'modified', 'parent': 'commit-message', 'path': 'updates[1].commit-message.prefix'}]",commit-message,Update commit-message,1
+4a51e1e45285429f8c4ee610f34fd75e54c03afb,ably/ably-js,"Override the default Dependabot configuration for npm.
+
+I need to do this in order to prevent Dependabot from creating a `dependencies` label in this repository every time it creates a PR.
+
+The `directory` and `schedule.interval` options are required and it doesn't look like it's possible to tell them to inherit the defaults.
+This is why I have had to explicitly give them values here.
+In turn I've upgraded from 'daily' to 'weekly' for interval as that feels more appropriately prompt.
+
+see: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#configuration-options-for-the-dependabotyml-file",Quintin Willison,2022-12-05 12:35:40,5.047835648148148,139.9951041666667,ably/ably-js/commit/4a51e1e45285429f8c4ee610f34fd75e54c03afb,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+f2355c02989150ef76e041e02d45534658bc557f,acss-io/atomizer,Update dependabot.yml,Seth Bertalotto,2023-12-11 17:46:43,0.253761574074074,11.21274305555556,acss-io/atomizer/commit/f2355c02989150ef76e041e02d45534658bc557f,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[2].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+edc6a28da83c1cc2c602a42949bca4e3d19b9f3c,alphagov/govuk-frontend,Add `@typescript-eslint` to dependabot ignore list,Owen Jones,2024-08-27 08:43:59,0.03097800925925925,0.5197453703703704,alphagov/govuk-frontend/commit/edc6a28da83c1cc2c602a42949bca4e3d19b9f3c,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore[2].update-types'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[2].dependency-name'}, {'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore[3]'}]",ignore,Ignore unstable dependencies/version,1
+ee44e000c94b249cd9705927bc99cf9f3e007e18,alphagov/govuk-frontend,Set all dependabot intervals to monthly,Brett Kyle,2025-02-24 11:35:11,0.01709490740740735,0.1710879629629629,alphagov/govuk-frontend/commit/ee44e000c94b249cd9705927bc99cf9f3e007e18,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[2].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[3].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[4].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+b950e6ef3cd9ab41f6a3e380505f8085288f9d09,alphagov/govuk-frontend,"Replace reviewers with codeowners file
+
+Dependabot's reviewers option is being removed on 27th May and has been replaced with a dedicated codeowners file.",beeps,2025-05-13 08:49:35,0.2756944444444444,0.9285300925925926,alphagov/govuk-frontend/commit/b950e6ef3cd9ab41f6a3e380505f8085288f9d09,"[{'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[0].reviewers'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[1].reviewers'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[2].reviewers'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[3].reviewers'}, {'change_type': 'removed', 'parent': 'reviewers', 'path': 'updates[4].reviewers'}]",reviewers,Remove reviewers,1
+48793c419094a147f2b7b1f03130b59230c9e8d4,antville/antville,Add myself as default assignee,Tobi Schäfer,2021-04-05 10:11:53,13.42173611111111,91.87871527777779,antville/antville/commit/48793c419094a147f2b7b1f03130b59230c9e8d4,"[{'change_type': 'added', 'parent': 'assignees', 'path': 'updates[0].assignees'}, {'change_type': 'added', 'parent': 'assignees', 'path': 'updates[1].assignees'}]",assignees,Add assignees,1
+bd7bdddf82a95f771a7ac1f04f2f930d59cb5102,archiverjs/node-archiver,Update dependabot.yml,Chris Talkington,2021-03-03 05:34:42,13.40274305555555,59.3449537037037,archiverjs/node-archiver/commit/bd7bdddf82a95f771a7ac1f04f2f930d59cb5102,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.time'}]",schedule,Add/set time,1
+b6821de2970c2da4b030dedb9b90c44882270e16,archiverjs/node-archiver,Create dependabot.yml,Chris Talkington,2022-04-15 20:04:34,59.3449537037037,287.8783333333333,archiverjs/node-archiver/commit/b6821de2970c2da4b030dedb9b90c44882270e16,"[{'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}]",versioning-strategy,Increase,1
+d3ee255f452b9ef5dad9d67a36f7f4bca4fe55e6,asdf-vm/actions,Update dependabot.yml,BSKY,2020-03-23 19:07:49,0.0035416666666666,0.03769675925925925,asdf-vm/actions/commit/d3ee255f452b9ef5dad9d67a36f7f4bca4fe55e6,"[{'change_type': 'removed', 'parent': 'allow', 'path': 'updates[0].allow'}]",allow,Remove allow,1
+00ab20a3ef6fa45e7993f2d4e0147963dce2b417,asdf-vm/actions,Update dependabot.yml,Sora Morimoto,2020-06-03 21:50:22,0.03769675925925925,1.008888888888889,asdf-vm/actions/commit/00ab20a3ef6fa45e7993f2d4e0147963dce2b417,"[{'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",package-ecosystem,Other ecosystem,1
+444b5faff42f487bba573908d1336ea899ff64aa,auth0/auth0.js,"Batch babel updates (#1389)
+
+Co-authored-by: Frederik Prijck <frederik.prijck@auth0.com>",Ewan Harris,2024-01-04 10:32:50,0.4700868055555556,53.6462962962963,auth0/auth0.js/commit/444b5faff42f487bba573908d1336ea899ff64aa,"[{'change_type': 'added', 'parent': 'groups', 'path': 'updates[1].groups'}]",groups,Group matching name dependencies,1
+720dd4aff76cd06ebf039c9d7d8744b6a3faea96,auth0/lock,Group babel dependabot updates (#2490),Ewan Harris,2023-11-10 10:34:05,0.110162037037037,5.950729166666667,auth0/lock/commit/720dd4aff76cd06ebf039c9d7d8744b6a3faea96,"[{'change_type': 'added', 'parent': 'groups', 'path': 'updates[1].groups'}]",groups,Group matching name dependencies,1
+b2b09c4f76fa2ee31d7ec3f976f8b62a5436fb42,carloscuesta/gitmoji-cli,🔧 Set `schedule.interval` to `monthly`,Carlos Cuesta,2023-08-07 15:35:43,0.3523611111111111,4.636597222222222,carloscuesta/gitmoji-cli/commit/b2b09c4f76fa2ee31d7ec3f976f8b62a5436fb42,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+2c269018696bd5289e1c75364b25b7e7f65ed6ca,cibernox/ember-power-calendar,Remove NodeJs info (not necessary for v2 addon),Markus Sanin,2024-04-05 10:38:40,0.07991898148148145,9.423217592592591,cibernox/ember-power-calendar/commit/2c269018696bd5289e1c75364b25b7e7f65ed6ca,"[{'change_type': 'modified', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}]",versioning-strategy,Increase-if-necessary,1
+74b3102567647322167a6860198e8862bdf40dc7,cibernox/ember-power-select,Change versioning-strategy for dependabot,Markus Sanin,2024-04-05 10:37:51,0.1025405092592593,11.2646412037037,cibernox/ember-power-select/commit/74b3102567647322167a6860198e8862bdf40dc7,"[{'change_type': 'modified', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}]",versioning-strategy,Increase-if-necessary,1
+8cc6c6b3831e5c436ae738c81280a70132929442,cockpit-project/cockpit-podman,"dependabot: Run in our evenings, reduce limit
+
+So far the daily updates tend to run in our mornings between 7:00 and
+8:00, which blocks our CI for a long time, and thus collides with
+developers sending PRs. Move them to the evening instead, when they can
+use the quiet bots time.
+
+Also reduce the number of parallel PRs from 5 to 3. Parallel ones always
+need to be rebased, and thus are very expensive. We still want to be
+able to have a complicated PatternFly PR open for several days without
+blocking other updates.",Martin Pitt,2023-10-16 08:09:17,0.03395254629629625,0.3714409722222222,cockpit-project/cockpit-podman/commit/8cc6c6b3831e5c436ae738c81280a70132929442,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}]",schedule,Add/Set time,1
+8cc6c6b3831e5c436ae738c81280a70132929442,cockpit-project/cockpit-podman,"dependabot: Run in our evenings, reduce limit
+
+So far the daily updates tend to run in our mornings between 7:00 and
+8:00, which blocks our CI for a long time, and thus collides with
+developers sending PRs. Move them to the evening instead, when they can
+use the quiet bots time.
+
+Also reduce the number of parallel PRs from 5 to 3. Parallel ones always
+need to be rebased, and thus are very expensive. We still want to be
+able to have a complicated PatternFly PR open for several days without
+blocking other updates.",Martin Pitt,2023-10-16 08:09:17,0.03395254629629625,0.3714409722222222,cockpit-project/cockpit-podman/commit/8cc6c6b3831e5c436ae738c81280a70132929442,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}]",open-pull-requests-limit,Decrease limit,1
+9322fae476f19bcaa03a73dd56386cd94d5ac088,codeceptjs/CodeceptJS,"Bump eslint from v8 to v9 (#4592)
+
+* Bump eslint from v8 to v9_x000D_
+_x000D_
+* Possible fix_x000D_
+_x000D_
+* fix: failed typing tests_x000D_
+_x000D_
+---------_x000D_
+_x000D_
+Co-authored-by: kobenguyent <kobenguyent@gmail.com>",thomashohn,2024-11-15 13:46:21,0.0378935185185185,0.2366319444444444,codeceptjs/CodeceptJS/commit/9322fae476f19bcaa03a73dd56386cd94d5ac088,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[1].ignore[1]'}]",ignore,Unignore dependencies,1
+b7186ee9ebffcd1e76afccc5652fb9d7f76077de,compasjs/compas,chore(dependabot): group all dependency updates,Dirk de Visser,2023-08-18 14:35:18,0.4165972222222222,3.659050925925926,compasjs/compas/commit/b7186ee9ebffcd1e76afccc5652fb9d7f76077de,"[{""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[0].groups.production-breaking""}, {""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[0].groups.production-compat""}, {""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[0].groups.development""}, {""change_type"": ""removed"", ""parent"": ""groups"", ""path"": ""updates[0].groups.babel""}, {""change_type"": ""removed"", ""parent"": ""groups"", ""path"": ""updates[0].groups.aws-sdk""}, {""change_type"": ""removed"", ""parent"": ""groups"", ""path"": ""updates[0].groups.typescript-types""}, {""change_type"": ""removed"", ""parent"": ""groups"", ""path"": ""updates[0].groups.typescript-eslint""}]",groups,Group dev/prod dependencies,1
+9a6a0f4922e827828fcca6729e39959d1bcfacd5,contentful/contentful-batch-libs,"fix: https-proxy-agent usage after version bump [NONE] (#206)
+
+* fix: https-proxy-agent usage after version bump [NONE]_x000D_
+_x000D_
+* chore: pin version of ESM only modules [NONE]",Marco Link,2023-10-11 08:37:59,0.0002430555555555,0.0021064814814814,contentful/contentful-batch-libs/commit/9a6a0f4922e827828fcca6729e39959d1bcfacd5,"[{""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[0].ignore""}]",ignore,Ignore ESM-related dependencies,1
+7f228e838e529309415dc092611f753217c4647a,contentful/contentful-export,"fix: upgrade contentful-management to include axios vuln fix (#1845)
+
+* fix: upgrade contentful-management to include axios vuln fix_x000D_
+_x000D_
+* chore: group dependency upgrades",Tyler Collins,2024-08-15 16:30:06,0.0012847222222222,0.006099537037037,contentful/contentful-export/commit/7f228e838e529309415dc092611f753217c4647a,"[{'change_type': 'added', 'parent': 'groups', 'path': 'updates[0].groups'}]",groups,Group dev/prod dependencies,1
+c1fe513fa126e056b039ff9c4c219c9e3468faa1,elastic/opbeans-node,"chore: make it the responsibility of opbeans-node to update its APM agent dep (#163)
+
+This adds a second ""Opbeans Node Bump"" Jenkins job that runs weekly on the_x000D_
+""main"" branch. It checks for an available agent update (a published version_x000D_
+newer than what is in the current package-lock file), and if there is one it:_x000D_
+bumps to that ver, pushes, and git tags with ""v$VERSION"". The push and tag_x000D_
+will trigger the usual opbeans Jenkins pipeline to publish docker images._x000D_
+_x000D_
+Refs: https://github.com/elastic/apm-agent-nodejs/issues/2728_x000D_
+Fixes: #164_x000D_
+Co-authored-by: Victor Martinez <VictorMartinezRubio@gmail.com>",Trent Mick,2022-06-15 18:15:38,0.1588773148148148,1.397418981481482,elastic/opbeans-node/commit/c1fe513fa126e056b039ff9c4c219c9e3468faa1,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore'}]",ignore,Ignore dependency updates,1
+3ba9739aa429f9d1e9359230beda03f49238cb25,ember-cli/ember-exam,dependabot: Remove config,Tobias Bieniek,2021-12-11 19:26:03,47.05750578703704,614.6680613425926,ember-cli/ember-exam/commit/3ba9739aa429f9d1e9359230beda03f49238cb25,"[{""change_type"": ""deleted""}]",Removed Dependabot,Remove Dependabot,1
+d1236caf2c713ee3fb16686196cd62512cb7bc91,facebook/Rapid,Update mocha and sinon,Bryan Housel,2022-05-02 15:06:55,0.3117592592592592,85.22550347222221,facebook/Rapid/commit/d1236caf2c713ee3fb16686196cd62512cb7bc91,"[{'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[0].dependency-name'}, {'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore[1]'}]",ignore,Unignore dependencies,1
+44de6ded9544e1c85218465f51d7d82715035cc2,fastify/benchmarks,ci(dependabot): update github actions,Frazer Smith,2021-03-11 20:31:31,0.0006481481481481,4.913078703703704,fastify/benchmarks/commit/44de6ded9544e1c85218465f51d7d82715035cc2,"[{'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",package-ecosystem,Fix typos,1
+4b5919e7e84892036e4eee0c95164fd5fb6c37cd,fastify/benchmarks,build: reduce dependabot update frequency (#227),Frazer Smith,2022-02-01 21:15:58,0.0009606481481481,35.0315162037037,fastify/benchmarks/commit/4b5919e7e84892036e4eee0c95164fd5fb6c37cd,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+69e6e623952f014b8d816649774fc1435e1a7faa,fastify/fastify-nextjs,ci(dependabot): update github actions (#192),Frazer Smith,2021-03-09 23:59:57,0.000949074074074,0.00167245370370365,fastify/fastify-nextjs/commit/69e6e623952f014b8d816649774fc1435e1a7faa,"[{'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",package-ecosystem,Other ecosystem,1
+51973171a754bc65abddef61cc2f26f34ea00eba,fastify/fastify-nextjs,build: reduce dependabot update frequency (#469),Frazer Smith,2022-01-27 08:40:43,0.00167245370370365,0.0057291666666666,fastify/fastify-nextjs/commit/51973171a754bc65abddef61cc2f26f34ea00eba,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+375989ae7188051ea5308b8e0cafcccadbc35ef0,freelawproject/recap-chrome,Upgrade to GitHub-native Dependabot,dependabot-preview[bot],2021-04-28 16:45:57,0.004988425925925849,0.2229629629629629,freelawproject/recap-chrome/commit/375989ae7188051ea5308b8e0cafcccadbc35ef0,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+fb1eabd63d2b234085bd91aac0ce23069a51b39d,getyoti/yoti-node-sdk,NA: Update dependabot config,Ed Harrod,2020-12-01 14:07:27,1.212146990740741,105.7575694444444,getyoti/yoti-node-sdk/commit/fb1eabd63d2b234085bd91aac0ce23069a51b39d,"[{'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[0].reviewers[0]'}, {'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[0].reviewers[1]'}, {'change_type': 'added', 'parent': 'reviewers', 'path': 'updates[0].reviewers[2]'}, {'change_type': 'modified', 'parent': 'assignees', 'path': 'updates[0].assignees[0]'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+fb1eabd63d2b234085bd91aac0ce23069a51b39d,getyoti/yoti-node-sdk,NA: Update dependabot config,Ed Harrod,2020-12-01 14:07:27,1.212146990740741,105.7575694444444,getyoti/yoti-node-sdk/commit/fb1eabd63d2b234085bd91aac0ce23069a51b39d,"[{'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[0].reviewers[0]'}, {'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[0].reviewers[1]'}, {'change_type': 'added', 'parent': 'reviewers', 'path': 'updates[0].reviewers[2]'}, {'change_type': 'modified', 'parent': 'assignees', 'path': 'updates[0].assignees[0]'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",reviewers,Add reviewers,1
+fb1eabd63d2b234085bd91aac0ce23069a51b39d,getyoti/yoti-node-sdk,NA: Update dependabot config,Ed Harrod,2020-12-01 14:07:27,1.212146990740741,105.7575694444444,getyoti/yoti-node-sdk/commit/fb1eabd63d2b234085bd91aac0ce23069a51b39d,"[{'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[0].reviewers[0]'}, {'change_type': 'modified', 'parent': 'reviewers', 'path': 'updates[0].reviewers[1]'}, {'change_type': 'added', 'parent': 'reviewers', 'path': 'updates[0].reviewers[2]'}, {'change_type': 'modified', 'parent': 'assignees', 'path': 'updates[0].assignees[0]'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",assignees,Modify assignees,1
+dcac1de002079e315ee3340f9080fa054ac68a68,homebridge-plugins/homebridge-meross,"v3.4.0 (#106)
+
+## [Version 3.4.0](https://github.com/donavanbecker/homebridge-meross/compare/v3.3.0....3.4.0) (2020-11-19)_x000D_
+_x000D_
+### Changes_x000D_
+_x000D_
+- Add preliminary support for MSG200._x000D_
+  - Minor changes to support channels with the garage door opener, has been tested with the MSG100 and MSG200._x000D_
+  - The MSG100 uses channel 0, for the single door, but the MSG200 uses channels 1, 2, and 3._x000D_
+  - FWIW, setting channel 0 on the MSG200 to open or closed appears to control all doors.",Donavan Becker,2020-11-20 05:23:32,0.3128009259259259,9.916898148148148,homebridge-plugins/homebridge-meross/commit/dcac1de002079e315ee3340f9080fa054ac68a68,"[{'change_type': 'removed', 'parent': 'target-branch', 'path': 'updates[0].target-branch'}, {'change_type': 'removed', 'parent': 'target-branch', 'path': 'updates[1].target-branch'}]",target-branch,Remove target-branch,1
+07cb33981be685497cc2a396f1c24e921542a2cf,htmlhint/HTMLHint,chore: increase Dependabot PR limit,Nick Schonning,2021-11-24 02:59:28,0.0224131944444444,0.9958564814814816,htmlhint/HTMLHint/commit/07cb33981be685497cc2a396f1c24e921542a2cf,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[1].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[2].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[3].open-pull-requests-limit'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+fd51cebd65e3c20d994bf923d37ee314b73cfffc,htmlhint/HTMLHint,chore(deps-dev): Minor dev dep updates (#1318),Christian Oliff,2023-04-26 07:45:45,11.29071180555556,157.9206597222222,htmlhint/HTMLHint/commit/fd51cebd65e3c20d994bf923d37ee314b73cfffc,"[{""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[0].versioning-strategy""}, {""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[1].versioning-strategy""}]",versioning-strategy,Add version-strategy,1
+0b21376ce59048c47eb7123487ba2fce57e90b45,iobroker-community-adapters/ioBroker.ical,Update dependabot.yml,Martin M,2024-02-11 17:16:41,0.0047106481481481,0.1969560185185185,iobroker-community-adapters/ioBroker.ical/commit/0b21376ce59048c47eb7123487ba2fce57e90b45,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[1].versioning-strategy'}, {'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[1].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[1].package-ecosystem'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[1].schedule.time'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[1].schedule.timezone'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+8dee3c71a81458183c7eceb4cbc87d08e0646706,iobroker-community-adapters/ioBroker.iqontrol,add dependabot and testing,Martin M.,2024-10-20 15:33:22,0.0011458333333333,0.08707175925925925,iobroker-community-adapters/ioBroker.iqontrol/commit/8dee3c71a81458183c7eceb4cbc87d08e0646706,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+05b62cbe0a93239c46028669f0d5c50e742cca7b,iobroker-community-adapters/ioBroker.sma-em,Update dependabot.yml,Martin M,2024-02-12 10:20:27,0.027974537037037,0.2233564814814815,iobroker-community-adapters/ioBroker.sma-em/commit/05b62cbe0a93239c46028669f0d5c50e742cca7b,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+150aa4ffce348ea97ca2a24ce2afdb6cfc9d89c3,iobroker-community-adapters/ioBroker.snmp,Update dependabot.yml,Martin M,2023-07-13 12:23:34,0.0068518518518518,0.0448958333333333,iobroker-community-adapters/ioBroker.snmp/commit/150aa4ffce348ea97ca2a24ce2afdb6cfc9d89c3,[{'change_type': 'unchanged'}],Styling,Fix typos,1
+950ed2f53a9c84e3b3b63f6c811ace64696ee99a,iobroker-community-adapters/ioBroker.yeelight-2,"* (Apollon77) Add Sentry for crash reporting
+* (Apollon77) Prevent log on unexpected types
+* add sentry
+* add weblate
+* update release script",Ingo Fischer,2022-03-25 14:23:20,0.00518518518518515,0.0582465277777777,iobroker-community-adapters/ioBroker.yeelight-2/commit/950ed2f53a9c84e3b3b63f6c811ace64696ee99a,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+950ed2f53a9c84e3b3b63f6c811ace64696ee99a,iobroker-community-adapters/ioBroker.yeelight-2,"* (Apollon77) Add Sentry for crash reporting
+* (Apollon77) Prevent log on unexpected types
+* add sentry
+* add weblate
+* update release script",Ingo Fischer,2022-03-25 14:23:20,0.00518518518518515,0.0582465277777777,iobroker-community-adapters/ioBroker.yeelight-2/commit/950ed2f53a9c84e3b3b63f6c811ace64696ee99a,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+950ed2f53a9c84e3b3b63f6c811ace64696ee99a,iobroker-community-adapters/ioBroker.yeelight-2,"* (Apollon77) Add Sentry for crash reporting
+* (Apollon77) Prevent log on unexpected types
+* add sentry
+* add weblate
+* update release script",Ingo Fischer,2022-03-25 14:23:20,0.00518518518518515,0.0582465277777777,iobroker-community-adapters/ioBroker.yeelight-2/commit/950ed2f53a9c84e3b3b63f6c811ace64696ee99a,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}]",versioning-strategy,Add version-strategy,1
+950ed2f53a9c84e3b3b63f6c811ace64696ee99a,iobroker-community-adapters/ioBroker.yeelight-2,"* (Apollon77) Add Sentry for crash reporting
+* (Apollon77) Prevent log on unexpected types
+* add sentry
+* add weblate
+* update release script",Ingo Fischer,2022-03-25 14:23:20,0.00518518518518515,0.0582465277777777,iobroker-community-adapters/ioBroker.yeelight-2/commit/950ed2f53a9c84e3b3b63f6c811ace64696ee99a,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}]",schedule,Set time,1
+950ed2f53a9c84e3b3b63f6c811ace64696ee99a,iobroker-community-adapters/ioBroker.yeelight-2,"* (Apollon77) Add Sentry for crash reporting
+* (Apollon77) Prevent log on unexpected types
+* add sentry
+* add weblate
+* update release script",Ingo Fischer,2022-03-25 14:23:20,0.00518518518518515,0.0582465277777777,iobroker-community-adapters/ioBroker.yeelight-2/commit/950ed2f53a9c84e3b3b63f6c811ace64696ee99a,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}]",schedule,Set timezone,1
+4b098aa1501f2f68a8878ea3196632d5623118bf,iobroker-community-adapters/ioBroker.yeelight-2,Update dependabot.yml,Martin M,2024-02-12 10:38:44,0.0421006944444444,0.1343518518518518,iobroker-community-adapters/ioBroker.yeelight-2/commit/4b098aa1501f2f68a8878ea3196632d5623118bf,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[1].versioning-strategy'}, {'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[1].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[1].package-ecosystem'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+4b098aa1501f2f68a8878ea3196632d5623118bf,iobroker-community-adapters/ioBroker.yeelight-2,Update dependabot.yml,Martin M,2024-02-12 10:38:44,0.0421006944444444,0.1343518518518518,iobroker-community-adapters/ioBroker.yeelight-2/commit/4b098aa1501f2f68a8878ea3196632d5623118bf,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[1].versioning-strategy'}, {'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[1].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[1].package-ecosystem'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",open-pull-requests-limit,Decrease limit,1
+620d3f72ccd837fe72fe03c362ecc832c40c36a2,jenkins-infra/plugin-site,Update Dependabot config file,dependabot-preview[bot],2020-10-20 00:56:18,0.0099537037037037,0.9317129629629628,jenkins-infra/plugin-site/commit/620d3f72ccd837fe72fe03c362ecc832c40c36a2,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+fd34a5103ecb61d7894c831abdabb2ed2e310a36,jonathanpeppers/inclusive-code-reviews-browser,Setup dependabot for npm,Jonathan Peppers,2023-03-14 20:50:25,0.0037731481481481,0.5215046296296296,jonathanpeppers/inclusive-code-reviews-browser/commit/fd34a5103ecb61d7894c831abdabb2ed2e310a36,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+26586a38b45de42c2f7e759038a1e1f7178e271d,kurkle/chartjs-chart-treemap,chore: update automation stuff,Jukka Kurkela,2023-10-17 04:19:39,0.3786805555555556,20.95866319444444,kurkle/chartjs-chart-treemap/commit/26586a38b45de42c2f7e759038a1e1f7178e271d,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+1133e63989c22c90b494f50f3aafaf44674eb948,kurkle/chartjs-plugin-autocolors,feat: enable dependabot for actions,Jukka Kurkela,2024-09-11 17:04:41,0.0040393518518518,5.399085648148148,kurkle/chartjs-plugin-autocolors/commit/1133e63989c22c90b494f50f3aafaf44674eb948,[],package-ecosystem,Other ecosystem,1
+4e8ea5c2ffe3569710eae83149475f54fe3d268f,msys2/setup-msys2,chore: Add github-actions to dependabot.yml,Ross Smith II,2022-08-13 08:49:52,7.417372685185185,67.27824074074074,msys2/setup-msys2/commit/4e8ea5c2ffe3569710eae83149475f54fe3d268f,[],package-ecosystem,Other ecosystem,1
+feefc8680c222f66ff686cd04698c95652aaaa9d,nextcloud/files_pdfviewer,Update dependabot.yml,John Molakvoæ,2022-01-05 08:30:01,0.0175462962962962,0.2359606481481481,nextcloud/files_pdfviewer/commit/feefc8680c222f66ff686cd04698c95652aaaa9d,"[{'change_type': 'modified', 'parent': 'target-branch', 'path': 'updates[2].target-branch'}, {'change_type': 'modified', 'parent': 'target-branch', 'path': 'updates[3].target-branch'}, {'change_type': 'modified', 'parent': 'target-branch', 'path': 'updates[4].target-branch'}]",target-branch,Rename target-branch,1
+2eca9bf4a2834a6b032b8111158c698b9e22bc46,nextcloud/tables,"chore(CI): fix CI after renaming master to main branch
+
+Signed-off-by: Florian Steffens <florian@nextcloud.com>",Florian Steffens,2023-01-16 15:31:45,0.031417824074074,2.249866898148148,nextcloud/tables/commit/2eca9bf4a2834a6b032b8111158c698b9e22bc46,"[{'change_type': 'modified', 'parent': 'target-branch', 'path': 'updates[0].target-branch'}]",target-branch,Rename target-branch,1
+404d8f3092fde8b70524ac9c7bace6776533849a,nextcloud/viewer,"AUto merge and add compsoer
+
+Signed-off-by: John Molakvoæ (skjnldsv) <skjnldsv@protonmail.com>",John Molakvoæ (skjnldsv),2020-09-04 10:47:25,0.0079571759259259,0.3921296296296296,nextcloud/viewer/commit/404d8f3092fde8b70524ac9c7bace6776533849a,"[{'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",package-ecosystem,Other ecosystem,1
+f5135ba6c4e3420db816312093ba544b85e2577d,npm/make-fetch-happen,chore: postinstall for dependabot template-oss PR,Luke Karrys,2023-12-07 22:31:17,1.203310185185185,11.10713541666667,npm/make-fetch-happen/commit/f5135ba6c4e3420db816312093ba544b85e2577d,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+66e0c23fa0ee4c24b7bdb184c0959f5d92c0fe90,npm/package-json,chore: postinstall for dependabot template-oss PR,Luke Karrys,2023-12-07 22:33:53,1.120208333333333,21.30019097222223,npm/package-json/commit/66e0c23fa0ee4c24b7bdb184c0959f5d92c0fe90,"[{""change_type"": ""added"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+e24860137165ca32a942dc9b9f2e0d39a413c84a,openstreetmap/iD,Specify GitHub label for dependabot pull requests,Quincy Morgan,2020-06-04 21:21:44,0.0157523148148148,0.4205902777777778,openstreetmap/iD/commit/e24860137165ca32a942dc9b9f2e0d39a413c84a,"[{'change_type': 'added', 'parent': 'labels', 'path': 'updates[0].labels'}]",labels,Add labels,1
+95d34835e22bd318e20d364e62eedcfa53ea53df,openstreetmap/iD,"upgrade sinon, don't exclude it from dependabot anymore",Martin Raifer,2025-06-04 08:14:53,0.0193981481481481,0.8353819444444445,openstreetmap/iD/commit/95d34835e22bd318e20d364e62eedcfa53ea53df,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore'}]",ignore,Unignore dependencies,1
+68e8468141e161b3d0013d9b2a5af3e887c706dd,pi-hole/web,"No PHP, no phpstan, np composer
+
+Signed-off-by: Christian König <ckoenig@posteo.de>",Christian König,2023-07-12 21:03:53,0.0105902777777777,0.0788831018518518,pi-hole/web/commit/68e8468141e161b3d0013d9b2a5af3e887c706dd,[],package-ecosystem,Other ecosystem,1
+489dc911cf8d257583d0441317d5a591d3e63432,playcanvas/engine,Switch Dependabot update frequency to monthly,Will Eastcott,2021-02-03 10:27:31,0.1483043981481481,3.220219907407407,playcanvas/engine/commit/489dc911cf8d257583d0441317d5a591d3e63432,"[{""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+d4f644d923a93d377732de7546fbf51d7939c01d,pmndrs/drei,"chore: harden on formatting (#2204)
+
+* test now include lint+format_x000D_
+_x000D_
+* prettierignore_x000D_
+_x000D_
+* prettier-fix_x000D_
+_x000D_
+* no pre-push",Antoine BERNIER,2024-11-16 00:08:28,0.2195601851851851,3.581869212962963,pmndrs/drei/commit/d4f644d923a93d377732de7546fbf51d7939c01d,[{'change_type': 'unchanged'}],Styling,Fix typos,1
+8c275f5eb6d8c77b2f6738ec85e89424737c974c,readmeio/rdme,ci: setting up codeql (#230),Jon Ursenbach,2020-08-10 18:45:32,0.5089236111111111,3.54712962962963,readmeio/rdme/commit/8c275f5eb6d8c77b2f6738ec85e89424737c974c,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+69fadd30b6990be6385d74348fd6c73b035a4868,readmeio/rdme,"feat: overhauling the help screen generator so it's consistent everywhere (#397)
+
+* feat: swapping our colors for chalk_x000D_
+_x000D_
+* chore: reverting some unnnecessary changes_x000D_
+_x000D_
+* feat: overhauling the help screen generator so it's consistent everywhere_x000D_
+_x000D_
+* feat: simplify command listings_x000D_
+_x000D_
+* ci: fixing chalk to always run in ci_x000D_
+_x000D_
+* fix: reverting a command description change_x000D_
+_x000D_
+* test: updating snapshots_x000D_
+_x000D_
+* fix: ""check out"" instead of ""checkout""",Jon Ursenbach,2021-12-02 20:10:47,0.1056481481481481,0.8498726851851852,readmeio/rdme/commit/69fadd30b6990be6385d74348fd6c73b035a4868,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[1].ignore[2]'}]",ignore,Unignore dependencies,1
+ab0a791f9e6715d616ad61dcbcf16cc1e9daa728,readmeio/rdme,"chore(dependabot): add update-notifier to ignore list
+
+*shakes fist at ESM*",Kanad Gupta,2022-07-01 15:17:45,0.0652199074074074,5.584201388888889,readmeio/rdme/commit/ab0a791f9e6715d616ad61dcbcf16cc1e9daa728,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[1].ignore[4]'}]",ignore,Ignore ESM-related dependencies,1
+0017967aafb7aa8d895f0d6b4042f40e3bf3c3c7,readmeio/rdme,"chore(prettier): upgrading to prettier 3 (#864)
+
+* chore(prettier): upgrading to prettier 3_x000D_
+_x000D_
+* fix: add await_x000D_
+_x000D_
+* chore: backfill peer dep_x000D_
+_x000D_
+* chore: rework scripts so linting happens separately_x000D_
+_x000D_
+* fix: lint_x000D_
+_x000D_
+* ci: remove redundant name_x000D_
+_x000D_
+* chore: alphabetize_x000D_
+_x000D_
+---------_x000D_
+_x000D_
+Co-authored-by: Kanad Gupta <git@kanad.dev>",Jon Ursenbach,2023-08-18 22:37:17,3.564751157407407,4.674768518518519,readmeio/rdme/commit/0017967aafb7aa8d895f0d6b4042f40e3bf3c3c7,"[{""change_type"": ""modified"", ""parent"": ""versions"", ""path"": ""updates[1].ignore[3].versions[0]""}, {""change_type"": ""modified"", ""parent"": ""ignore"", ""path"": ""updates[1].ignore[3].dependency-name""}, {""change_type"": ""modified"", ""parent"": ""versions"", ""path"": ""updates[1].ignore[4].versions[0]""}, {""change_type"": ""modified"", ""parent"": ""ignore"", ""path"": ""updates[1].ignore[4].dependency-name""}]",Others,Others,1
+78976ae6588109479b6ba98a7c9f0e11c0ab219a,recharts/recharts.org,"Refresh ""Getting started"" page (#350)",Pavel Vaněček,2025-06-26 14:19:14,0.0198379629629629,0.1187731481481481,recharts/recharts.org/commit/78976ae6588109479b6ba98a7c9f0e11c0ab219a,[{'change_type': 'unchanged'}],Styling,Fix typos,1
+cbab1294abf928314dcdde78a9ccdcee16dc063f,reconmap/web-client,Create dependabot.yml,Santiago,2022-09-15 20:10:19,2.004386574074074,26.53156828703704,reconmap/web-client/commit/cbab1294abf928314dcdde78a9ccdcee16dc063f,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,1
+b269309a921906e401c1da02f246135e2c922e32,scala-text/scala_text,disable github actions auto update,kenji yoshida,2021-03-08 02:39:00,0.0112037037037037,0.1139756944444444,scala-text/scala_text/commit/b269309a921906e401c1da02f246135e2c922e32,"[{'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",package-ecosystem,Other ecosystem,1
+95c2b764ec482b77e921b09c0a77011585e8b6cc,scala-text/scala_text,Update dependabot.yml,kenji yoshida,2022-07-06 22:37:53,0.1139756944444444,1.08005787037037,scala-text/scala_text/commit/95c2b764ec482b77e921b09c0a77011585e8b6cc,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+3f66d2380c0dd96f26d7203c691d193eed3343ff,simatec/ioBroker.backitup,(simatec) test and release updated,simatec,2021-11-17 11:20:31,0.0032291666666666,4.377256944444444,simatec/ioBroker.backitup/commit/3f66d2380c0dd96f26d7203c691d193eed3343ff,"[{'change_type': 'added', 'parent': 'labels', 'path': 'updates[0].labels'}, {'change_type': 'added', 'parent': 'target-branch', 'path': 'updates[1].target-branch'}, {'change_type': 'added', 'parent': 'labels', 'path': 'updates[1].labels'}]",labels,Add labels,1
+3f66d2380c0dd96f26d7203c691d193eed3343ff,simatec/ioBroker.backitup,(simatec) test and release updated,simatec,2021-11-17 11:20:31,0.0032291666666666,4.377256944444444,simatec/ioBroker.backitup/commit/3f66d2380c0dd96f26d7203c691d193eed3343ff,"[{'change_type': 'added', 'parent': 'labels', 'path': 'updates[0].labels'}, {'change_type': 'added', 'parent': 'target-branch', 'path': 'updates[1].target-branch'}, {'change_type': 'added', 'parent': 'labels', 'path': 'updates[1].labels'}]",target-branch,Add target-branch,1
+ba2b772366a6102ba28d3eb595928c82c5d2cec6,stylelint/stylelint-config-standard,Update dependencies (#170),Richard Hallows,2021-03-05 17:16:02,0.0896180555555555,2.04365162037037,stylelint/stylelint-config-standard/commit/ba2b772366a6102ba28d3eb595928c82c5d2cec6,[{'change_type': 'unchanged'}],Styling,Fix typos,1
+2792c70d59b0f97a4cdd4d62bd7a43ee10e8fa2e,stylelint/stylelint-config-standard,Enable Dependabot (#307),Masafumi Koba,2023-12-22 00:33:14,0.1745428240740741,3.533530092592593,stylelint/stylelint-config-standard/commit/2792c70d59b0f97a4cdd4d62bd7a43ee10e8fa2e,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+6fa7a1faa7cbd09d41ea2a0008647509e1791c4e,sweetalert2/sweetalert2-react-content,Delete dependabot.yml,Limon Monte,2020-10-19 08:13:22,0.0012731481481481,0.3311226851851852,sweetalert2/sweetalert2-react-content/commit/6fa7a1faa7cbd09d41ea2a0008647509e1791c4e,[{'change_type': 'deleted'}],Removed Dependabot,Remove Dependabot,1
+4ad351c7f29092fd57e81f469040449404189375,taskcluster/taskcluster,Create dependabot.yml,Matt Boris,2022-02-01 20:32:25,11.85616898148148,97.21436921296296,taskcluster/taskcluster/commit/4ad351c7f29092fd57e81f469040449404189375,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,1
+851572375754cee45a12ea3f941dba2d88ffad3c,techmatters/terraso-web-client,chore: bump open-pull-requests-limit to 30,Paul Schreiber,2024-08-12 21:51:30,0.0172337962962962,0.1126273148148147,techmatters/terraso-web-client/commit/851572375754cee45a12ea3f941dba2d88ffad3c,"[{'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+37e10305cb3a4535e3c7ffaa1d659b5f107d28e2,texastribune/data-visuals-create,Add dependabot config file,Mandi Cai,2021-08-03 21:07:09,9.726082175925924,488.730775462963,texastribune/data-visuals-create/commit/37e10305cb3a4535e3c7ffaa1d659b5f107d28e2,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+5109519b0b9d19e117e91e175bbe35bedd2ec16b,third-culture-software/bhima,Tell dependabot to ignore angular,Jonathan Cameron,2024-08-31 16:42:03,0.179224537037037,2.372013888888889,third-culture-software/bhima/commit/5109519b0b9d19e117e91e175bbe35bedd2ec16b,"[{'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[1].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[1].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[2].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[3].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[4].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[4].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[5].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[5].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[6].versions[0]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[6].versions[1]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[6].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[7].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[7].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[8].versions[0]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[8].versions[1]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[8].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[9].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[9].dependency-name'}, {'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore[10]'}]",ignore,Ignore minor/patch version upgrades,1
+449867452d702190bbbcd005caad4cd2fd3aadff,tido64/suggestion-bot,chore: configure Dependabot for GitHub Actions (#60),Tommy Nguyen,2021-06-13 00:49:29,0.0236921296296296,0.2423900462962963,tido64/suggestion-bot/commit/449867452d702190bbbcd005caad4cd2fd3aadff,"[{'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}]",package-ecosystem,Other ecosystem,1
+21842a6410b9d0034ebdeb35e12a0cc7b571d8f9,timbeadle/grunt-tv4,Add versioning-strategy: increase,Tim Beadle,2023-09-30 20:44:44,0.2950231481481482,3.440717592592593,timbeadle/grunt-tv4/commit/21842a6410b9d0034ebdeb35e12a0cc7b571d8f9,"[{""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[0].versioning-strategy""}]",versioning-strategy,Add version-strategy,1
+fcd97fe821d318069451f2562d90875702eba6f7,w3c/aria-at,chore: Add Dependabot config for NPM and Actions,Nick Schonning,2020-11-10 02:46:05,3.354195601851852,389.69125,w3c/aria-at/commit/fcd97fe821d318069451f2562d90875702eba6f7,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,1
+3f6b2b846acdc79cc6cfe4b12f6f6cc66589ab76,w3c/aria-at,"Update dependabot checks to ""monthly"" for npm packages (#889)",Howard Edwards,2023-03-07 18:48:02,70.88052083333334,512.8242766203704,w3c/aria-at/commit/3f6b2b846acdc79cc6cfe4b12f6f6cc66589ab76,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+b45d37028623730c2fb0a2b0edeed2068298d1ae,warmachine028/nike,Update dependabot.yml,Pritam Kundu,2023-09-20 15:35:36,0.017974537037037,0.6728587962962963,warmachine028/nike/commit/b45d37028623730c2fb0a2b0edeed2068298d1ae,[{'change_type': 'unchanged'}],Styling,Fix typos,1
+77ad5412d2851f136be197a385cb0f56f2db220f,zooniverse/Panoptes-Front-End,Add dependabot for GH Actions (#6921),Jim O'Donnell,2023-11-06 19:13:03,0.0152199074074074,2.650353009259259,zooniverse/Panoptes-Front-End/commit/77ad5412d2851f136be197a385cb0f56f2db220f,[],package-ecosystem,Other ecosystem,1
+4e3dc8e90893d31f534308f23d62086db84f3556,RubyNepal/rubynepal.github.io,Update dependabot.yml,Saroj Maharjan,2025-05-12 06:51:55,0.0009143518518518,0.00362268518518515,RubyNepal/rubynepal.github.io/commit/4e3dc8e90893d31f534308f23d62086db84f3556,"[{""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+03e9f837d27c05cebba753a6a6e4d3ae695019f3,TheOdinProject/odin-bot-v2,"Chore: Add dependabot file
+
+Because:_x000D_
+* We want to keep our dependencies up to date.",Kevin Mulhern,2023-02-08 19:27:39,0.01693865740740735,3.966087962962963,TheOdinProject/odin-bot-v2/commit/03e9f837d27c05cebba753a6a6e4d3ae695019f3,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,1
+34e1d2a7b9555a9fc3baa8602903b9b0c639f229,TurboWarp/desktop,"Remove git submodules from dependabot
+
+It's not used for extensions anymore
+Desktop screenshots submodule can be managed manually",Thomas Weber,2025-03-07 07:27:49,0.2109722222222222,3.380983796296296,TurboWarp/desktop/commit/34e1d2a7b9555a9fc3baa8602903b9b0c639f229,[],package-ecosystem,Other ecosystem,1
+ccf2546115d506fdbb319a928c13fdd8619f3879,alphagov/pay-selfservice,"BAU: Dependabot ignore Node v18+
+
+Removing the v14 restriction should prompt Dependabot to restart updates for Node v16 again.",Kat Stevens,2023-03-24 10:54:18,0.4289293981481481,2.510243055555556,alphagov/pay-selfservice/commit/ccf2546115d506fdbb319a928c13fdd8619f3879,"[{""change_type"": ""modified"", ""parent"": ""versions"", ""path"": ""updates[1].ignore[0].versions[0]""}, {""change_type"": ""removed"", ""parent"": ""versions"", ""path"": ""updates[1].ignore[0].versions[1]""}, {""change_type"": ""removed"", ""parent"": ""ignore"", ""path"": ""updates[1].ignore[1]""}]",package-ecosystem,Other ecosystem,1
+b37337124584d2e76c4492ba7e85bed296453ff0,carloscuesta/gitmoji-cli,"🔧 Enable `dependabot` for GitHub Action dependencies (#984)
+
+* 🔧 Enable `dependabot` for GitHub Action dependencies_x000D_
+_x000D_
+* 🎨 Update indent",Carlos Cuesta,2023-01-01 11:54:41,0.188761574074074,0.2862037037037037,carloscuesta/gitmoji-cli/commit/b37337124584d2e76c4492ba7e85bed296453ff0,[],package-ecosystem,Other ecosystem,1
+f6ba458c8ad8b0de5069c87433f593fdd8f2da96,cylc/cylc-ui,Use infrastructure label for dependabot GH Actions PRs,Ronnie Dutta,2022-01-24 19:56:03,7.586203703703704,13.18420138888889,cylc/cylc-ui/commit/f6ba458c8ad8b0de5069c87433f593fdd8f2da96,"[{""change_type"": ""added"", ""parent"": ""labels"", ""path"": ""updates[1].labels""}]",labels,Add labels,1
+837d63528c2c1b70d34601a0e57d66958627d458,dhis2/capture-app,chore(workflow): fix concurrency issue and decrease dependabot PRs,Joakim Storløkken Melseth,2022-04-19 08:11:34,1.028043981481482,3.982881944444444,dhis2/capture-app/commit/837d63528c2c1b70d34601a0e57d66958627d458,"[{""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+ae600cb6098daa7a372600a82674e9c76b096d9f,github/safe-settings,ci(dependabot): update GitHub Action dependencies with dependabot,Martin Migasiewicz,2023-01-05 09:21:56,4.866041666666667,35.51447916666667,github/safe-settings/commit/ae600cb6098daa7a372600a82674e9c76b096d9f,"[{""change_type"": ""added"", ""parent"": ""commit-message"", ""path"": ""updates[0].commit-message""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",package-ecosystem,Other ecosystem,1
+5f3cd89b6c36089eeeb47ef302714f4a1c4b6b82,hiero-ledger/hiero-sdk-js,"chore: update deps for all packages and remove yarn.lock as yarn hasn't been used in awhile
+
+Signed-off-by: Daniel Akhterov <daniel@launchbadge.com>",Daniel Akhterov,2022-01-25 07:26:23,1.035399305555555,14.04224537037037,hiero-ledger/hiero-sdk-js/commit/5f3cd89b6c36089eeeb47ef302714f4a1c4b6b82,"[{""change_type"": ""modified"", ""parent"": ""directory"", ""path"": ""updates[1].directory""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}]",package-ecosystem,Add npm ecosystem,1
+59cf0e2b520cb0d16e54c978b06997845437f6f4,iobroker-community-adapters/ioBroker.openknx,sync with adapter creator,Franz Böllner,2022-11-14 23:38:44,0.0053530092592592,0.0302199074074074,iobroker-community-adapters/ioBroker.openknx/commit/59cf0e2b520cb0d16e54c978b06997845437f6f4,"[{""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[0].versioning-strategy""}, {""change_type"": ""added"", ""parent"": ""assignees"", ""path"": ""updates[0].assignees""}, {""change_type"": ""added"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""assignees"", ""path"": ""updates[1].assignees""}, {""change_type"": ""removed"", ""parent"": ""versioning-strategy"", ""path"": ""updates[1].versioning-strategy""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[1].package-ecosystem""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}]",schedule,"Increase interval (e.g., from daily to weekly)",1
+2338e0a6afc3617faf97e2cb0c8b943bbfb2260c,iobroker-community-adapters/ioBroker.openknx,Update dependabot.yml,Martin M,2023-05-24 10:44:19,0.0302199074074074,0.07470486111111105,iobroker-community-adapters/ioBroker.openknx/commit/2338e0a6afc3617faf97e2cb0c8b943bbfb2260c,"[{""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+690076c06b61ec6f82cdfdb5a633a144570a5e2d,iobroker-community-adapters/ioBroker.unifi-protect,update workflows,Martin M,2024-03-27 07:59:21,0.0108217592592592,0.1746296296296296,iobroker-community-adapters/ioBroker.unifi-protect/commit/690076c06b61ec6f82cdfdb5a633a144570a5e2d,"[{""change_type"": ""removed"", ""parent"": ""assignees"", ""path"": ""updates[0].assignees""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+8bbb2a9c1c5fb0ca44343616ff31c581f042682b,iobroker-community-adapters/ioBroker.worx,Update dependabot.yml,Martin M,2024-02-12 10:36:46,0.0218634259259259,0.2149768518518518,iobroker-community-adapters/ioBroker.worx/commit/8bbb2a9c1c5fb0ca44343616ff31c581f042682b,"[{""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[0].versioning-strategy""}, {""change_type"": ""added"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""removed"", ""parent"": ""versioning-strategy"", ""path"": ""updates[1].versioning-strategy""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.timezone""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.time""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[1].package-ecosystem""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",1
+87a6e1d950240b2b263c0757027f562e5e7570b0,mozilla/addons-frontend,Update dependabot.yml,Mathieu Pillard,2023-12-12 14:46:03,15.08898148148148,42.43002314814814,mozilla/addons-frontend/commit/87a6e1d950240b2b263c0757027f562e5e7570b0,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",package-ecosystem,Other ecosystem,1
+99f9b8b1d693cc890310ca8ac37dbb0baf070a72,mrhenry/core-web,Update dependabot.yml (#1194),Romain Menke,2022-08-01 10:12:07,0.8997800925925926,5.802013888888888,mrhenry/core-web/commit/99f9b8b1d693cc890310ca8ac37dbb0baf070a72,"[{""change_type"": ""added"", ""parent"": ""target-branch"", ""path"": ""updates[0].target-branch""}, {""change_type"": ""added"", ""parent"": ""target-branch"", ""path"": ""updates[1].target-branch""}]",target-branch,Add target-branch,1
+680130f550d68ce4aac3f9cd7f6d0677cd6405c7,nextcloud/deck,"chore(ci): configure dependabot reviewers
+
+Signed-off-by: Max <max@nextcloud.com>",Max,2023-12-19 10:34:37,0.0318055555555555,0.0716087962962963,nextcloud/deck/commit/680130f550d68ce4aac3f9cd7f6d0677cd6405c7,"[{""change_type"": ""added"", ""parent"": ""reviewers"", ""path"": ""updates[0].reviewers[1]""}, {""change_type"": ""added"", ""parent"": ""reviewers"", ""path"": ""updates[3].reviewers[1]""}, {""change_type"": ""added"", ""parent"": ""reviewers"", ""path"": ""updates[4].reviewers[1]""}, {""change_type"": ""added"", ""parent"": ""reviewers"", ""path"": ""updates[5].reviewers[1]""}]",reviewers,Add reviewers,1
+df32a3ee34779c9e1f11b98b18882b0142706e72,nextcloud/deck,"feat(deps): Add Nextcloud 32 support on main
+
+Signed-off-by: Joas Schilling <coding@schilljs.com>",Joas Schilling,2025-01-23 09:57:25,0.02195023148148145,2.508148148148148,nextcloud/deck/commit/df32a3ee34779c9e1f11b98b18882b0142706e72,"[{""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[1].target-branch""}, {""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[2].target-branch""}, {""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[3].target-branch""}, {""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[4].versioning-strategy""}, {""change_type"": ""added"", ""parent"": ""target-branch"", ""path"": ""updates[4].target-branch""}, {""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[4].ignore""}, {""change_type"": ""added"", ""parent"": ""labels"", ""path"": ""updates[4].labels""}, {""change_type"": ""removed"", ""parent"": ""reviewers"", ""path"": ""updates[4].reviewers""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[4].package-ecosystem""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[4].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""directory"", ""path"": ""updates[5].directory""}, {""change_type"": ""modified"", ""parent"": ""directory"", ""path"": ""updates[6].directory""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[6].package-ecosystem""}]",package-ecosystem,Add npm ecosystem,1
+837d63528c2c1b70d34601a0e57d66958627d458,dhis2/capture-app,chore(workflow): fix concurrency issue and decrease dependabot PRs,Joakim Storløkken Melseth,2022-04-19 08:11:34,1.028043981481482,3.982881944444444,dhis2/capture-app/commit/837d63528c2c1b70d34601a0e57d66958627d458,"[{""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}]",open-pull-requests-limit,Decrease limit,1
+59cf0e2b520cb0d16e54c978b06997845437f6f4,iobroker-community-adapters/ioBroker.openknx,sync with adapter creator,Franz Böllner,2022-11-14 23:38:44,0.0053530092592592,0.0302199074074074,iobroker-community-adapters/ioBroker.openknx/commit/59cf0e2b520cb0d16e54c978b06997845437f6f4,"[{""change_type"": ""added"", ""parent"": ""versioning-strategy"", ""path"": ""updates[0].versioning-strategy""}, {""change_type"": ""added"", ""parent"": ""assignees"", ""path"": ""updates[0].assignees""}, {""change_type"": ""added"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}, {""change_type"": ""added"", ""parent"": ""assignees"", ""path"": ""updates[1].assignees""}, {""change_type"": ""removed"", ""parent"": ""versioning-strategy"", ""path"": ""updates[1].versioning-strategy""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[1].package-ecosystem""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}]",open-pull-requests-limit,Decrease limit,1
+ab4203ec37acfabf309916e4468846703525df8d,Apollon77/ioBroker.daikin,deps and updates,Ingo Fischer,2023-08-29 20:51:18,0.102037037037037,0.0092592592592592,Apollon77/ioBroker.daikin/commit/ab4203ec37acfabf309916e4468846703525df8d,"[{'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[1].open-pull-requests-limit'}]",open-pull-requests-limit,Decrease interval,0
+2e6c4514bbab8a8981e737d084c21395aadb5570,EOX-A/EOxElements,chore(CI): group storybook dependabot updates,silvester-pari,2023-11-08 13:46:51,0.7492708333333333,0.1094502314814814,EOX-A/EOxElements/commit/2e6c4514bbab8a8981e737d084c21395aadb5570,"[{'change_type': 'added', 'parent': 'groups', 'path': 'updates[0].groups'}]",groups,Group matching name dependencies,0
+1f2de303cecdd880571801687c58b78032553fad,Fdawgs/node-poppler,style: use default prettier options for trailing commas and quotes,Frazer Smith,2020-12-28 15:43:34,3.365300925925926,0.0061226851851851,Fdawgs/node-poppler/commit/1f2de303cecdd880571801687c58b78032553fad,[{'change_type': 'unchanged'}],Styling,Fix typos,0
+8065f2c345d8bb69466b1b8823cb31af01d49b40,Financial-Times/ft-poller,Migrate from Renovate to Dependabot,Rowan Manning,2024-10-16 14:27:36,365.2638773148148,11.38619212962963,Financial-Times/ft-poller/commit/8065f2c345d8bb69466b1b8823cb31af01d49b40,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+6e856eb2229a5242352089426937651d760574e7,LDflex/LDflex,chore: upgrade deps & use LTS for CI (#355),Jesse Wright,2024-04-01 23:16:52,0.004473379629629549,0.0011574074074074,LDflex/LDflex/commit/6e856eb2229a5242352089426937651d760574e7,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,Decrease interval,0
+d2304f451ea7c0e591498a7322f65df1e84a52bb,LibreSign/libresign,Create dependabot.yml,Vitor Mattos,2022-02-06 15:43:07,13.97969907407407,0.8346701388888889,LibreSign/libresign/commit/d2304f451ea7c0e591498a7322f65df1e84a52bb,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,0
+fefe4338ab57a0f06b6b93a2bf5218b44dbf5518,MattiLehtinen/postgrator-cli,Add docker-compose.yml,Julian Grinblat,2021-11-24 10:08:22,251.9406597222223,0.3716550925925926,MattiLehtinen/postgrator-cli/commit/fefe4338ab57a0f06b6b93a2bf5218b44dbf5518,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+f90a5d4e5f0d8fb5b75d694c87ec6ff24d12e2f2,MattiLehtinen/postgrator-cli,chore: dependabot npm pull requests limit,Julian Grinblat,2022-11-02 04:32:02,0.3137905092592592,0.1554282407407407,MattiLehtinen/postgrator-cli/commit/f90a5d4e5f0d8fb5b75d694c87ec6ff24d12e2f2,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+9e4ad1fd3d875f4cba450ec830b79d6016aeadc7,NodeSecure/js-x-ray,chore: using dependabot groups (#244),Kouadio Fabrice Nguessan,2024-03-01 09:26:09,19.14561342592593,0.0006192129629629,NodeSecure/js-x-ray/commit/9e4ad1fd3d875f4cba450ec830b79d6016aeadc7,"[{""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[0].groups""}, {""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[1].groups""}]",groups,Group dev/prod dependencies,0
+22bab1dc4e037f0ee02fe9ce05cb87598a1d1ffd,RubyNepal/rubynepal.github.io,"Update dependabot settings (#726)
+
+* Remove ignore directives_x000D_
+* Add weekly check interval",Saroj Maharjan,2022-09-12 13:54:38,10.2878125,0.0556018518518518,RubyNepal/rubynepal.github.io/commit/22bab1dc4e037f0ee02fe9ce05cb87598a1d1ffd,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.day'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[1].ignore'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[1].schedule.day'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[1].schedule.timezone'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+22bab1dc4e037f0ee02fe9ce05cb87598a1d1ffd,RubyNepal/rubynepal.github.io,"Update dependabot settings (#726)
+
+* Remove ignore directives_x000D_
+* Add weekly check interval",Saroj Maharjan,2022-09-12 13:54:38,10.2878125,0.0556018518518518,RubyNepal/rubynepal.github.io/commit/22bab1dc4e037f0ee02fe9ce05cb87598a1d1ffd,"[{'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.day'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[1].ignore'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[1].schedule.day'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[1].schedule.timezone'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",ignore,Unignore dependencies,0
+13de311b22ba61def5eaebe0db3c2f435fb633fe,RubyNepal/rubynepal.github.io,"Update Dependabot gem update check interval (#747)
+
+Change from weekly to daily",Saroj Maharjan,2022-10-15 09:06:00,0.0556018518518518,0.0009143518518518,RubyNepal/rubynepal.github.io/commit/13de311b22ba61def5eaebe0db3c2f435fb633fe,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,Decrease interval,0
+191df0d0d350af0bf6564138e65c693c0dabcca3,Schmakus/ioBroker.lightcontrol,Initial commit,Schmakus,2022-12-08 09:41:31,39.00814236111111,6.454791666666667,Schmakus/ioBroker.lightcontrol/commit/191df0d0d350af0bf6564138e65c693c0dabcca3,"[{'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",open-pull-requests-limit,Decrease limit,0
+3567e61359286d30cdab06a794c725f343c660cf,WFCD/warframe-items,"ci: use dependabot for github actions (#517)
+
+Co-authored-by: Matej Voboril <tobiah@pm.me>",Ornstein,2024-02-09 20:53:19,0.2307407407407407,0.0222800925925925,WFCD/warframe-items/commit/3567e61359286d30cdab06a794c725f343c660cf,[],package-ecosystem,Other ecosystem,0
+1c5a9f894b0fd41eeebeddd7b4aa3147409c4c94,adopted-ember-addons/ember-keyboard,Upgrade to GitHub-native Dependabot,dependabot-preview[bot],2021-04-29 15:38:43,158.7777430555556,4.831203703703704,adopted-ember-addons/ember-keyboard/commit/1c5a9f894b0fd41eeebeddd7b4aa3147409c4c94,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+8697fc0ce2e68ceba6c24ce934d422042d9be350,alphagov/govuk-frontend,"Adjust dependabot frequency
+
+Weekly updates is becoming burdensome, so we're going to try updating monthly instead and folding dependabot fixes into preparation for releases",Brett Kyle,2025-02-17 12:59:18,0.5197453703703704,0.01709490740740735,alphagov/govuk-frontend/commit/8697fc0ce2e68ceba6c24ce934d422042d9be350,"[{'change_type': 'modified', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+f579069f32e94c9a7835feb4fde18b463ba66e71,amweiss/angular-diff-match-patch,Update dependabot.yml,Adam Weiss,2023-01-27 12:03:46,0.1719039351851852,0.0009837962962962,amweiss/angular-diff-match-patch/commit/f579069f32e94c9a7835feb4fde18b463ba66e71,[],package-ecosystem,Other ecosystem,0
+a9d2b69617d2ce2c8c949bdc48cbaa35caa431ea,asyncjs/async-website,chore: Added Dependabot config to automate dependency updates,Yann イーベス Eves,2024-10-03 19:31:00,1.28994212962963,0.04032407407407405,asyncjs/async-website/commit/a9d2b69617d2ce2c8c949bdc48cbaa35caa431ea,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,0
+46dfe06a73b47748b77ce35674484614b62de77f,auth0/express-openid-connect,Ignore major versions from dependabot,Frederik Prijck,2023-09-18 18:24:07,769.637349537037,0.31765625,auth0/express-openid-connect/commit/46dfe06a73b47748b77ce35674484614b62de77f,"[{""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[1].ignore""}]",ignore,Ignore major version upgrades,0
+def9b8e54076ac7d04cd7709f8b74144d6a5a7a3,avohq/avo,Create dependabot.yml,Hugi Hlynsson,2022-07-07 17:33:07,67.54212384259259,0.1772800925925926,avohq/avo/commit/def9b8e54076ac7d04cd7709f8b74144d6a5a7a3,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+ae69cc2a1b87fbed0b8c157788c7a748529b8b80,avohq/avo,Bump dependabot PR limit to 10,Hugi Hlynsson,2023-05-01 12:38:53,0.1772800925925926,0.0213425925925925,avohq/avo/commit/ae69cc2a1b87fbed0b8c157788c7a748529b8b80,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}]",schedule,Set time,0
+ae69cc2a1b87fbed0b8c157788c7a748529b8b80,avohq/avo,Bump dependabot PR limit to 10,Hugi Hlynsson,2023-05-01 12:38:53,0.1772800925925926,0.0213425925925925,avohq/avo/commit/ae69cc2a1b87fbed0b8c157788c7a748529b8b80,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+42015f7ecd8499e8ce954e07dbc1bd7e4162ab5d,ccnmtl/footprints,Ignore semver minor patches for all dependencies,Susan Dreher,2021-11-03 13:08:02,1.234918981481481,0.1893055555555555,ccnmtl/footprints/commit/42015f7ecd8499e8ce954e07dbc1bd7e4162ab5d,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore[0].update-types'}, {'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[0].ignore[0].versions'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[0].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[1].versions[0]'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[1].versions[1]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[1].versions[2]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[1].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[0]'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[1]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[2]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[3]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[4]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[2].versions[5]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[2].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[0]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[1]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[2]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[3]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[4]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[3].versions[5]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[3].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[4].versions[0]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[4].versions[1]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[4].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[5].versions[0]'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[5].versions[1]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[5].versions[2]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[5].versions[3]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[5].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[6].versions[0]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[6].versions[1]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[6].versions[2]'}, {'change_type': 'added', 'parent': 'versions', 'path': 'updates[0].ignore[6].versions[3]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[6].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[7].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[7].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[8].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[8].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[9].versions[0]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[9].versions[1]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[9].dependency-name'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[10].versions[0]'}, {'change_type': 'modified', 'parent': 'versions', 'path': 'updates[0].ignore[10].versions[1]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[10].versions[2]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[10].versions[3]'}, {'change_type': 'removed', 'parent': 'versions', 'path': 'updates[0].ignore[10].versions[4]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[0].ignore[10].dependency-name'}, {'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore[11]'}, {'change_type': 'added', 'parent': 'ignore', 'path': 'updates[1].ignore'}]",ignore,Ignore minor/patch version upgrades,0
+7b6062f91ac514cd31a747f19e12794c6f1e5c16,cibernox/ember-power-calendar,Reactivate dependabot,Markus Sanin,2024-01-14 10:23:53,285.8429050925926,0.07991898148148145,cibernox/ember-power-calendar/commit/7b6062f91ac514cd31a747f19e12794c6f1e5c16,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+d5b924eff95fee8eda306a5e0f6f0b5f52f07840,cibernox/ember-power-select,Activate dependabot,Markus Sanin,2024-01-17 08:37:25,108.3901851851852,0.1025405092592593,cibernox/ember-power-select/commit/d5b924eff95fee8eda306a5e0f6f0b5f52f07840,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+08e7bcfbd419f289fd0a2669deccc47accb54d8c,cloud-gov/pages-core,Remove dependabot configuration for dependabot dep updates,David Corwin,2021-09-17 17:47:16,758.2788136574075,156.414525462963,cloud-gov/pages-core/commit/08e7bcfbd419f289fd0a2669deccc47accb54d8c,"[{""change_type"": ""deleted""}]",Removed Dependabot,Remove Dependabot,0
+099a6984653f1761cf3844d4f6ef60587d7034cd,codeceptjs/CodeceptJS,"Bump apollo-server-express from 2.x to 3.x (#4579)
+
+* Bump apollo-server-express from 2.x to 3.x, fix command and remove from dependabot ignore_x000D_
+_x000D_
+* Adapt after review",thomashohn,2024-11-14 09:03:47,0.2164004629629629,0.0378935185185185,codeceptjs/CodeceptJS/commit/099a6984653f1761cf3844d4f6ef60587d7034cd,"[{'change_type': 'modified', 'parent': 'versions', 'path': 'updates[1].ignore[1].versions[0]'}, {'change_type': 'modified', 'parent': 'ignore', 'path': 'updates[1].ignore[1].dependency-name'}, {'change_type': 'removed', 'parent': 'ignore', 'path': 'updates[1].ignore[2]'}]",ignore,Unignore dependencies,0
+cd3f64e1ff8cf31c7c64521f85edca8cecf00aa9,codeceptjs/ui,"feat(ARCH-402): import Design system with its history (#3519)
+
+* fix(Link): underline (#153)_x000D_
+_x000D_
+* fix(Link): underline_x000D_
+_x000D_
+* fix(Link): underline_x000D_
+_x000D_
+* fix(Link): underline_x000D_
+_x000D_
+* fix(Link): underline_x000D_
+_x000D_
+* chore: Release (#151)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* feat(CTA): keep style when using as (#154)_x000D_
+_x000D_
+* feat(CTA): extending style using as_x000D_
+_x000D_
+* feat(CTA): extending style using as_x000D_
+_x000D_
+* chore: Release (#155)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#157)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump ws from 6.2.1 to 6.2.2 (#156)_x000D_
+_x000D_
+Bumps [ws](https://github.com/websockets/ws) from 6.2.1 to 6.2.2._x000D_
+- [Release notes](https://github.com/websockets/ws/releases)_x000D_
+- [Commits](https://github.com/websockets/ws/commits)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ws_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* fix(Chromatic): Canvas were disabled (#152)_x000D_
+_x000D_
+* chore(Chromatic): Canvas were disabled_x000D_
+_x000D_
+* chore(Chromatic): Canvas were disabled_x000D_
+_x000D_
+* doc(Tokens): Gradients (#158)_x000D_
+_x000D_
+* doc(Tokens): Gradients_x000D_
+_x000D_
+* doc(Tokens): Gradients_x000D_
+_x000D_
+* doc(Tag): stories_x000D_
+_x000D_
+* doc(InlineMessage): stories_x000D_
+_x000D_
+* doc(Tooltip): stories_x000D_
+_x000D_
+* doc(Link): stories_x000D_
+_x000D_
+* chore(deps): bump deps versions (#160)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* fix(components): stepper progress bar style (#159)_x000D_
+_x000D_
+* fix(Stepper): progress bar background_x000D_
+_x000D_
+* changeset_x000D_
+_x000D_
+* chore(deps): bump trim-newlines from 3.0.0 to 3.0.1 (#161)_x000D_
+_x000D_
+Bumps [trim-newlines](https://github.com/sindresorhus/trim-newlines) from 3.0.0 to 3.0.1._x000D_
+- [Release notes](https://github.com/sindresorhus/trim-newlines/releases)_x000D_
+- [Commits](https://github.com/sindresorhus/trim-newlines/commits)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: trim-newlines_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore: Release (#162)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(Storybook): extract stories_x000D_
+_x000D_
+* chore(deps): bump deps versions (#163)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* Create _headers_x000D_
+_x000D_
+* chore(Netlify): headers_x000D_
+_x000D_
+* chore(deps): bump deps versions (#164)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore: links_x000D_
+_x000D_
+* chore: links_x000D_
+_x000D_
+* Update package.json_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support (#165)_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support_x000D_
+_x000D_
+* chore: Chromatic_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support_x000D_
+_x000D_
+* feat(InlineMessage): CSS variables support_x000D_
+_x000D_
+* chore(Storybook): bump storybook-docs-toc_x000D_
+_x000D_
+* chore: Release (#166)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(Storybook): dark mode toggle_x000D_
+_x000D_
+* chore(Storybook): dark mode toggle_x000D_
+_x000D_
+* chore(Storybook): prettier (#167)_x000D_
+_x000D_
+* chore(Storybook): prettier_x000D_
+_x000D_
+* chore(Storybook): prettier_x000D_
+_x000D_
+* chore(Storybook): 6.3.0_x000D_
+_x000D_
+* Revert ""chore(Storybook): prettier (#167)"" (#168)_x000D_
+_x000D_
+This reverts commit 09317548186ad0f7c5958eaffe83b55a32999a39._x000D_
+_x000D_
+* chore(deps): bump deps versions (#169)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump prismjs from 1.23.0 to 1.24.0 (#171)_x000D_
+_x000D_
+Bumps [prismjs](https://github.com/PrismJS/prism) from 1.23.0 to 1.24.0._x000D_
+- [Release notes](https://github.com/PrismJS/prism/releases)_x000D_
+- [Changelog](https://github.com/PrismJS/prism/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/PrismJS/prism/compare/v1.23.0...v1.24.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: prismjs_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#173)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* fix(InlineMessage): default colors should inherit (#172)_x000D_
+_x000D_
+* fix(InlineMessage): default colors should inherit_x000D_
+_x000D_
+* fix(InlineMessage): manage dark mode_x000D_
+_x000D_
+* fix(InlineMessage): manage dark mode_x000D_
+_x000D_
+* chore(GitHub): visual regression for releases [skip ci]_x000D_
+_x000D_
+* chore(deps): bump deps versions (#175)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(Storybook): prettier (#176)_x000D_
+_x000D_
+* chore: Rename link and button_x000D_
+_x000D_
+* fix(components): read-only Checkbox was not sent to the server (#178)_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* feat(components): CheckboxGroup_x000D_
+_x000D_
+* fix(components): changeset_x000D_
+_x000D_
+* feat(components): Radio onChange was not fired (#177)_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* feat(components): RadioGroup_x000D_
+_x000D_
+* already pushed_x000D_
+_x000D_
+* already pushed_x000D_
+_x000D_
+* already pushed_x000D_
+_x000D_
+* changeset_x000D_
+_x000D_
+* chore: uuid [skip ci]_x000D_
+_x000D_
+* chore: Chromatic_x000D_
+_x000D_
+* chore: Release (#174)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* fix(Forms): focus outline should not be visible using mouse (#180)_x000D_
+_x000D_
+* fix(Forms): focus outline should not be visible using mouse_x000D_
+_x000D_
+* fix(Forms): focus outline should not be visible using mouse [skip ci]_x000D_
+_x000D_
+* fix(Stepper): Progress bar classnames need to be more precise (#181)_x000D_
+_x000D_
+* chore: Release (#182)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(Storybook): CSF 3.0 (#179)_x000D_
+_x000D_
+* chore(Storybook): CSF 3.0_x000D_
+_x000D_
+* Update Link.stories.tsx_x000D_
+_x000D_
+* chore(deps): bump deps versions (#183)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#185)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#186)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump tar from 6.0.5 to 6.1.5 (#187)_x000D_
+_x000D_
+Bumps [tar](https://github.com/npm/node-tar) from 6.0.5 to 6.1.5._x000D_
+- [Release notes](https://github.com/npm/node-tar/releases)_x000D_
+- [Changelog](https://github.com/npm/node-tar/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/npm/node-tar/compare/v6.0.5...v6.1.5)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: tar_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump next from 10.1.3 to 11.1.0 (#191)_x000D_
+_x000D_
+Bumps [next](https://github.com/vercel/next.js) from 10.1.3 to 11.1.0._x000D_
+- [Release notes](https://github.com/vercel/next.js/releases)_x000D_
+- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)_x000D_
+- [Commits](https://github.com/vercel/next.js/compare/v10.1.3...v11.1.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: next_x000D_
+  dependency-type: direct:development_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump url-parse from 1.5.1 to 1.5.3 (#192)_x000D_
+_x000D_
+Bumps [url-parse](https://github.com/unshiftio/url-parse) from 1.5.1 to 1.5.3._x000D_
+- [Release notes](https://github.com/unshiftio/url-parse/releases)_x000D_
+- [Commits](https://github.com/unshiftio/url-parse/compare/1.5.1...1.5.3)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: url-parse_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#193)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#194)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(components): styled syntax (#196)_x000D_
+_x000D_
+* feat(templates): Step (#195)_x000D_
+_x000D_
+* feat(Templates): Step_x000D_
+_x000D_
+* feat(Templates): Step [skip ci]_x000D_
+_x000D_
+* feat(Templates): Step_x000D_
+_x000D_
+* docs: Voice and Tone (#198)_x000D_
+_x000D_
+* docs(content): UX writing guidelines_x000D_
+_x000D_
+* docs(content): UX writing guidelines_x000D_
+_x000D_
+* fix(templates): Step with dark mode (#200)_x000D_
+_x000D_
+* fix(Templates): Step_x000D_
+_x000D_
+* fix(Templates): Step_x000D_
+_x000D_
+* fix(Templates): nav width (#197)_x000D_
+_x000D_
+* fix(Templates): Nav_x000D_
+_x000D_
+* fix(Templates): Nav_x000D_
+_x000D_
+* fix(Templates): Nav_x000D_
+_x000D_
+* fix(Templates): Nav_x000D_
+_x000D_
+* chore(Tests): @storybook/testing-react (#202)_x000D_
+_x000D_
+* chore(Tests): @storybook/testing-react_x000D_
+_x000D_
+* chore(Tests): @storybook/testing-react_x000D_
+_x000D_
+* chore(deps): bump deps versions (#203)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump tar from 6.1.5 to 6.1.11 (#205)_x000D_
+_x000D_
+Bumps [tar](https://github.com/npm/node-tar) from 6.1.5 to 6.1.11._x000D_
+- [Release notes](https://github.com/npm/node-tar/releases)_x000D_
+- [Changelog](https://github.com/npm/node-tar/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/npm/node-tar/compare/v6.1.5...v6.1.11)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: tar_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* fix(docs): succinct instead of succint (#209)_x000D_
+_x000D_
+* chore(Typescript): add as dev dependency (#210)_x000D_
+_x000D_
+* feat(components): Drawer (#204)_x000D_
+_x000D_
+* feat(components): Drawer_x000D_
+_x000D_
+* feat(components): Drawer_x000D_
+_x000D_
+* feat(components): Drawer_x000D_
+_x000D_
+* feat(components): Drawer_x000D_
+_x000D_
+* feat(components): Drawer_x000D_
+_x000D_
+* feat(components): Drawer_x000D_
+_x000D_
+* feat(components): use Area generic component for illustration_x000D_
+_x000D_
+* Update src/components/Drawer/docs/Drawer.stories.mdx_x000D_
+_x000D_
+Co-authored-by: Benrajalu <rajalubenoit@gmail.com>_x000D_
+_x000D_
+* Update src/components/Drawer/docs/Drawer.stories.mdx_x000D_
+_x000D_
+Co-authored-by: Benrajalu <rajalubenoit@gmail.com>_x000D_
+_x000D_
+* feat(components): Drawer as disclosure content_x000D_
+_x000D_
+* feat(components): Drawer props improvement_x000D_
+_x000D_
+* ts_x000D_
+_x000D_
+* ts_x000D_
+_x000D_
+Co-authored-by: Benrajalu <rajalubenoit@gmail.com>_x000D_
+_x000D_
+* doc(Accordion): Clarification and application of the doc (#208)_x000D_
+_x000D_
+Co-authored-by: Benoit Rajalu <benoitrajalu@LT-C02VN10KHTDF.local>_x000D_
+_x000D_
+* chore(GitHub Action): UMD checker (#212)_x000D_
+_x000D_
+* chore(GitHub Action): UMD checker_x000D_
+_x000D_
+* chore(GitHub Action): UMD checker_x000D_
+_x000D_
+* Update umd-checker.yml_x000D_
+_x000D_
+* chore(GitHub Action): UMD checker_x000D_
+_x000D_
+* chore(GitHub Action): UMD checker_x000D_
+_x000D_
+* chore(Next): Remove Next (#211)_x000D_
+_x000D_
+* fix(components/InlineMessage): className was missing for variations (#216)_x000D_
+_x000D_
+* fix(components/InlineMessage): className was missing for variations_x000D_
+_x000D_
+* fix(components/InlineMessage): className was missing for variations_x000D_
+_x000D_
+* doc(Stepper): Content (#217)_x000D_
+_x000D_
+* (doc)stepper: add details for buttons order in multi step forms_x000D_
+_x000D_
+* doc(components/Stepper): add copy guidelines_x000D_
+_x000D_
+Co-authored-by: Monia Huet <mhuet@talend.com>_x000D_
+_x000D_
+* chore(Tests): Percy support (#218)_x000D_
+_x000D_
+* chore(Tests): Percy support_x000D_
+_x000D_
+* chore(Tests): Percy support_x000D_
+_x000D_
+* chore(Tests): Percy support [skip ci]_x000D_
+_x000D_
+* chore(deps): bump axios from 0.21.1 to 0.21.4 (#220)_x000D_
+_x000D_
+Bumps [axios](https://github.com/axios/axios) from 0.21.1 to 0.21.4._x000D_
+- [Release notes](https://github.com/axios/axios/releases)_x000D_
+- [Changelog](https://github.com/axios/axios/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/axios/axios/compare/v0.21.1...v0.21.4)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: axios_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#222)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* Revert ""chore(deps): bump deps versions (#222)"" (#223)_x000D_
+_x000D_
+This reverts commit 01a4132aaf07fe1e51d462e4a3b99944a4eff636._x000D_
+_x000D_
+* fix(components/InlineMessage): text-align at start (#224)_x000D_
+_x000D_
+* fix(components/InlineMessage): text-align at start_x000D_
+_x000D_
+* fix(components/InlineMessage): text-align at start_x000D_
+_x000D_
+* chore: Release (#199)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* feat(components/Button): types (#213)_x000D_
+_x000D_
+* feat(Buttons): Fixing button prop types to fit documentation_x000D_
+_x000D_
+* feat(Drawer): Fixing Drawer types to fit new Button types_x000D_
+_x000D_
+* feat(Combobox): Fixing types (#215)_x000D_
+_x000D_
+* feat(Buttons): Rewrote stories for tsx validation_x000D_
+_x000D_
+* feat(Buttons): More type fixings_x000D_
+_x000D_
+* fix(components/Button): stories_x000D_
+_x000D_
+Co-authored-by: Benrajalu <rajalubenoiit@gmail.com>_x000D_
+Co-authored-by: Fabien Rassinier <frassinier@talend.com>_x000D_
+_x000D_
+* fix(Link): Link target attribute should be preserved on subcomponent (#225)_x000D_
+_x000D_
+* fix(Link): Link target attribute should be preserved on subcomponent_x000D_
+_x000D_
+* fix(components/Link): test for external story_x000D_
+_x000D_
+Co-authored-by: Fabien Rassinier <frassinier@talend.com>_x000D_
+_x000D_
+* chore(deps): bump axios from 0.21.1 to 0.21.4 (#226)_x000D_
+_x000D_
+Bumps [axios](https://github.com/axios/axios) from 0.21.1 to 0.21.4._x000D_
+- [Release notes](https://github.com/axios/axios/releases)_x000D_
+- [Changelog](https://github.com/axios/axios/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/axios/axios/compare/v0.21.1...v0.21.4)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: axios_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* Create dependabot.yml_x000D_
+_x000D_
+* chore(deps-dev): bump prettier from 2.2.1 to 2.4.0 (#232)_x000D_
+_x000D_
+Bumps [prettier](https://github.com/prettier/prettier) from 2.2.1 to 2.4.0._x000D_
+- [Release notes](https://github.com/prettier/prettier/releases)_x000D_
+- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/prettier/prettier/compare/2.2.1...2.4.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: prettier_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-minor_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump react-i18next from 11.8.13 to 11.12.0 (#230)_x000D_
+_x000D_
+Bumps [react-i18next](https://github.com/i18next/react-i18next) from 11.8.13 to 11.12.0._x000D_
+- [Release notes](https://github.com/i18next/react-i18next/releases)_x000D_
+- [Changelog](https://github.com/i18next/react-i18next/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/i18next/react-i18next/compare/v11.8.13...v11.12.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: react-i18next_x000D_
+  dependency-type: direct:production_x000D_
+  update-type: version-update:semver-minor_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @storybook/testing-react (#228)_x000D_
+_x000D_
+Bumps [@storybook/testing-react](https://github.com/storybookjs/testing-react) from 1.0.0-next.0 to 1.0.0--canary.46.4a6c010.0._x000D_
+- [Release notes](https://github.com/storybookjs/testing-react/releases)_x000D_
+- [Changelog](https://github.com/storybookjs/testing-react/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/storybookjs/testing-react/commits)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@storybook/testing-react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @storybook/addons (#231)_x000D_
+_x000D_
+Bumps [@storybook/addons](https://github.com/storybookjs/storybook/tree/HEAD/lib/addons) from 6.4.0-alpha.32 to 6.4.0-alpha.35._x000D_
+- [Release notes](https://github.com/storybookjs/storybook/releases)_x000D_
+- [Changelog](https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/storybookjs/storybook/commits/v6.4.0-alpha.35/lib/addons)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@storybook/addons""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* Revert ""chore(deps-dev): bump prettier from 2.2.1 to 2.4.0 (#232)"" (#238)_x000D_
+_x000D_
+This reverts commit 3bd977ef43f2138a6313839bded7dea65ad60e42._x000D_
+_x000D_
+* chore(deps-dev): bump @cypress/react from 5.4.0 to 5.10.0 (#237)_x000D_
+_x000D_
+Bumps [@cypress/react](https://github.com/cypress-io/cypress) from 5.4.0 to 5.10.0._x000D_
+- [Release notes](https://github.com/cypress-io/cypress/releases)_x000D_
+- [Changelog](https://github.com/cypress-io/cypress/blob/develop/.releaserc.base.js)_x000D_
+- [Commits](https://github.com/cypress-io/cypress/compare/@cypress/react-v5.4.0...@cypress/react-v5.10.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@cypress/react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-minor_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @testing-library/react from 11.2.6 to 12.1.0 (#236)_x000D_
+_x000D_
+Bumps [@testing-library/react](https://github.com/testing-library/react-testing-library) from 11.2.6 to 12.1.0._x000D_
+- [Release notes](https://github.com/testing-library/react-testing-library/releases)_x000D_
+- [Changelog](https://github.com/testing-library/react-testing-library/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/testing-library/react-testing-library/compare/v11.2.6...v12.1.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@testing-library/react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-major_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump i18next from 20.2.2 to 20.6.1 (#234)_x000D_
+_x000D_
+Bumps [i18next](https://github.com/i18next/i18next) from 20.2.2 to 20.6.1._x000D_
+- [Release notes](https://github.com/i18next/i18next/releases)_x000D_
+- [Changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/i18next/i18next/compare/v20.2.2...v20.6.1)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: i18next_x000D_
+  dependency-type: direct:production_x000D_
+  update-type: version-update:semver-minor_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @percy/cli from 1.0.0-beta.67 to 1.0.0-beta.68 (#235)_x000D_
+_x000D_
+Bumps [@percy/cli](https://github.com/percy/cli/tree/HEAD/packages/cli) from 1.0.0-beta.67 to 1.0.0-beta.68._x000D_
+- [Release notes](https://github.com/percy/cli/releases)_x000D_
+- [Commits](https://github.com/percy/cli/commits/v1.0.0-beta.68/packages/cli)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@percy/cli""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @storybook/theming (#229)_x000D_
+_x000D_
+Bumps [@storybook/theming](https://github.com/storybookjs/storybook/tree/HEAD/lib/theming) from 6.4.0-alpha.32 to 6.4.0-alpha.35._x000D_
+- [Release notes](https://github.com/storybookjs/storybook/releases)_x000D_
+- [Changelog](https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/storybookjs/storybook/commits/v6.4.0-alpha.35/lib/theming)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@storybook/theming""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* feat(i18n): add i18next support (#233)_x000D_
+_x000D_
+* chore(i18n): add i18next support_x000D_
+_x000D_
+* feat(i18n): add i18next support [skip ci]_x000D_
+_x000D_
+* Update i18n.js_x000D_
+_x000D_
+* Update talend-i18n.json_x000D_
+_x000D_
+* Update i18next-scanner.config.js_x000D_
+_x000D_
+* Update preview.js_x000D_
+_x000D_
+* feat(i18n): add i18next support_x000D_
+_x000D_
+* feat(i18n): add i18next support_x000D_
+_x000D_
+* chore(deps): bump polished from 4.1.2 to 4.1.3 (#241)_x000D_
+_x000D_
+Bumps [polished](https://github.com/styled-components/polished) from 4.1.2 to 4.1.3._x000D_
+- [Release notes](https://github.com/styled-components/polished/releases)_x000D_
+- [Commits](https://github.com/styled-components/polished/compare/v4.1.2...v4.1.3)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: polished_x000D_
+  dependency-type: direct:production_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump react-hook-form from 7.10.1 to 7.15.3 (#245)_x000D_
+_x000D_
+Bumps [react-hook-form](https://github.com/react-hook-form/react-hook-form) from 7.10.1 to 7.15.3._x000D_
+- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)_x000D_
+- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.10.1...v7.15.3)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: react-hook-form_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-minor_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @changesets/cli from 2.16.0 to 2.17.0 (#242)_x000D_
+_x000D_
+Bumps [@changesets/cli](https://github.com/changesets/changesets) from 2.16.0 to 2.17.0._x000D_
+- [Release notes](https://github.com/changesets/changesets/releases)_x000D_
+- [Changelog](https://github.com/atlassian/changesets/blob/main/docs/modifying-changelog-format.md)_x000D_
+- [Commits](https://github.com/changesets/changesets/compare/@changesets/cli@2.16.0...@changesets/cli@2.17.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@changesets/cli""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-minor_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#240)_x000D_
+_x000D_
+* chore(deps): bump deps versions_x000D_
+_x000D_
+* chore: deps_x000D_
+_x000D_
+* chore: deps_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+Co-authored-by: Fabien Rassinier <frassinier@talend.com>_x000D_
+_x000D_
+* chore(dependencies): upgrade (#247)_x000D_
+_x000D_
+* feat(Link): Fixing Link types (#246)_x000D_
+_x000D_
+* feat(Link): Fixing Link types_x000D_
+_x000D_
+* feat(Link): Changeset_x000D_
+_x000D_
+* feat(Menu): Overriding Link types to add active status_x000D_
+_x000D_
+* chore(dependencies): resolutions (#248)_x000D_
+_x000D_
+* chore(deps-dev): bump cypress from 7.7.0 to 8.4.0 (#252)_x000D_
+_x000D_
+Bumps [cypress](https://github.com/cypress-io/cypress) from 7.7.0 to 8.4.0._x000D_
+- [Release notes](https://github.com/cypress-io/cypress/releases)_x000D_
+- [Changelog](https://github.com/cypress-io/cypress/blob/develop/.releaserc.base.js)_x000D_
+- [Commits](https://github.com/cypress-io/cypress/compare/v7.7.0...v8.4.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: cypress_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-major_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(Dependabot): schedule weekly upgrades_x000D_
+_x000D_
+* chore(Dependabot): schedule weekly upgrades_x000D_
+_x000D_
+* chore(Tests): remove Percy support_x000D_
+_x000D_
+* chore(deps-dev): bump cypress from 8.4.0 to 8.4.1 (#264)_x000D_
+_x000D_
+Bumps [cypress](https://github.com/cypress-io/cypress) from 8.4.0 to 8.4.1._x000D_
+- [Release notes](https://github.com/cypress-io/cypress/releases)_x000D_
+- [Changelog](https://github.com/cypress-io/cypress/blob/develop/.releaserc.base.js)_x000D_
+- [Commits](https://github.com/cypress-io/cypress/compare/v8.4.0...v8.4.1)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: cypress_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump react-hook-form from 7.15.3 to 7.15.4 (#263)_x000D_
+_x000D_
+Bumps [react-hook-form](https://github.com/react-hook-form/react-hook-form) from 7.15.3 to 7.15.4._x000D_
+- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)_x000D_
+- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.15.3...v7.15.4)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: react-hook-form_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump mixme from 0.5.1 to 0.5.2 (#262)_x000D_
+_x000D_
+Bumps [mixme](https://github.com/adaltas/node-mixme) from 0.5.1 to 0.5.2._x000D_
+- [Release notes](https://github.com/adaltas/node-mixme/releases)_x000D_
+- [Changelog](https://github.com/adaltas/node-mixme/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/adaltas/node-mixme/compare/v0.5.1...v0.5.2)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: mixme_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump tmpl from 1.0.4 to 1.0.5 (#266)_x000D_
+_x000D_
+Bumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5._x000D_
+- [Release notes](https://github.com/daaku/nodejs-tmpl/releases)_x000D_
+- [Commits](https://github.com/daaku/nodejs-tmpl/commits/v1.0.5)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: tmpl_x000D_
+  dependency-type: indirect_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(Storybook): version fixed (#269)_x000D_
+_x000D_
+* chore(GitHub): ADR template [skip ci] (#271)_x000D_
+_x000D_
+* chore: Release (#227)_x000D_
+_x000D_
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* feat(forms): Inline message example (#279)_x000D_
+_x000D_
+* doc(global): Added design system definition (#278)_x000D_
+_x000D_
+* chore(deps-dev): bump @testing-library/react from 12.1.0 to 12.1.1 (#272)_x000D_
+_x000D_
+Bumps [@testing-library/react](https://github.com/testing-library/react-testing-library) from 12.1.0 to 12.1.1._x000D_
+- [Release notes](https://github.com/testing-library/react-testing-library/releases)_x000D_
+- [Changelog](https://github.com/testing-library/react-testing-library/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/testing-library/react-testing-library/compare/v12.1.0...v12.1.1)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@testing-library/react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump storybook-addon-mdx-embed from 0.0.19 to 0.0.20 (#273)_x000D_
+_x000D_
+Bumps [storybook-addon-mdx-embed](https://github.com/PaulieScanlon/mdx-embed) from 0.0.19 to 0.0.20._x000D_
+- [Release notes](https://github.com/PaulieScanlon/mdx-embed/releases)_x000D_
+- [Commits](https://github.com/PaulieScanlon/mdx-embed/compare/v0.0.19...v0.0.20)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: storybook-addon-mdx-embed_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump i18next from 20.6.1 to 21.2.0 (#280)_x000D_
+_x000D_
+Bumps [i18next](https://github.com/i18next/i18next) from 20.6.1 to 21.2.0._x000D_
+- [Release notes](https://github.com/i18next/i18next/releases)_x000D_
+- [Changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/i18next/i18next/compare/v20.6.1...v21.2.0)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: i18next_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-major_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump mdx-embed from 0.0.19 to 0.0.22 (#281)_x000D_
+_x000D_
+Bumps [mdx-embed](https://github.com/PaulieScanlon/mdx-embed) from 0.0.19 to 0.0.22._x000D_
+- [Release notes](https://github.com/PaulieScanlon/mdx-embed/releases)_x000D_
+- [Commits](https://github.com/PaulieScanlon/mdx-embed/compare/v0.0.19...v0.0.22)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: mdx-embed_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps): bump deps versions (#277)_x000D_
+_x000D_
+Co-authored-by: frassinier <frassinier@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @types/react from 16.14.15 to 17.0.26 (#282)_x000D_
+_x000D_
+Bumps [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) from 16.14.15 to 17.0.26._x000D_
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)_x000D_
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@types/react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-major_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* Revert ""chore(deps-dev): bump @types/react from 16.14.15 to 17.0.26 (#282)"" (#283)_x000D_
+_x000D_
+This reverts commit 44985f4acdb2531b37fdf8c3ec156f113957bfed._x000D_
+_x000D_
+* fix(components/button): move icon button border to toggle (#284)_x000D_
+_x000D_
+* fix(components/buttonÂ): remove icon button border_x000D_
+_x000D_
+* changeset_x000D_
+_x000D_
+* adapt catalog_x000D_
+_x000D_
+* revert border radius_x000D_
+_x000D_
+Co-authored-by: Fabien Rassinier <frassinier@talend.com>_x000D_
+_x000D_
+* chore(deps-dev): bump @cypress/react from 5.10.0 to 5.10.1 (#289)_x000D_
+_x000D_
+Bumps [@cypress/react](https://github.com/cypress-io/cypress) from 5.10.0 to 5.10.1._x000D_
+- [Release notes](https://github.com/cypress-io/cypress/releases)_x000D_
+- [Changelog](https://github.com/cypress-io/cypress/blob/develop/.releaserc.base.js)_x000D_
+- [Commits](https://github.com/cypress-io/cypress/compare/@cypress/react-v5.10.0...@cypress/react-v5.10.1)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@cypress/react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* Delete .percy.yml_x000D_
+_x000D_
+* chore(deps-dev): bump @testing-library/react from 12.1.1 to 12.1.2 (#288)_x000D_
+_x000D_
+Bumps [@testing-library/react](https://github.com/testing-library/react-testing-library) from 12.1.1 to 12.1.2._x000D_
+- [Release notes](https://github.com/testing-library/react-testing-library/releases)_x000D_
+- [Changelog](https://github.com/testing-library/react-testing-library/blob/main/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/testing-library/react-testing-library/compare/v12.1.1...v12.1.2)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: ""@testing-library/react""_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>_x000D_
+_x000D_
+* chore(deps-dev): bump i18next from 21.2.0 to 21.2.4 (#287)_x000D_
+_x000D_
+Bumps [i18next](https://github.com/i18next/i18next) from 21.2.0 to 21.2.4._x000D_
+- [Release notes](https://github.com/i18next/i18next/releases)_x000D_
+- [Changelog](https://github.com/i18next/i18next/blob/master/CHANGELOG.md)_x000D_
+- [Commits](https://github.com/i18next/i18next/compare/v21.2.0...v21.2.4)_x000D_
+_x000D_
+---_x000D_
+updated-dependencies:_x000D_
+- dependency-name: i18next_x000D_
+  dependency-type: direct:development_x000D_
+  update-type: version-update:semver-patch_x000D_
+..._x000D_
+_x000D_
+Signed-off-by: dependabot[bot] <support@github.com>_x000D_
+_x000D_
+Co-authored-by: dependabot[bot] <4969",Jean-Michel FRANCOIS,2021-11-26 16:57:06,113.471875,10.60421296296296,codeceptjs/ui/commit/cd3f64e1ff8cf31c7c64521f85edca8cecf00aa9,[],package-ecosystem,Others,0
+928b6d5a53463b543fd682c26fc707659e9809ec,compasjs/compas,chore(dependabot): drop grouped updates,Dirk de Visser,2024-07-10 21:14:19,3.659050925925926,0.2258449074074074,compasjs/compas/commit/928b6d5a53463b543fd682c26fc707659e9809ec,"[{""change_type"": ""removed"", ""parent"": ""groups"", ""path"": ""updates[0].groups""}]",groups,Ungroup prod/dev dependencies,0
+6144e36d0f7f8dbbdb1e3a15863900c68df7e954,contentful/contentful-batch-libs,chore: add debendabot [NONE] (#195),Marco Link,2023-10-11 06:53:23,202.6196990740741,0.0002430555555555,contentful/contentful-batch-libs/commit/6144e36d0f7f8dbbdb1e3a15863900c68df7e954,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+b4482f06c7f2f9a8d8379e3c8bd78b9b865b9c1c,contentful/contentful-export,chore: fix dependabot downgrade semantic-release again [EXT-5917],Bob Hemphill,2024-11-07 17:27:52,0.00143518518518515,0.00090856481481475,contentful/contentful-export/commit/b4482f06c7f2f9a8d8379e3c8bd78b9b865b9c1c,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore[3]'}]",ignore,Ignore unstable dependencies/version,0
+db3ec1244530a42045afdab207b55a539fda286c,contentful/contentful-resolve-response,chore(dependencies): enable dependabot,Marco Link,2022-02-24 09:37:13,291.6540162037037,0.0007986111111111,contentful/contentful-resolve-response/commit/db3ec1244530a42045afdab207b55a539fda286c,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+df259c742d87b56a84f3bc36f600d734923e8e69,contentful/contentful-resolve-response,fix: lock fast-copy dependency [NONE],Marco Link,2022-10-28 07:06:28,0.0007986111111111,0.0002430555555555,contentful/contentful-resolve-response/commit/df259c742d87b56a84f3bc36f600d734923e8e69,"[{""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[0].ignore""}]",ignore,Ignore unstable dependencies/version,0
+c09d54dd5333e7426fc4297f259faa8365678c04,contentful/contentful-resolve-response,fix(build): downgrade to semantic-release 19 to build with node 16,Janko Marklein,2023-02-09 16:18:40,0.0002430555555555,0.0002083333333333,contentful/contentful-resolve-response/commit/c09d54dd5333e7426fc4297f259faa8365678c04,"[{""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[0].ignore[1]""}]",ignore,Ignore unstable dependencies/version,0
+2fdf7921084db163b2fddaffdb39561b007f9ecc,dependents/detective-typescript,Add dependabot.yml for action updates,XhmikosR,2023-03-18 06:08:53,186.8699305555556,7.886759259259259,dependents/detective-typescript/commit/2fdf7921084db163b2fddaffdb39561b007f9ecc,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+a142c49957b055c55875fa69b72cf440c22371cd,eXist-db/xst,"ci: dependabot configuration
+
+- add github-actions to dependabot
+- prefix all commits with ""chore"" to pass commitlint rules",Juri Leino,2022-12-23 11:59:04,70.72355324074073,1.814710648148148,eXist-db/xst/commit/a142c49957b055c55875fa69b72cf440c22371cd,"[{'change_type': 'added', 'parent': 'commit-message', 'path': 'updates[0].commit-message'}, {'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",commit-message,Add commit-message,0
+a142c49957b055c55875fa69b72cf440c22371cd,eXist-db/xst,"ci: dependabot configuration
+
+- add github-actions to dependabot
+- prefix all commits with ""chore"" to pass commitlint rules",Juri Leino,2022-12-23 11:59:04,70.72355324074073,1.814710648148148,eXist-db/xst/commit/a142c49957b055c55875fa69b72cf440c22371cd,"[{'change_type': 'added', 'parent': 'commit-message', 'path': 'updates[0].commit-message'}, {'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",open-pull-requests-limit,Decrease interval,0
+b34327e2f432500d6f0ccf7f63891aaea3aae1bf,electron/update.electronjs.org,chore: use Dependabot to update GitHub Actions deps (#153),David Sanders,2024-03-16 04:56:19,3.828263888888889,0.0018634259259259,electron/update.electronjs.org/commit/b34327e2f432500d6f0ccf7f63891aaea3aae1bf,[{'change_type': 'added'}],Configure Dependabot for version updates,Other ecosystem,0
+d0ca77966d2bb184430a4138fc5c8ddcaf15ebdc,ember-cli/ember-exam,"Create dependabot.yml
+
+dependabot-preview is shutdown, need to add this file to keep getting updates.",Nathaniel Furniss,2021-08-09 18:23:18,135.0247222222222,47.05750578703704,ember-cli/ember-exam/commit/d0ca77966d2bb184430a4138fc5c8ddcaf15ebdc,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+2be7a838691ebeeee8ff816da39368adbd667fa5,fastify/aws-lambda-fastify,build(dependabot): reduce npm updates to monthly (#246),Frazer Smith,2025-01-15 15:38:59,0.0018518518518518,0.0010069444444444,fastify/aws-lambda-fastify/commit/2be7a838691ebeeee8ff816da39368adbd667fa5,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+69d42a56bfbbf9f2efd9ae01b8ddbfbfdd3a4ac9,fastify/fastify-autoload,build(dependabot): reduce npm updates to monthly (#439),Frazer Smith,2025-01-15 15:35:32,0.0079282407407407,0.0019039351851851,fastify/fastify-autoload/commit/69d42a56bfbbf9f2efd9ae01b8ddbfbfdd3a4ac9,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+ed44430a71bb785e7f4170d6009b8dc3211f50cb,fastify/fastify-hotwire,build(dependabot): reduce npm updates to monthly (#165),Frazer Smith,2025-01-15 15:32:59,0.0025231481481481,0.0010532407407407,fastify/fastify-hotwire/commit/ed44430a71bb785e7f4170d6009b8dc3211f50cb,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+4edfad1c6654873ffe03da8b186db1dde6a51f21,fastify/fastify-nextjs,build(dependabot): reduce npm updates to monthly (#1021),Frazer Smith,2025-01-15 15:32:07,0.0057291666666666,0.0018287037037037,fastify/fastify-nextjs/commit/4edfad1c6654873ffe03da8b186db1dde6a51f21,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[1].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+ed5ddfd8d135acfb6d36c7dcd965c7c9799e8e5a,fastify/github-action-merge-dependabot,build(dependabot): reduce npm updates to monthly (#682),Frazer Smith,2025-01-15 14:54:34,0.00064236111111105,0.0004282407407407,fastify/github-action-merge-dependabot/commit/ed5ddfd8d135acfb6d36c7dcd965c7c9799e8e5a,"[{""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+b939809e5b00fc09e355f64b06980e5866fbdfc0,floccusaddon/floccus,Create dependabot.yml,Marcel Klehr,2023-01-08 15:26:06,94.72668981481482,4.003402777777778,floccusaddon/floccus/commit/b939809e5b00fc09e355f64b06980e5866fbdfc0,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,0
+f572a9512048b28ff1ca9235ac8824be22852db7,getgauge/gauge-js,"Reduce dependabot updates to monthly grouped
+
+Reduce the amount of noise here
+
+Signed-off-by: Chad Wilson <29788154+chadlwilson@users.noreply.github.com>",Chad Wilson,2025-05-12 07:10:13,0.0146180555555555,0.0011458333333333,getgauge/gauge-js/commit/f572a9512048b28ff1ca9235ac8824be22852db7,"[{""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[0].groups""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[1].groups""}, {""change_type"": ""added"", ""parent"": ""allow"", ""path"": ""updates[1].allow""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+f572a9512048b28ff1ca9235ac8824be22852db7,getgauge/gauge-js,"Reduce dependabot updates to monthly grouped
+
+Reduce the amount of noise here
+
+Signed-off-by: Chad Wilson <29788154+chadlwilson@users.noreply.github.com>",Chad Wilson,2025-05-12 07:10:13,0.0146180555555555,0.0011458333333333,getgauge/gauge-js/commit/f572a9512048b28ff1ca9235ac8824be22852db7,"[{""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[0].groups""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""added"", ""parent"": ""groups"", ""path"": ""updates[1].groups""}, {""change_type"": ""added"", ""parent"": ""allow"", ""path"": ""updates[1].allow""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}]",groups,Group all dependencies,0
+56ee47908b630736e1cb178a7a91a309b8ca1654,getredash/website,Configure Dependabot,SeongTae Jeong,2024-04-06 01:17:18,527.5582060185185,0.1088368055555555,getredash/website/commit/56ee47908b630736e1cb178a7a91a309b8ca1654,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+31b79aaaab7a97774996c3704ffc3be9f418e92d,googlefonts/fontra,Switch to monthly dependabot,Just van Rossum,2025-01-10 14:06:45,0.0696064814814814,0.00243634259259255,googlefonts/fontra/commit/31b79aaaab7a97774996c3704ffc3be9f418e92d,"[{""change_type"": ""removed"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.day""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""removed"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.day""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[1].schedule.interval""}, {""change_type"": ""removed"", ""parent"": ""schedule"", ""path"": ""updates[2].schedule.day""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[2].schedule.interval""}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+2895a6ce206abe2de92ea5254592514abbfe6ffb,hiero-ledger/hiero-sdk-js,"chore(ci): fix permissions preventing Github release creation (#2149)
+
+Signed-off-by: Nathan Klick <nathan@swirldslabs.com>",Nathan Klick,2024-02-21 07:04:04,280.8947106481481,6.079166666666667,hiero-ledger/hiero-sdk-js/commit/2895a6ce206abe2de92ea5254592514abbfe6ffb,"[{'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[1].versioning-strategy'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[2].versioning-strategy'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[3].versioning-strategy'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[4].versioning-strategy'}, {'change_type': 'added', 'parent': 'versioning-strategy', 'path': 'updates[5].versioning-strategy'}]",versioning-strategy,Increase versioning-strategy,0
+09226f738a1eb2ce945b93df61613b1c3ee22dbe,iobroker-community-adapters/ioBroker.chromecast,"* updates
+* make compatible with node.js 16",Ingo Fischer,2022-08-19 12:03:44,86.1638599537037,0.0975636574074074,iobroker-community-adapters/ioBroker.chromecast/commit/09226f738a1eb2ce945b93df61613b1c3ee22dbe,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+d01057378d1eeb5cbc28b274d8fc1494150fe9ae,iobroker-community-adapters/ioBroker.fhem,* update default stuff,Ingo Fischer,2021-04-09 16:48:02,9.243449074074077,0.01579861111111105,iobroker-community-adapters/ioBroker.fhem/commit/d01057378d1eeb5cbc28b274d8fc1494150fe9ae,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+d01057378d1eeb5cbc28b274d8fc1494150fe9ae,iobroker-community-adapters/ioBroker.fhem,* update default stuff,Ingo Fischer,2021-04-09 16:48:02,9.243449074074077,0.01579861111111105,iobroker-community-adapters/ioBroker.fhem/commit/d01057378d1eeb5cbc28b274d8fc1494150fe9ae,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+338f08ac92e8089d5f075ef32116a70bde99df54,iobroker-community-adapters/ioBroker.ical,* (Apollon77) try to make sure all code is executed before adapter is ended,Ingo Fischer,2021-01-30 22:57:15,11.69591435185185,0.0050231481481481,iobroker-community-adapters/ioBroker.ical/commit/338f08ac92e8089d5f075ef32116a70bde99df54,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'removed', 'parent': 'versioning-strategy', 'path': 'updates[0].versioning-strategy'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,Other ecosystem,0
+3660c9305b0a303494a8bee39db52673b0f0e35d,iobroker-community-adapters/ioBroker.snmp,"* add github action, remove travis/appveyor
+* add dependabot, stalebot
+* add weblate support
+* iupdate deps and io-package",Ingo Fischer,2022-03-17 22:24:20,512.6568287037037,0.01842013888888885,iobroker-community-adapters/ioBroker.snmp/commit/3660c9305b0a303494a8bee39db52673b0f0e35d,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+3660c9305b0a303494a8bee39db52673b0f0e35d,iobroker-community-adapters/ioBroker.snmp,"* add github action, remove travis/appveyor
+* add dependabot, stalebot
+* add weblate support
+* iupdate deps and io-package",Ingo Fischer,2022-03-17 22:24:20,512.6568287037037,0.01842013888888885,iobroker-community-adapters/ioBroker.snmp/commit/3660c9305b0a303494a8bee39db52673b0f0e35d,"[{'change_type': 'removed', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'modified', 'parent': 'package-ecosystem', 'path': 'updates[0].package-ecosystem'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.timezone'}, {'change_type': 'added', 'parent': 'schedule', 'path': 'updates[0].schedule.time'}, {'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+e169d58562c7b6d6ad14745cad9ebb11332f480f,iobroker-community-adapters/ioBroker.solarlog,Update dependabot.yml,Martin M,2023-05-24 15:56:05,3.694328703703704,0.1805092592592592,iobroker-community-adapters/ioBroker.solarlog/commit/e169d58562c7b6d6ad14745cad9ebb11332f480f,"[{""change_type"": ""unchanged""}]",Styling,Fix typos,0
+b152e46cc68cbadd55af738f160c126aecf3f501,iobroker-community-adapters/ioBroker.unifi-protect,dependabot,peterbaumert,2021-05-21 07:50:59,39.07972800925926,0.0108217592592592,iobroker-community-adapters/ioBroker.unifi-protect/commit/b152e46cc68cbadd55af738f160c126aecf3f501,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+ccb6c84f499666f9e6df2a248c4df9d881590fbc,keycloak/keycloak-nodejs-connect,Add a Dependabot config to keep dependencies up-to-date,Jon Koops,2022-01-20 20:01:19,63.21638310185185,3.591354166666667,keycloak/keycloak-nodejs-connect/commit/ccb6c84f499666f9e6df2a248c4df9d881590fbc,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+0ed662ca16add6bead636017763645998eee0471,klein0r/ioBroker.lametric,Auto-Merge Dependabot,Matthias Kleine,2022-05-01 10:31:06,39.6857349537037,0.0007986111111111,klein0r/ioBroker.lametric/commit/0ed662ca16add6bead636017763645998eee0471,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+f1a5229e9d1ca78fee51eda0d936d460ca53b93e,koajs/redis-session-sets,add dependabot,jongleberry,2021-08-22 05:11:45,28.70166666666667,0.004016203703703701,koajs/redis-session-sets/commit/f1a5229e9d1ca78fee51eda0d936d460ca53b93e,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+eca8d4193b36e7c342e20cf036586dac337c4e94,kurkle/chartjs-chart-treemap,chore: update sonar settings,Jukka Kurkela,2024-09-11 19:56:09,20.95866319444444,6.049519675925926,kurkle/chartjs-chart-treemap/commit/eca8d4193b36e7c342e20cf036586dac337c4e94,[],package-ecosystem,Other ecosystem,0
+a163f8863e60de76487297a38a5453694e139dde,kurkle/chartjs-plugin-autocolors,feat: enable dependabot,Jukka Kurkela,2024-09-11 17:02:24,5.748396990740741,0.0040393518518518,kurkle/chartjs-plugin-autocolors/commit/a163f8863e60de76487297a38a5453694e139dde,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+4f9a8a56a4faeacfe78de4c0d7b6689295866d6c,macbre/nodemw,Update dependabot.yml,Maciej Brencz,2021-08-10 09:41:09,1.324375,0.0006655092592591999,macbre/nodemw/commit/4f9a8a56a4faeacfe78de4c0d7b6689295866d6c,[],package-ecosystem,Other ecosystem,0
+9ff5a51ed3ceefd3baf16513d763d0a991631d50,mattiasw/ExifReader,Create dependabot.yml,Mattias Wallander,2024-03-28 17:23:22,0.2716087962962963,0.0773379629629629,mattiasw/ExifReader/commit/9ff5a51ed3ceefd3baf16513d763d0a991631d50,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+cc3b625e5c24cd170d06139a59f136af5fe063d5,nearform/the-micro-frontends-workshop,fix: downgrade the next.js module federation plugin and add an exception to the dependabot config (#98),Russ Bredihin,2023-08-10 23:12:04,0.001099537037037,0.0008101851851851,nearform/the-micro-frontends-workshop/commit/cc3b625e5c24cd170d06139a59f136af5fe063d5,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[0].ignore'}]",ignore,Ignore unstable dependencies/version,0
+f8d3a7b5a371084959ee99dc0c6c023ede65c2f1,nextcloud/announcementcenter,"docs(reuse): Add SPDX header
+
+Signed-off-by: Andy Scherzinger <info@andy-scherzinger.de>",Andy Scherzinger,2024-10-29 09:08:45,0.0584143518518518,0.003599537037037,nextcloud/announcementcenter/commit/f8d3a7b5a371084959ee99dc0c6c023ede65c2f1,[{'change_type': 'unchanged'}],Styling,Fix typos,0
+d90c69e136235a163d4ad21183620f0551757b13,nextcloud/officeonline,"docs(reuse): Add SPDX header
+
+Signed-off-by: Andy Scherzinger <info@andy-scherzinger.de>",Andy Scherzinger,2024-12-03 21:02:15,2.064166666666666,0.00182870370370365,nextcloud/officeonline/commit/d90c69e136235a163d4ad21183620f0551757b13,[{'change_type': 'unchanged'}],Styling,Fix typos,0
+7617680e7495bc92bd9c0a34202c394b12c32bd2,npm/package-json,"feat!: postinstall for dependabot template-oss PR
+
+BREAKING CHANGE: `@npmcli/package-json` is now compatible with the following semver range for node: `^14.17.0 || ^16.13.0 || >=18.0.0`",Luke Karrys,2022-09-21 06:31:18,20.38827546296296,2.481099537037037,npm/package-json/commit/7617680e7495bc92bd9c0a34202c394b12c32bd2,[{'change_type': 'unchanged'}],Styling,Fix typos,0
+de0c70d25254df93c8466a05d1a3f94f79466833,olsh/Feedly-Notifier,Fix build,Oleg,2023-02-03 13:20:51,0.0090277777777777,0.0003993055555555,olsh/Feedly-Notifier/commit/de0c70d25254df93c8466a05d1a3f94f79466833,[],package-ecosystem,Other ecosystem,0
+6af6e1b4429b5faf5b97c943387af2c7cdbe7c92,openstreetmap/iD,"Enable dependabot for GitHub Actions dependencies (#11093)
+
+* Pin GitHub Actions versions
+* Add Dependabot alerts for Actions",Florian Stosse,2025-06-04 08:01:43,1.302395833333333,0.0193981481481481,openstreetmap/iD/commit/6af6e1b4429b5faf5b97c943387af2c7cdbe7c92,[],package-ecosystem,Other ecosystem,0
+048b79a0b81f2024d1bd0d7dc72893157d0df6d0,pinojs/pino-opentelemetry-transport,"Feat/improve workflows and dependabot (#132)
+
+* feat: add commitlint and conventional config_x000D_
+_x000D_
+- ignore dependabot commits due to length_x000D_
+  https://github.com/dependabot/dependabot-core/issues/2445_x000D_
+_x000D_
+* chore: add action validating commits with commit-lint_x000D_
+_x000D_
+* chore: make dependabot group prod and dev deps_x000D_
+_x000D_
+* feat: add release-please workflow_x000D_
+_x000D_
+* chore: publish on release PR merge",Vladimir Adamić,2024-02-07 22:18:54,20.94813657407407,5.964328703703703,pinojs/pino-opentelemetry-transport/commit/048b79a0b81f2024d1bd0d7dc72893157d0df6d0,"[{'change_type': 'added', 'parent': 'groups', 'path': 'updates[1].groups'}]",groups,Group dev/prod dependencies,0
+2bcda31ff690d0c6301bfb02b45086fac847182f,prebid/Prebid.js,"chore: Included githubactions in the dependabot config (#8583)
+
+This should help with keeping the GitHub actions updated on new releases. This will also help with keeping it secure._x000D_
+_x000D_
+Dependabot helps in keeping the supply chain secure https://docs.github.com/en/code-security/dependabot_x000D_
+_x000D_
+GitHub actions up to date https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot_x000D_
+_x000D_
+https://github.com/ossf/scorecard/blob/main/docs/checks.md#dependency-update-tool_x000D_
+Signed-off-by: naveen <172697+naveensrinivasan@users.noreply.github.com>",Naveen,2022-06-19 12:05:55,7.548530092592593,0.1555497685185185,prebid/Prebid.js/commit/2bcda31ff690d0c6301bfb02b45086fac847182f,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+891f7977ac63297fc0532a411739f4a95102d3f0,prettier/plugin-xml,Various updates,Kevin Newton,2023-01-04 03:44:36,0.0007407407407407,0.0001504629629629,prettier/plugin-xml/commit/891f7977ac63297fc0532a411739f4a95102d3f0,[],package-ecosystem,Other ecosystem,0
+9428fa3f3d2fa16ba9f648f8f61a173323bbe38c,readmeio/rdme,ci: updating the dependabot label,Jon Ursenbach,2021-08-25 16:15:09,3.54712962962963,0.01926504629629625,readmeio/rdme/commit/9428fa3f3d2fa16ba9f648f8f61a173323bbe38c,"[{'change_type': 'modified', 'parent': 'labels', 'path': 'updates[0].labels[0]'}, {'change_type': 'modified', 'parent': 'labels', 'path': 'updates[1].labels[0]'}]",labels,Update labels,0
+94bbcbe6af758903a7e36604dbc7a0d7d77bd5d7,readmeio/rdme,ci: ignoring table-layout from dependabot because its now an esm-only pkg,Jon Ursenbach,2021-10-05 16:49:22,3.675590277777778,0.003449074074074,readmeio/rdme/commit/94bbcbe6af758903a7e36604dbc7a0d7d77bd5d7,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[1].ignore[1]'}]",ignore,Ignore ESM-related dependencies,0
+e1aeac0f54f0bc7a8cac7efd905de03ed7dbafab,readmeio/rdme,"perf(openapi): upload improvements (#518)
+
+* chore(deps): install ora_x000D_
+_x000D_
+* chore: add ora to dependabot and reformat_x000D_
+_x000D_
+* feat: add spinner for file validation_x000D_
+_x000D_
+* feat: initial registry upload function_x000D_
+_x000D_
+* refactor: move ora opts into shared function_x000D_
+_x000D_
+* refactor: use shared ora opts in new function also_x000D_
+_x000D_
+* feat: first pass at rewriting openapi command to support new flow_x000D_
+_x000D_
+- also i realphabetized the imports_x000D_
+_x000D_
+* chore: making the spinners spin_x000D_
+_x000D_
+* test: refactor existing tests to work with new flow_x000D_
+_x000D_
+* test: add coverage for if registry endpoint fails_x000D_
+_x000D_
+* chore: test coverage in ora opts_x000D_
+_x000D_
+* chore: spinner language",Kanad Gupta,2022-06-23 17:02:22,0.5487673611111111,0.0652199074074074,readmeio/rdme/commit/e1aeac0f54f0bc7a8cac7efd905de03ed7dbafab,"[{'change_type': 'added', 'parent': 'ignore', 'path': 'updates[1].ignore[3]'}]",ignore,Ignore major version upgrades,0
+83043de67bc4eedbf869fe20dfa1bac02db1cee2,recharts/recharts.org,chore: add dependabot configuration for npm updates,Pavel Vanecek,2025-06-26 11:33:06,5.871539351851852,0.0198379629629629,recharts/recharts.org/commit/83043de67bc4eedbf869fe20dfa1bac02db1cee2,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+89ba2f4c6230dbe7e13404cc9750b5094f9cbd83,scala-text/scala_text,Update dependabot.yml,kenji yoshida,2022-11-08 22:49:13,1.08005787037037,0.0803819444444444,scala-text/scala_text/commit/89ba2f4c6230dbe7e13404cc9750b5094f9cbd83,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,Decrease interval,0
+f3cba791dd136c6f76b5427088fc8569029157fb,simatec/ioBroker.backitup,(simatec) Beta 2.2.2,simatec,2021-11-06 22:41:25,11.43532407407407,0.0032291666666666,simatec/ioBroker.backitup/commit/f3cba791dd136c6f76b5427088fc8569029157fb,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+6af452b8c0440691731a94ad7d1b7d88079a850a,stylelint-scss/stylelint-scss,Create dependabot.yml,Krister Kari,2022-07-08 10:51:33,6.414097222222222,0.6401967592592592,stylelint-scss/stylelint-scss/commit/6af452b8c0440691731a94ad7d1b7d88079a850a,[{'change_type': 'added'}],Configure Dependabot for version updates,Adopt Dependabot,0
+c4ec5a519508a7d641f0de84117495271ab8b9d3,stylelint/stylelint-config-standard,"Remove dependabot (#236)
+
+Co-authored-by: Masafumi Koba <473530+ybiquitous@users.noreply.github.com>",Richard Hallows,2022-02-07 23:38:37,2.04365162037037,0.1745428240740741,stylelint/stylelint-config-standard/commit/c4ec5a519508a7d641f0de84117495271ab8b9d3,[{'change_type': 'deleted'}],Removed Dependabot,Remove Dependabot,0
+13b6853fc8a88d4ba119f13374080fcb09dfa278,techmatters/terraso-web-client,chore: bump dependabot PR limit to 20,Paul Schreiber,2024-01-08 20:36:24,0.08613425925925926,0.0172337962962962,techmatters/terraso-web-client/commit/13b6853fc8a88d4ba119f13374080fcb09dfa278,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+eef7d928740cd6a8f7b66f32d235ba8a6a3b184b,timbeadle/grunt-tv4,Update dependabot.yml,Tim Beadle,2023-02-02 09:57:09,2.699855324074074,0.2950231481481482,timbeadle/grunt-tv4/commit/eef7d928740cd6a8f7b66f32d235ba8a6a3b184b,"[{'change_type': 'added', 'parent': 'assignees', 'path': 'updates[0].assignees'}]",assignees,Add assignees,0
+f521fdcc19a941cf792ad053cb051252abcdef5f,timbru31/spigot-anti-piracy-backend,build(deps): replace TSLint with ESLint,Tim Brust,2023-08-18 12:00:14,0.0638078703703703,0.0004398148148148,timbru31/spigot-anti-piracy-backend/commit/f521fdcc19a941cf792ad053cb051252abcdef5f,"[{""change_type"": ""unchanged""}]",Styling,Fix typos,0
+0a6df8860b5c6e0eeaeb162bbe836a680217899c,tldr-pages/tldr-lint,"feat: dockerise tldr-lint (#309)
+
+* add tldr-lint dockerfile_x000D_
+_x000D_
+* Add docker build workflow_x000D_
+_x000D_
+* npm install -> npm ci_x000D_
+_x000D_
+* docker push workflow_x000D_
+_x000D_
+* fix docker publish wf syntax_x000D_
+_x000D_
+* insert missing tailing newline_x000D_
+_x000D_
+* tailing newline_x000D_
+_x000D_
+* improv: update Docker and CI files_x000D_
+_x000D_
+Signed-off-by: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>_x000D_
+_x000D_
+* cleanup: update CI files_x000D_
+_x000D_
+Signed-off-by: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>_x000D_
+_x000D_
+* improv: combine publish workflows_x000D_
+_x000D_
+Signed-off-by: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>_x000D_
+_x000D_
+* ci: add names for CI workflows_x000D_
+_x000D_
+---------_x000D_
+_x000D_
+Signed-off-by: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>_x000D_
+Co-authored-by: K.B.Dharun Krishna <kbdharunkrishna@gmail.com>_x000D_
+Co-authored-by: Owen Voke <development@voke.dev>",Juri Dispan,2024-03-22 09:07:19,1.321134259259259,0.1588078703703703,tldr-pages/tldr-lint/commit/0a6df8860b5c6e0eeaeb162bbe836a680217899c,[],package-ecosystem,Other ecosystem,0
+2b6a661ca723a50e980cd40fcb591f6b46921af7,w3c/aria-at,chore: increase Dependabot PR limit (#657),Nick Schonning,2022-03-22 18:26:07,389.69125,70.88052083333334,w3c/aria-at/commit/2b6a661ca723a50e980cd40fcb591f6b46921af7,"[{'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[0].open-pull-requests-limit'}, {'change_type': 'added', 'parent': 'open-pull-requests-limit', 'path': 'updates[1].open-pull-requests-limit'}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+65e86a4f137e3b778f2d6c5e17a21076f41ec44e,w3c/aria-at,"Update dependencies and scripts (#1095)
+
+Bump several outdated dependencies, update scripts where applicable and address lint errors",Howard Edwards,2024-08-26 15:33:10,512.8242766203704,135.9916145833333,w3c/aria-at/commit/65e86a4f137e3b778f2d6c5e17a21076f41ec44e,[{'change_type': 'unchanged'}],Styling,Fix typos,0
+d3898dbc4416fcd316ee341504f65d632cbab82d,w3c/aria-at-app,Limit # of dependabot alert related PRs being created at once (#565),Howard Edwards,2023-03-27 21:12:12,484.9784722222223,92.96981481481481,w3c/aria-at-app/commit/d3898dbc4416fcd316ee341504f65d632cbab82d,"[{""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[1].open-pull-requests-limit""}, {""change_type"": ""modified"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[2].open-pull-requests-limit""}]",open-pull-requests-limit,Decrease limit,0
+6bd7bd9c9bcc3711183bc4ba7f3d196dbf0ecc07,w3c/spec-generator,Change dependabot into weekly update.,JiayingL,2021-06-29 03:03:15,3.781053240740741,0.6996875,w3c/spec-generator/commit/6bd7bd9c9bcc3711183bc4ba7f3d196dbf0ecc07,"[{'change_type': 'modified', 'parent': 'schedule', 'path': 'updates[0].schedule.interval'}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+2bad43f787a281bc40ed4febadc1d6c407e4109e,webex/webex-js-sdk,feat(meetings): merge beta into next (#3219),Dipanshu Sharma,2024-01-22 06:02:17,104.2640046296296,11.92550347222222,webex/webex-js-sdk/commit/2bad43f787a281bc40ed4febadc1d6c407e4109e,"[{""change_type"": ""unchanged""}]",Styling,Fix typos,0
+3a12c85d18ee358f60b52f51419ddbfb3142abae,Chia-Network/chialisp-web,Update Managed Files (#354),ChiaAutomation,2024-12-19 13:52:37,22.98126736111111,2.142789351851852,Chia-Network/chialisp-web/commit/3a12c85d18ee358f60b52f51419ddbfb3142abae,"[{""change_type"": ""added"", ""parent"": ""directories"", ""path"": ""updates[2].directories""}, {""change_type"": ""removed"", ""parent"": ""directory"", ""path"": ""updates[2].directory""}]",package-ecosystem,Other ecosystem,0
+01cf70df1305948d8b8ae248f2b80d13aa236a22,alphagov/govuk-frontend,"Make dependabot ignore major bumps for iframe-resizer
+
+It seems to have done it so far, but with the update popping up on the Design System site, better be safe than inadvertentnly use a GPL dependency which would make us have to change our licence as well",Romaric Pascal,2024-08-09 13:20:44,0.2346412037037037,0.03097800925925925,alphagov/govuk-frontend/commit/01cf70df1305948d8b8ae248f2b80d13aa236a22,"[{""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[0].ignore[2]""}]",ignore,Ignore major version upgrades,0
+25c7b987743bbe7a1434705ab02e360f4bde662b,alphagov/pay-selfservice,PP-8224 Add github actions to dependabot file,Stephen Daly,2021-08-02 10:29:33,1.099166666666667,0.348923611111111,alphagov/pay-selfservice/commit/25c7b987743bbe7a1434705ab02e360f4bde662b,[],package-ecosystem,Other ecosystem,0
+452914fd321aef0329fb03bdf826eee27f8ef79c,cozy/cozy-drive,chore(dependabot): Move dependabot to correct location,Cozy Pierre,2022-02-21 13:19:35,181.726875,3.262806712962963,cozy/cozy-drive/commit/452914fd321aef0329fb03bdf826eee27f8ef79c,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,0
+4164b13cd2d2cd7fb3ddf6173909df324e787d69,jens-maus/node-ical,added automerge and dependabot settings.,Jens Maus,2023-11-22 18:35:50,16.54612268518519,0.0022106481481481,jens-maus/node-ical/commit/4164b13cd2d2cd7fb3ddf6173909df324e787d69,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",schedule,"Increase interval (e.g., from daily to weekly)",0
+7b89b7504a3056accb756201d56eab62e11cb949,liatrio/gratibot,"Refactor tf to use Terragrunt for deployments (#322)
+
+* Refactor tf to use Terragrunt for deployments_x000D_
+_x000D_
+* fix: revert to custom workflow_x000D_
+_x000D_
+* fix: Fix yaml indent_x000D_
+_x000D_
+* fix: Update include block labels for terragrunt_x000D_
+_x000D_
+* fix: Update plan output working dir",Alice Jones,2023-02-17 15:10:54,19.34114583333333,1.052748842592593,liatrio/gratibot/commit/7b89b7504a3056accb756201d56eab62e11cb949,"[{""change_type"": ""modified"", ""parent"": ""directory"", ""path"": ""updates[3].directory""}]",package-ecosystem,Other ecosystem,0
+a8a85438e506ce8f0104bb2974e750430c7a0091,mjeanroy/rollup-plugin-license,doc: update copyright header,Mickael Jeanroy,2023-10-14 12:56:30,2.133576388888889,0.768900462962963,mjeanroy/rollup-plugin-license/commit/a8a85438e506ce8f0104bb2974e750430c7a0091,"[{""change_type"": ""unchanged""}]",Styling,Fix typos,0
+6d6cf409f18bdcb43490d73787b406cd67cbac2c,nextcloud/files_pdfviewer,"feat(deps): Add Nextcloud 29 support on master
+
+Signed-off-by: Joas Schilling <coding@schilljs.com>",Joas Schilling,2023-11-23 13:18:32,2.649780092592593,0.2603761574074073,nextcloud/files_pdfviewer/commit/6d6cf409f18bdcb43490d73787b406cd67cbac2c,"[{""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[2].target-branch""}, {""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[3].target-branch""}, {""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[4].target-branch""}]",target-branch,Modify target-branch,0
+8a0cee25c0e229fd812df75e0b5a86eb7b13fd31,nextcloud/viewer,"Update dependabot.yml
+
+Signed-off-by: John Molakvoæ <skjnldsv@users.noreply.github.com>",John Molakvoæ,2022-09-27 07:43:33,4.431215277777778,0.4757291666666666,nextcloud/viewer/commit/8a0cee25c0e229fd812df75e0b5a86eb7b13fd31,"[{""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[2].target-branch""}, {""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[3].target-branch""}, {""change_type"": ""modified"", ""parent"": ""target-branch"", ""path"": ""updates[4].target-branch""}]",target-branch,Modify target-branch,0
+440c2d0e3d13299556c6469c58580ad100c2d9f8,readmeio/rdme,chore(deps): bumping out of date deps (#477),Jon Ursenbach,2022-03-10 17:51:40,0.8498726851851852,0.5487673611111111,readmeio/rdme/commit/440c2d0e3d13299556c6469c58580ad100c2d9f8,"[{""change_type"": ""modified"", ""parent"": ""ignore"", ""path"": ""updates[1].ignore[1].dependency-name""}, {""change_type"": ""modified"", ""parent"": ""versions"", ""path"": ""updates[1].ignore[1].versions[0]""}, {""change_type"": ""added"", ""parent"": ""ignore"", ""path"": ""updates[1].ignore[2]""}]",ignore,Ignore ESM-related dependencies,0
+fe2e8c658224239264173673e0ceec929cf929a9,tido64/suggestion-bot,chore: disable Dependabot (#118),Tommy Nguyen,2021-09-14 23:26:41,0.2423900462962963,0.02758101851851845,tido64/suggestion-bot/commit/fe2e8c658224239264173673e0ceec929cf929a9,"[{""change_type"": ""deleted""}]",Removed Dependabot,Remove Dependabot,0
+e0cce6e83131931ec54930c3b6c7207b61955144,tracked-tools/tracked-toolbox,Add dependabot.yml config file,Sergey Astapov,2023-03-30 20:20:59,136.9453298611111,0.0752199074074074,tracked-tools/tracked-toolbox/commit/e0cce6e83131931ec54930c3b6c7207b61955144,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,0
+9d021163b1f1ee9b9a44af52866a708ab0310acb,urbica/react-map-gl,ci: enable auto updates with dependabot,Stepan Kuzmin,2022-07-07 10:52:27,0.6157581018518519,0.0002199074074074,urbica/react-map-gl/commit/9d021163b1f1ee9b9a44af52866a708ab0310acb,"[{""change_type"": ""added""}]",Configure Dependabot for version updates,Adopt Dependabot,0
+4164b13cd2d2cd7fb3ddf6173909df324e787d69,jens-maus/node-ical,added automerge and dependabot settings.,Jens Maus,2023-11-22 18:35:50,16.54612268518519,0.0022106481481481,jens-maus/node-ical/commit/4164b13cd2d2cd7fb3ddf6173909df324e787d69,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",schedule,Set time,0
+4164b13cd2d2cd7fb3ddf6173909df324e787d69,jens-maus/node-ical,added automerge and dependabot settings.,Jens Maus,2023-11-22 18:35:50,16.54612268518519,0.0022106481481481,jens-maus/node-ical/commit/4164b13cd2d2cd7fb3ddf6173909df324e787d69,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",schedule,Set timezone,0
+4164b13cd2d2cd7fb3ddf6173909df324e787d69,jens-maus/node-ical,added automerge and dependabot settings.,Jens Maus,2023-11-22 18:35:50,16.54612268518519,0.0022106481481481,jens-maus/node-ical/commit/4164b13cd2d2cd7fb3ddf6173909df324e787d69,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",open-pull-requests-limit,"Increase limit (e.g., from 5 to 20)",0
+4164b13cd2d2cd7fb3ddf6173909df324e787d69,jens-maus/node-ical,added automerge and dependabot settings.,Jens Maus,2023-11-22 18:35:50,16.54612268518519,0.0022106481481481,jens-maus/node-ical/commit/4164b13cd2d2cd7fb3ddf6173909df324e787d69,"[{""change_type"": ""removed"", ""parent"": ""open-pull-requests-limit"", ""path"": ""updates[0].open-pull-requests-limit""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.time""}, {""change_type"": ""added"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.timezone""}, {""change_type"": ""modified"", ""parent"": ""schedule"", ""path"": ""updates[0].schedule.interval""}, {""change_type"": ""modified"", ""parent"": ""package-ecosystem"", ""path"": ""updates[0].package-ecosystem""}]",versioning-strategy,Add/update versioning-strategy,0

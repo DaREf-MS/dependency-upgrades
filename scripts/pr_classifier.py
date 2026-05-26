@@ -1,253 +1,369 @@
 import os
+import re
+import csv
+import json
+import shlex
+import ast
+import subprocess
+import pandas as pd
+from datetime import timedelta, timezone, datetime
+from typing import Optional, Tuple, List
+from packaging.version import Version, InvalidVersion
+from tqdm import tqdm
 from pathlib import Path
 
-from yarnlock import yarnlock_parse
-from scripts.abstract_pr_classifier import AbstractPRClassifier
-from scripts.pr_exceptions import YarnLockParsingError
+from dotenv import load_dotenv
 
+load_dotenv()
 
-class PRClassifier(AbstractPRClassifier):
-    def check_changed_package_manager(self):
+# --- Configuration & Constants ---
+PARENT_PATH = Path(__file__).resolve().parent.parent
+DATA_PATH = Path(__file__).resolve().parent.parent / 'data'
 
-        num_pkg_manger_files = 0
-        for pkg_file in self.changed_files:
-            if self.pkg_manger_files[0] in pkg_file:
-                self.package_json_file = pkg_file
-                num_pkg_manger_files += 1
-            elif self.pkg_manger_files[1] in pkg_file:
-                self.package_lock_json_file = pkg_file
-                num_pkg_manger_files += 1
-            elif self.pkg_manger_files[2] in pkg_file:
-                num_pkg_manger_files += 1
-                self.yarn_lock_file = pkg_file
+TARGET_FILES = ["package.json", "package-lock.json", "yarn.lock", "pnpm-lock.yaml"]
+REPOS_DIR = "./repos"
+OUTPUT_CSV = DATA_PATH / "unified_upgrades.csv"
+CHECKPOINT_FILE = DATA_PATH / "processed_repo_libs.txt"
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-        self.package_json_file = self.package_json_file or self.pkg_manger_files[0]
-        self.package_lock_json_file = self.package_lock_json_file or self.pkg_manger_files[1]
-        self.yarn_lock_file = self.yarn_lock_file or self.pkg_manger_files[2]
+INPUT_FILES = [
+    ("base_prs_star.csv", "Star"),
+    ("base_prs_commit.csv", "Commit"),
+    ("base_prs_contributor.csv", "Contributor"),
+    ("base_prs_dep.csv", "Dependabot")
+]
 
-        return num_pkg_manger_files > 0
+BOTS = ['dependabot', 'github-actions', 'contentful-automation', 'mergify', 'kodiakhq']
 
-    def get_dependency_version(self, package_json: dict, lib_name: str):
-        for section in ['dependencies', 'devDependencies', 'peerDependencies', 'optionalDependencies', 'resolutions']:
-            deps = package_json.get(section, {})
-            if lib_name in deps:
-                return deps[lib_name].strip("^~><= ")
+# --- Utilities ---
+def run_cmd(cmd: str, cwd: Optional[str] = None) -> Tuple[int, str, str]:
+    proc = subprocess.Popen(
+        shlex.split(cmd), cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+    )
+    out, err = proc.communicate()
+    return proc.returncode, out.strip(), err.strip()
+
+def version_cmp_geq(v1: str, v2: str) -> bool:
+    def clean(v: str) -> str:
+        return re.sub(r"^[\^~><=\s]*", "", str(v)).strip()
+    try:
+        return Version(clean(v1)) >= Version(clean(v2))
+    except InvalidVersion:
+        return clean(v1) >= clean(v2)
+
+def parse_git_iso_dt(s: str) -> Optional[datetime]:
+    try:
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
         return None
 
-    def is_dependency_imported(self, lib_name):
-        for root, _, files in os.walk(self.repo_path):
-            for file in files:
-                if file.endswith(('.js', '.ts', '.jsx', '.tsx')):
-                    try:
-                        with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
-                            content = f.read()
-                            if f"from '{lib_name}'" in content or f'require("{lib_name}")' in content or f"require('{lib_name}')" in content:
-                                return True
-                    except Exception as ex:
-                        self.logger.info(f"Failed to import {lib_name} from {root}: {ex}")
-                        continue
-        return False
+def get_change_type(old_v_str: str, new_v_str: str) -> Optional[str]:
+    try:
+        old_v = Version(re.sub(r"^[\^~><=\s]*", "", str(old_v_str)).strip())
+        new_v = Version(re.sub(r"^[\^~><=\s]*", "", str(new_v_str)).strip())
+        if new_v.major > old_v.major:
+            return "major"
+        if new_v.minor > old_v.minor:
+            return "minor"
+        if new_v.micro > old_v.micro:
+            return "patch"
+    except Exception:
+        pass
+    return None
 
-    def has_peer_constraints(self, lib_name):
-        import yaml
+# --- Dependency Extraction ---
+class DependencyExtractor:
+    @staticmethod
+    def extract(pr_title: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
+        if pd.isna(pr_title): return None, None, None, None
+        patterns = [
+            r'(?:build\(deps(?:-dev)?\):\s*)?bump\s+(\S+)\s+from\s+(\d[\d\.]*)\s+to\s+(\d[\d\.]*)(?:\s+in\s+([^\s]+))?',
+            r'^(?:chore|fix|feat|build)(?:\([^)]+\))?:\s*bump\s+(\S+)\s+from\s+(\d[\d\.]*)\s+to\s+(\d[\d\.]*)(?:\s+in\s+([^\s]+))?',
+            r'(?:update|upgrade)\s+(\S+)(?:\s+from\s+(\d[\d\.]*))?\s+to\s+(\d[\d\.]*)(?:\s+in\s+([^\s]+))?'
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, str(pr_title), re.IGNORECASE)
+            if match:
+                groups = match.groups()
+                lib = groups[0].lower() if groups[0] else None
+                return lib, groups[1], groups[2], (groups[3] if len(groups) > 3 else None)
+        return None, None, None, None
 
-        yarn_lock_path = os.path.join(self.repo_path, self.yarn_lock_file)
-
-        if self.yarn_lock_file and os.path.exists(yarn_lock_path):
-
-            with open(yarn_lock_path, 'r') as f:
-                try:
-                    # yarn_lock_data = yaml.safe_load(f)
-                    # for key in yarn_lock_data.keys():
-                    #     yarnlock_item = yarn_lock_data.get(key)
-                    #     if :
-                    #         return True
-
-                    yarn_lock_data = yaml.safe_load(f)
-                    for key in yarn_lock_data.keys():
-                        if self.is_lib_key(key, lib_name):
-
-                            entry = yarn_lock_data[key]
-                            if isinstance(entry, dict) and entry.get('peerDependencies', None) and lib_name in entry.get(
-                                'peerDependencies').keys():
-                                return True
-                except yaml.YAMLError as e:
-
-                    self.logger.info(f"Error parsing YAML: {e}")
-
-                    try:
-                        yarn_lock_data = yarnlock_parse(Path(yarn_lock_path).read_text())
-                        for key in yarn_lock_data.keys():
-                            yarnlock_item = yarn_lock_data.get(key)
-
-                            if yarnlock_item.get('peerDependencies', None) and lib_name in yarnlock_item.get('peerDependencies').keys():
-                                return True
-                    except Exception as e:
-                        self.logger.info(f"Error parsing YAML: {e}")
-                        raise YarnLockParsingError(f"Error parsing YAML: {e}")
-        return False
-
-    def _retrieve_library_version_from_package_lock_json(self, package_json_lock_content: dict, lib_name: str):
-        if "dependencies" in package_json_lock_content and lib_name in package_json_lock_content["dependencies"]:
-            locked_version = package_json_lock_content.get("dependencies")[lib_name].get("version")
-
-            return locked_version
-
-        elif "packages" in package_json_lock_content:
-            locked_version = package_json_lock_content["packages"].get(f"node_modules/{lib_name}", {}).get("version", None)
-
-            return locked_version
-        else:
-            return None
-
-    def is_lib_key(self, key, lib_name):
-        """Check if the yarn.lock key matches the library name pattern"""
-        # Handle simple case: "@lib/name@version"
-        if key.startswith(f"{lib_name}@"):
-            return True
-
-        # Handle compound case: '"@lib/name@version1", "@lib/name@version2"'
-        if key.startswith('"') and f'"{lib_name}@' in key:
-            return True
-
-        return False
-
-    def _extract_semver(self, version_string):
-        import re
-        """
-        Extract semantic version (major.minor.patch) from complex version strings.
-        Handles cases like: 
-        - "15.3.1(rollup@3.29.5)" → "15.3.1"
-        - "1.2.3-beta.4" → "1.2.3"
-        - "^4.5.6" → "4.5.6"
-        - "=7.8.9" → "7.8.9"
-        """
-        pattern = r"""
-            (?<!\d\.)                     # Negative lookbehind for digits and dots
-            (?:                           # Non-capturing group for prefix
-                \^|~|>=|<=|>|<|=|v|\s*    # Common version prefixes
-            )?                            # Make prefix optional
-            (\d+\.\d+\.\d+)              # Core semver (captured)
-            (?:                           # Non-capturing group for suffix
-                [-+]                      # Start of pre-release/build
-                (?:[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*)
-            )?
-            (?![0-9a-zA-Z])               # Negative lookahead for more version chars
-        """
-        match = re.search(pattern, version_string, re.VERBOSE)
+    @staticmethod
+    def extract_lib_provider_metadata(pr_body: str):
+        if not isinstance(pr_body, str): return None
+        url_rx = r'https://github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)(?=[/"#\s>)])'
+        match = re.search(url_rx, pr_body)
         return match.group(1) if match else None
 
-    def _retrieve_lib_ver_from_pnpm_file(self, file, lib_name):
-        import yaml
-        with open(os.path.join(self.repo_path, file), 'r') as f:
-            try:
-                lock_pnpm_data = yaml.safe_load(f)
-                # if "importers" in lock_pnpm_data and "." in lock_pnpm_data["importers"]:
-                # lock_pnpm_data = lock_pnpm_data['importers']['.']
-                lock_pnpm_data = lock_pnpm_data.get("packages", {})
-                # for dep_label:
-                # if lock_pnpm_data.get(dep_label, None):
-                versions = [k.split("@")[-1] for k in lock_pnpm_data if k.startswith(f"{lib_name}@") or k.startswith(f"/{lib_name}@")]
-                versions = sorted(versions, key=lambda v: [int(part) if part.isdigit() else part for part in v.split('.')])
-                if len(versions) != 0:
-                    # version = self._extract_semver(version)
-                    return versions[-1]
-            except yaml.YAMLError as e:
-                self.logger.info(f"Error parsing YAML: {e}")
-                return None
+# --- Data Loading and Preprocessing ---
+def fill_pr_category(row):
+    state = str(row.get('state', '')).upper()
+    category = row.get('pr_category', '')
+    if category == "Many changed package managers": return "Others"
+    elif state == "CLOSED": return category
+    elif state == "MERGED": return "Up-to-date"
+    return category
 
-    def retrieve_library_version_from_package_manager(self, lib_name, old_ver: str):
-        """
-        Checks for the library version in the following order:
-        1. package.json (declared version)
-        2. yarn.lock (exact locked version)
-        3. package-lock.json (exact locked version)
-        Returns None if the library isn't found in any file.
-        """
-        pkg_version = None
+def calc_merge_time(row):
+    if str(row.get('state', '')).upper() == "MERGED" and pd.notna(row['pr_merged_at']) and pd.notna(row['pr_created_at']):
+        return (row['pr_merged_at'] - row['pr_created_at']).total_seconds() / 60.0
+    return None
 
-        # 1. Try to get version from package.json
-        package_json_path = os.path.join(self.repo_path, self.package_json_file)
-        if os.path.exists(package_json_path):
-            try:
-                package_json = self.read_package_manager_file(package_json_path)
-                pkg_version = self.get_dependency_version(package_json, lib_name)
-                self.logger.info(f"{lib_name} version from package.json: {pkg_version}")
-            except Exception as e:
-                self.logger.warning(f"Failed to read package.json for {lib_name}: {e}")
+def process_df():
+    df = pd.DataFrame({})
+    for file, metric in INPUT_FILES:
+        filepath = f"./data/{file}"
+        if not os.path.exists(filepath): continue
+        item_df = pd.read_csv(filepath)
+        item_df['metric'] = metric
+        df = pd.concat((df, item_df))
 
-        pnpm_file = [f for f in self.changed_files if f.endswith("pnpm-lock.yaml")]
-        if len(pnpm_file) > 0:
-            pnpm_file = pnpm_file[0]
+    if df.empty: raise ValueError("No data loaded. Check your input files in ./data/")
 
-        if not pnpm_file:
-            pnpm_file = "pnpm-lock.yaml"
+    for col in ['pr_created_at', 'pr_closed_at', 'pr_merged_at', 'repo_created_at', 'repo_updated_at', 'repo_last_committed_date']:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col], utc=True)
 
-        pnpm_file_path = os.path.join(self.repo_path, pnpm_file)
-        if os.path.exists(pnpm_file_path):
-            # if len(pnpm_file) != 0:
-            pnpm_pkg_version = self._retrieve_lib_ver_from_pnpm_file(pnpm_file, lib_name)
-            if pnpm_pkg_version:
-                return pnpm_pkg_version
+    df["repo_last_update"] = (datetime.now(timezone.utc) - df['repo_last_committed_date']).dt.total_seconds() / (3600 * 24)
+    df['repo_age'] = (df['repo_last_committed_date'] - df['repo_created_at']).dt.days
+    df["pr_category"] = df.apply(fill_pr_category, axis=1)
 
-        # 2. Try to get the exact version from yarn.lock
-        yarn_lock_path = os.path.join(self.repo_path, self.yarn_lock_file)
-        if os.path.exists(yarn_lock_path):
-            try:
-                yarn_lockfile = yarnlock_parse(Path(yarn_lock_path).read_text())
+    df.drop_duplicates(subset=['repo', 'id'], inplace=True)
+    df['repo_pr_id'] = df['repo'].str.cat(df['id'].astype(str), "&SEP&")
+    
+    df = df[df['state'].str.upper() != 'OPEN']
+    
+    extracted = df['title'].apply(lambda x: DependencyExtractor.extract(x) if pd.notna(x) else (None, None, None, None))
+    df['lib_name'] = [f"{x[3]}/{x[0]}" if x[3] else x[0] for x in extracted]
+    df['old_ver'] = [x[1] for x in extracted]
+    df['new_ver'] = [x[2] for x in extracted]
+    df['repo_lib'] = df['repo'].str.cat(df['lib_name'].astype(str), "-")
 
-                versions = []
-                for key in yarn_lockfile.keys():
-                    if self.is_lib_key(key, lib_name):
-                        entry = yarn_lockfile[key]
-                        if isinstance(entry, dict) and 'version' in entry:
-                            versions.append(entry['version'])
+    excluded_pr_categories = ['Non parsable', 'Unchanged package manager', 'No package manager', 'Unknown error', 'Git error']
+    df['merge_time'] = df.apply(calc_merge_time, axis=1)
+    
+    # df = df[~df['pr_category'].isin(excluded_pr_categories)]
+    # df = df[(~df['merged_by'].isin(BOTS)) | ((df['merged_by'].isin(BOTS)) & (df['merge_time'] > 1))]
+    # df = df[df['mentionable_users_count'] >= 5]
 
-                versions = sorted(versions, key=lambda v: [int(part) if part.isdigit() else part for part in v.split('.')])
-                if versions:
-                    return versions[-1]
-            except ValueError as ve:
-                self.logger.warning(f"Failed to parse yarn lockfile for {lib_name}: {ve}")
+    df['changed_files'] = df['changed_files'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+    mask = df["changed_files"].apply(lambda files: any(f in TARGET_FILES for f in files) if isinstance(files, list) else False)
+    df = df[mask]
 
-                with open(yarn_lock_path, 'r') as f:
-                    import yaml
-                    try:
-                        versions = []
-                        yarn_lock_data = yaml.safe_load(f)
-                        for key in yarn_lock_data.keys():
-                            if self.is_lib_key(key, lib_name):
-                                entry = yarn_lock_data[key]
-                                if isinstance(entry, dict) and 'version' in entry:
-                                    versions.append(entry['version'])
-                        versions = sorted(versions, key=lambda v: [int(part) if part.isdigit() else part for part in
-                                                                   v.split('.')])
-                        if versions:
-                            return versions[-1]
-                    except Exception as e:
-                        self.logger.warning(f"Failed to read yarn lockfile for {lib_name}: {e}")
-                        raise YarnLockParsingError(f"Failed to parse yarn lockfile for repository: {self.repo_name} and library: {lib_name}: {e}")
+    excluded_repos = ['choyiny/cscc09.com']
+    repo_pr_count_df = df.groupby('repo').count().reset_index()
+    repo_pr_less_than_5 = repo_pr_count_df.loc[repo_pr_count_df['id'] < 5, 'repo'].tolist()
+    excluded_repos.extend(repo_pr_less_than_5)
 
+    df = df[~df['repo'].isin(excluded_repos)]
+    df = df.dropna(subset=['lib_name', 'pr_created_at'])
 
-        # 3. Try to get the version from package-lock.json
-        package_json_lock_path = os.path.join(self.repo_path, self.package_lock_json_file)
-        if os.path.exists(package_json_lock_path):
-            try:
-                package_json_lock = self.read_package_manager_file(package_json_lock_path)
-                pkg_lock_version = self._retrieve_library_version_from_package_lock_json(package_json_lock, lib_name)
-                if pkg_lock_version:
-                    return pkg_lock_version
-            except Exception as e:
-                self.logger.warning(f"Failed to read package-lock.json for {lib_name}: {e}")
-        return pkg_version
+    print(f"Number of clean studied Dependabot PRs (OPEN excluded): {len(df)} for {df['repo'].nunique()} projects.")
+    return df
 
+# --- Git Operations ---
+def clone_blobless(repo_name: str, dest_dir: str):
+    repo_path = os.path.join(dest_dir, repo_name.replace("/", "_"))
+    if not os.path.exists(repo_path):
+        url = f"https://{GITHUB_TOKEN}@github.com/{repo_name}.git" if GITHUB_TOKEN else f"https://github.com/{repo_name}.git"
+        run_cmd(f"git clone --filter=blob:none {url} {repo_path}")
+    return repo_path
 
-    def count_files(self, suffix: str) -> int:
-        """Return how many files whose name ends with *suffix* exist under *root*."""
-        return sum(1 for f in self.changed_files if f.endswith(suffix))
+def get_commits_for_files(repo_path: str, since: datetime, until: datetime) -> List[str]:
+    fmt = r"%H"
+    files_str = " ".join(TARGET_FILES)
+    cmd = f'git log --since="{since.isoformat()}" --until="{until.isoformat()}" --format="{fmt}" -- {files_str}'
+    code, out, _ = run_cmd(cmd, cwd=repo_path)
+    if code != 0 or not out: return []
+    return out.splitlines()[::-1] 
 
-    def count_changed_package_manager_files(self):
-        for suffix in self.pkg_manger_files:
-            n = self.count_files(suffix)
-            if n > 1:
-                return n
-        return 1
+def get_commit_metadata(repo_path: str, commit_hash: str) -> dict:
+    cmd = f'git show -s --format="%an%x09%ae%x09%aI%x09%s" {commit_hash}'
+    code, out, _ = run_cmd(cmd, cwd=repo_path)
+    if code == 0 and out:
+        parts = out.split("\t")
+        if len(parts) >= 4:
+            return {"author": parts[0], "email": parts[1], "date": parts[2], "title": parts[3]}
+    return {"author": "", "email": "", "date": "", "title": ""}
+
+def check_file_for_version_bump(repo_path: str, commit_hash: str, lib_name: str, target_ver: str) -> Tuple[bool, str, str]:
+    actual_lib = lib_name.split("/")[-1] if "/" in lib_name and len(lib_name.split("/")) > 1 else lib_name
+    for file in TARGET_FILES:
+        cmd = f"git show {commit_hash}:{file}"
+        code, out, _ = run_cmd(cmd, cwd=repo_path)
+        if code != 0 or not out: continue
+        try:
+            if file.endswith("package.json") or file.endswith("package-lock.json"):
+                data = json.loads(out)
+                for key in ["dependencies", "devDependencies", "peerDependencies"]:
+                    if key in data and actual_lib in data[key]:
+                        val = data[key][actual_lib]
+                        ver_str = val.get("version") if isinstance(val, dict) else val
+                        if ver_str and version_cmp_geq(ver_str, target_ver):
+                            return True, file, key
+            elif re.search(rf"{re.escape(actual_lib)}.*(?:version|@)[\s\"']*([^\"'\s]+)", out):
+                match = re.search(rf"{re.escape(actual_lib)}.*(?:version|@)[\s\"']*([^\"'\s]+)", out)
+                if match and version_cmp_geq(match.group(1), target_ver):
+                    return True, file, "unknown"
+        except Exception:
+            continue
+    return False, "", ""
+
+# --- Main Pipeline ---
+def process_pr_chains(df: pd.DataFrame):
+    os.makedirs(REPOS_DIR, exist_ok=True)
+    
+    processed_aliases = set()
+    if os.path.exists(CHECKPOINT_FILE):
+        with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.strip(): processed_aliases.add(line.strip())
+                    
+    file_exists = os.path.exists(OUTPUT_CSV)
+    out_f = open(OUTPUT_CSV, "a", newline="", encoding="utf-8")
+    
+    fieldnames = [
+        "repo", "pr_id", "last_pr_id", "lib_name", "dep_name", "dep_type",
+        "first_pr_created_at", "first_pr_closed_at", "last_pr_created_at", "last_pr_closed_at",
+        "title", "superseding_pr_ids", "continuous_superseded_count", "matched_file", 
+        "lib_repo", "change_type", "is_security", "author_commit", "author_date", 
+        "author_hash", "commit_titles", "label", "last_pr_state", "delay_time", 
+        "delay_hours", "delay_days"
+    ]
+    
+    writer = csv.DictWriter(out_f, fieldnames=fieldnames)
+    if not file_exists:
+        writer.writeheader()
+        
+    chk_f = open(CHECKPOINT_FILE, "a", encoding="utf-8")
+    
+    for (repo, lib), group in tqdm(df.groupby(['repo', 'lib_name']), desc="Processing PR Chains"):
+        alias = f"{repo}:::{lib}"
+        if alias in processed_aliases: continue
+            
+        group = group.sort_values('pr_created_at').reset_index(drop=True)
+        n = len(group)
+        skip_indices = set()
+        records_to_write = []
+        
+        for i in range(n):
+            if i in skip_indices: continue
+                
+            current_pr = group.iloc[i]
+            chain = [current_pr]
+            
+            curr_idx = i
+            while curr_idx + 1 < n:
+                next_pr = group.iloc[curr_idx + 1]
+                if pd.notna(chain[-1]['pr_closed_at']):
+                    time_diff_sec = abs((next_pr['pr_created_at'] - chain[-1]['pr_closed_at']).total_seconds())
+                    if time_diff_sec <= 180:
+                        if version_cmp_geq(next_pr['new_ver'], chain[-1]['new_ver']):
+                            chain.append(next_pr)
+                            skip_indices.add(curr_idx + 1)
+                            curr_idx += 1
+                            continue
+                break
+                
+            terminal_pr = chain[-1]
+            state = str(terminal_pr.get('state', '')).upper()
+            body_text = str(terminal_pr.get('body', ''))
+            
+            record = {
+                "repo": repo,
+                "pr_id": str(chain[0]['id']),
+                "last_pr_id": str(terminal_pr['id']),
+                "lib_name": lib,
+                "dep_name": lib.split("/")[-1] if "/" in lib else lib,
+                "dep_type": "", 
+                "first_pr_created_at": chain[0]['pr_created_at'].isoformat() if pd.notna(chain[0]['pr_created_at']) else "",
+                "first_pr_closed_at": chain[0]['pr_closed_at'].isoformat() if pd.notna(chain[0]['pr_closed_at']) else "",
+                "last_pr_created_at": terminal_pr['pr_created_at'].isoformat() if pd.notna(terminal_pr['pr_created_at']) else "",
+                "last_pr_closed_at": terminal_pr['pr_closed_at'].isoformat() if pd.notna(terminal_pr['pr_closed_at']) else "",
+                "title": terminal_pr['title'],
+                "superseding_pr_ids": ",".join([str(pr['id']) for pr in chain]),
+                "continuous_superseded_count": len(chain) if len(chain) > 1 else 0,
+                "matched_file": "",
+                "lib_repo": DependencyExtractor.extract_lib_provider_metadata(body_text) or "",
+                "change_type": get_change_type(chain[0]['old_ver'], terminal_pr['new_ver']) or "",
+                "is_security": "No" if pd.notna(terminal_pr.get('dependabot_exists')) and terminal_pr.get('dependabot_exists') else "Yes", 
+                "author_commit": "",
+                "author_date": "",
+                "author_hash": "",
+                "commit_titles": "",
+                "label": "",
+                "last_pr_state": state,
+                "delay_time": "",
+                "delay_hours": "",
+                "delay_days": ""
+            }
+
+            # --- STRICT STATE ROUTING ---
+            if state == "MERGED":
+                record["label"] = "Merged superseded PR" if len(chain) > 1 else "Merged PR"
+                if pd.notna(terminal_pr['pr_closed_at']) and pd.notna(chain[0]['pr_created_at']):
+                    delay_sec = (terminal_pr['pr_closed_at'] - chain[0]['pr_created_at']).total_seconds()
+                    record["delay_time"] = delay_sec
+                    record["delay_hours"] = delay_sec / 3600.0
+                    record["delay_days"] = delay_sec / 86400.0
+                
+                records_to_write.append(record)
+                continue
+                
+            if state == "CLOSED":
+                search_start = terminal_pr['pr_closed_at']
+                search_end = datetime.now(timezone.utc)
+                if curr_idx + 1 < n:
+                    search_end = group.iloc[curr_idx + 1]['pr_created_at']
+                
+                try:
+                    repo_path = clone_blobless(repo, REPOS_DIR)
+                    commits = get_commits_for_files(repo_path, search_start, search_end)
+                
+                    found_external = False
+                    for commit in commits:
+                        is_bump, matched_file, dep_type = check_file_for_version_bump(repo_path, commit, lib, terminal_pr['new_ver'])
+                        if is_bump:
+                            meta = get_commit_metadata(repo_path, commit)
+                            record["author_hash"] = commit
+                            record["author_commit"] = meta["author"]
+                            record["author_date"] = meta["date"]
+                            record["commit_titles"] = meta["title"]
+                            record["matched_file"] = matched_file
+                            record["dep_type"] = dep_type
+                            record["label"] = "Closed superseded PR with external upgrade" if len(chain) > 1 else "Closed PR with external upgrade"
+                            
+                            commit_dt = parse_git_iso_dt(meta["date"])
+                            if commit_dt and pd.notna(chain[0]['pr_created_at']):
+                                delay_sec = (commit_dt - chain[0]['pr_created_at']).total_seconds()
+                                record["delay_time"] = delay_sec
+                                record["delay_hours"] = delay_sec / 3600.0
+                                record["delay_days"] = delay_sec / 86400.0
+
+                            found_external = True
+                            break
+                    if found_external:
+                        records_to_write.append(record)
+                except Exception as ex:
+                    continue
+
+        if records_to_write:
+            for rec in records_to_write:
+                writer.writerow(rec)
+            out_f.flush()
+            
+        chk_f.write(alias + "\n")
+        chk_f.flush()
+        processed_aliases.add(alias)
+        
+    out_f.close()
+    chk_f.close()
+    print(f"\nExtraction complete. Results saved to {OUTPUT_CSV}.")
+
+if __name__ == "__main__":
+    df = process_df()
+    process_pr_chains(df)

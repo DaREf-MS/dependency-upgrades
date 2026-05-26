@@ -1,0 +1,134 @@
+You will receive a document and a topic hierarchy. Assign the document to the most relevant topics the hierarchy. Then, output the topic labels, assignment reasoning and supporting quotes from the document. DO NOT make up new topics or quotes.  
+
+[Topic Hierarchy]
+{tree}
+
+[Examples]
+Example 1: Assign "[1] Software Development" to the document
+Document: 
+# Acode - Code Editor for Android
+
+<p align="center">
+  <img src='res/logo_1.png' width='250'>
+</p>
+
+[![](https://img.shields.io/endpoint?logo=telegram&label=Acode&style=flat&url=https%3A%2F%2Facode.app%2Fapi%2Ftelegram-members-count)](https://t.me/foxdebug_acode) [![](https://dcbadge.vercel.app/api/server/vVxVWYUAWD?style=flat)](https://discord.gg/vVxVWYUAWD)
+
+## • Overview
+
+Welcome to Acode Editor - a powerful and versatile code editing tool designed specifically for Android devices. Whether you're working on HTML, CSS, JavaScript, or other programming languages, Acode empowers you to code on-the-go with confidence.
+
+## • Features
+
+- Edit and create websites, and instantly preview them in a browser.
+- Seamlessly modify source files for various languages like Python, Java, JavaScript, and more.
+- Built-in javascript console
+- Enjoy multi-language editing support with easy management tools.
+- Enjoy a large collections of community plugins to enhance your coding experience.
+
+## • Installation
+
+You can get Acode Editor from popular platforms:
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="60">](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="60"/>](https://www.f-droid.org/packages/com.foxdebug.acode/)
+
+## • Project Structure
+
+<pre>
+Acode/
+|
+|- src/   - Core code and language files
+|
+|- www/   - Public documents, compiled files, and HTML templates
+|
+|- utils/ - CLI tools for building, string manipulation, and more
+</pre>
+
+## • Multi-language Support
+
+Enhance Acode's capabilities by adding new languages easily. Just create a file with the language code (e.g., en-us for English) in [`src/lang/`](https://github.com/Acode-Foundation/Acode/tree/main/src/lang) and include it in [`src/lib/lang.js`](https://github.com/Acode-Foundation/Acode/blob/main/src/lib/lang.js). Manage strings across languages effortlessly using utility commands:
+
+## • Contributing & Building the Application
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions.
+
+## • Contributors
+
+<a href="https://github.com/Acode-Foundation/Acode/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Acode-Foundation/Acode" />
+</a>
+
+## • Developing a Plugin for Acode
+
+For comprehensive documentation on creating plugins for Acode Editor, visit the [repository](https://github.com/Acode-Foundation/acode-plugin).
+
+For plugin development information, refer to: [Acode Plugin Documentation](https://docs.acode.app/)
+
+## Star History
+
+<a href="https://star-history.com/#Acode-Foundation/Acode&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Acode-Foundation/Acode&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Acode-Foundation/Acode&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Acode-Foundation/Acode&type=Date" />
+ </picture>
+</a>
+
+Assignment:
+[1] Software Development: Mentions Android-based application related words ("...designed specifically for Android devices...")
+
+Example 2: Assign "[1] Game" to the document
+Document: 
+spyfall
+=======
+
+React + Firebase implementation for the card game [Spyfall](http://boardgamegeek.com/boardgame/166384/spyfall)
+
+### Localizations
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/adrianocola-spyfall/localized.svg)](https://crowdin.com/project/adrianocola-spyfall)
+
+Access [crowdin's](https://crowdin.com/project/adrianocola-spyfall) page to request new translations or help translating existing ones.
+
+### Running the project (locally)
+
+- Install [node.js](https://nodejs.org/)
+- Clone this project, enter the cloned folder and install dependencies with `npm install`
+- Open a terminal and run the command `npm run emulator`
+- Open another terminal and run the command `npm run dev-emulator`
+- Access it at `http://localhost:5173`
+
+### Running the project (deploy fo Firebase)
+
+- Install [node.js](https://nodejs.org/)
+- Clone this project, enter the cloned folder and install dependencies with `npm install`
+- Login to firebase with `npx firebase login`
+- Setup a new firebase project with the `npx firebase init` command and follow the instructions (select only the feature `database`. Use the default values for everything and don't overwrite anything)
+- Create a new web app with the command `npx firebase apps:create WEB`. The command will output the created `App Id`
+- Execute the command `npx firebase apps:sdkconfig WEB <created app id>` to get the complete app configuration
+- Create a copy of the file `.env.sample` named `.env.development` and fill it with the firebase configuration. You don't need to fill all fields.
+- Access your firebase project in the [firebase console](https://console.firebase.google.com/) and enable anonymous authentication (Authentication → Sign-in method → Anonymous)
+- Deploy firebase database security rules `npx firebase deploy --only database`
+- Run the project with `npm run dev` and access it at `http://localhost:5173`
+
+Assignment: 
+[1] Game: Mentions card game implementation as main functionality of the library ("...implementation for the card game...")
+
+Example 3: Assign "[1] Automotive" to the document
+Document:
+This adapter integrates BMW vehicles into ioBroker using the new BMW CarData API with OAuth2 authentication and real-time MQTT streaming. It provides comprehensive vehicle data monitoring for all BMW models linked to your BMW account.\n\n## Data Updata while charging\n\nWhile charging it can happens that the battery level is not updated via stream because the car is sleeping/standby when turn on the car the data will be updated. You can trigger an update via API.
+
+Assignment: 
+[1] Automotive: Mentions BMW vehicles in the document ("...integrates BMW vehicles...").
+
+[Instructions]
+1. Topic labels must be present in the provided topic hierarchy. You MUST NOT make up new topics. 
+2. The quote must be taken from the document. You MUST NOT make up quotes. 
+
+[Document]
+{Document}
+
+{Message} Double check that your assignment exists in the hierarchy!
+Your response should be in the following format:
+[Topic Level] Topic Label: Assignment reasoning (Supporting quote)
+
+Your response:

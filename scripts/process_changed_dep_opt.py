@@ -207,7 +207,7 @@ def main():
 
     # Iterate over each row
     for index, row in df.iloc[:].iterrows():
-        if pd.notna(row['changed_options']):
+        if ('changed_options' in row) and pd.notna(row['changed_options']):
             # Skip already processed rows
             continue
         

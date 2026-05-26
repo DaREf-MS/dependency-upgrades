@@ -1,0 +1,254 @@
+You will receive a document and a set of top-level topics from a topic hierarchy. Your task is to identify generalizable topics within the document that can act as top-level topics in the hierarchy. If any relevant topics are missing from the provided set, please add them. Otherwise, output the existing top-level topics as identified in the document.
+
+[Top-level topics]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] Software Development (Code Editor)"
+Document: 
+# Acode - Code Editor for Android
+
+<p align="center">
+  <img src='res/logo_1.png' width='250'>
+</p>
+
+[![](https://img.shields.io/endpoint?logo=telegram&label=Acode&style=flat&url=https%3A%2F%2Facode.app%2Fapi%2Ftelegram-members-count)](https://t.me/foxdebug_acode) [![](https://dcbadge.vercel.app/api/server/vVxVWYUAWD?style=flat)](https://discord.gg/vVxVWYUAWD)
+
+## • Overview
+
+Welcome to Acode Editor - a powerful and versatile code editing tool designed specifically for Android devices. Whether you're working on HTML, CSS, JavaScript, or other programming languages, Acode empowers you to code on-the-go with confidence.
+
+## • Features
+
+- Edit and create websites, and instantly preview them in a browser.
+- Seamlessly modify source files for various languages like Python, Java, JavaScript, and more.
+- Built-in javascript console
+- Enjoy multi-language editing support with easy management tools.
+- Enjoy a large collections of community plugins to enhance your coding experience.
+
+## • Installation
+
+You can get Acode Editor from popular platforms:
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="60">](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="60"/>](https://www.f-droid.org/packages/com.foxdebug.acode/)
+
+## • Project Structure
+
+<pre>
+Acode/
+|
+|- src/   - Core code and language files
+|
+|- www/   - Public documents, compiled files, and HTML templates
+|
+|- utils/ - CLI tools for building, string manipulation, and more
+</pre>
+
+## • Multi-language Support
+
+Enhance Acode's capabilities by adding new languages easily. Just create a file with the language code (e.g., en-us for English) in [`src/lang/`](https://github.com/Acode-Foundation/Acode/tree/main/src/lang) and include it in [`src/lib/lang.js`](https://github.com/Acode-Foundation/Acode/blob/main/src/lib/lang.js). Manage strings across languages effortlessly using utility commands:
+
+## • Contributing & Building the Application
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions.
+
+## • Contributors
+
+<a href="https://github.com/Acode-Foundation/Acode/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Acode-Foundation/Acode" />
+</a>
+
+## • Developing a Plugin for Acode
+
+For comprehensive documentation on creating plugins for Acode Editor, visit the [repository](https://github.com/Acode-Foundation/acode-plugin).
+
+For plugin development information, refer to: [Acode Plugin Documentation](https://docs.acode.app/)
+
+## Star History
+
+<a href="https://star-history.com/#Acode-Foundation/Acode&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Acode-Foundation/Acode&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Acode-Foundation/Acode&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Acode-Foundation/Acode&type=Date" />
+ </picture>
+</a>
+
+Your response: 
+[1] Software Development (Code Editor): It is an Android-based application specifically built for writing and editing code (HTML, CSS, JavaScript, Python, etc.), with features like live preview and plugin support. These characteristics clearly place it in the software development domain as a developer tool.
+
+Example 2: Duplicate "[1] Game (Online Multiplayer)", returning the existing topic
+Document: 
+spyfall
+=======
+
+React + Firebase implementation for the card game [Spyfall](http://boardgamegeek.com/boardgame/166384/spyfall)
+
+### Localizations
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/adrianocola-spyfall/localized.svg)](https://crowdin.com/project/adrianocola-spyfall)
+
+Access [crowdin's](https://crowdin.com/project/adrianocola-spyfall) page to request new translations or help translating existing ones.
+
+### Running the project (locally)
+
+- Install [node.js](https://nodejs.org/)
+- Clone this project, enter the cloned folder and install dependencies with `npm install`
+- Open a terminal and run the command `npm run emulator`
+- Open another terminal and run the command `npm run dev-emulator`
+- Access it at `http://localhost:5173`
+
+### Running the project (deploy fo Firebase)
+
+- Install [node.js](https://nodejs.org/)
+- Clone this project, enter the cloned folder and install dependencies with `npm install`
+- Login to firebase with `npx firebase login`
+- Setup a new firebase project with the `npx firebase init` command and follow the instructions (select only the feature `database`. Use the default values for everything and don't overwrite anything)
+- Create a new web app with the command `npx firebase apps:create WEB`. The command will output the created `App Id`
+- Execute the command `npx firebase apps:sdkconfig WEB <created app id>` to get the complete app configuration
+- Create a copy of the file `.env.sample` named `.env.development` and fill it with the firebase configuration. You don't need to fill all fields.
+- Access your firebase project in the [firebase console](https://console.firebase.google.com/) and enable anonymous authentication (Authentication → Sign-in method → Anonymous)
+- Deploy firebase database security rules `npx firebase deploy --only database`
+- Run the project with `npm run dev` and access it at `http://localhost:5173`
+
+Your response: 
+[1] Game (Online Multiplayer): The project is a digital implementation of the Spyfall card game using React and Firebase, designed to be played through a web interface. Its primary purpose is entertainment through gameplay, which categorizes it in the game domain.
+
+Example 3: Add "[1] Logistics"
+Document:
+# EasyPost Node Client Library
+
+[![CI](https://github.com/EasyPost/easypost-node/workflows/CI/badge.svg)](https://github.com/EasyPost/easypost-node/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/EasyPost/easypost-node/graph/badge.svg?token=RhFfmXPeDW)](https://codecov.io/gh/EasyPost/easypost-node)
+[![npm version](https://badge.fury.io/js/%40easypost%2Fapi.svg)](https://badge.fury.io/js/%40easypost%2Fapi)
+
+EasyPost, the simple shipping solution. You can sign up for an account at <https://easypost.com>.
+
+NOTE: This library is intended to be used in a backend Node service and not in a frontend Javascript project via the browser.
+
+## Install
+
+**NOTE:** If you are using @easypost/api prior to v5 and a version of Node less than 6.9, you will need to install and include a polyfill, such as `babel-polyfill`, and include it in your project:
+
+You can alternatively download the various built assets from this project's [releases page](https://github.com/EasyPost/easypost-node/releases).
+
+### Compatibility
+
+#### v4 and Earlier
+
+- `require('@easypost/api/easypost.8-lts.js')` (Node 8.9+)
+- `require('@easypost/api/easypost.6-lts.js')` (Node 6.9+)
+- `require('@easypost/api/easypost.legacy.js')` (Node 0.10+)
+
+#### v5
+
+If using @easypost/api v5, you can require the base project which is built on Node v10 - v16
+
+#### v6
+
+If using @easypost/api v6, you can require the base project which is built on Node v12+
+
+### Note on ES6 Usage
+
+You can import specific versions of the compiled code if you're using later versions of Node and using @easypost/api prior to v5.
+
+#### timeout
+
+Time in milliseconds that should fail requests.
+
+#### baseUrl
+
+Change the base URL that the API library uses. Useful if you proxy requests
+from a frontend through a server.
+
+#### useProxy
+
+Disable using the API key. Useful if you proxy requests from a frontend through
+a server.
+
+#### superagentMiddleware
+
+Function that takes `superagent` and returns `superagent`. Useful if you need
+to wrap superagent in a function, such as many superagent libraries do.
+
+#### requestMiddleware
+
+Function that takes a superagent `request` and returns that request. Useful if
+you need to hook into a request:
+
+### HTTP Hooks
+
+If you would need or want to view what requests are being made to the EasyPost API behind the scenes, you can provide functions to listen for the request and/or responses. This can be done with helper functions on the created client.
+
+**Note:** You cannot edit or otherwise affect the requests using these hooks. They are purely for debugging or logging purposes.
+
+## Documentation
+
+API documentation can be found at: <https://docs.easypost.com>.
+
+Library documentation can be found on the web at: <https://easypost.github.io/easypost-node/> or by building them locally via the `just docs` command.
+
+Upgrading major versions of this project? Refer to the [Upgrade Guide](UPGRADE_GUIDE.md).
+
+## Support
+
+New features and bug fixes are released on the latest major release of this library. If you are on an older major release of this library, we recommend upgrading to the most recent release to take advantage of new features, bug fixes, and security patches. Older versions of this library will continue to work and be available as long as the API version they are tied to remains active; however, they will not receive updates and are considered EOL.
+
+For additional support, see our [org-wide support policy](https://github.com/EasyPost/.github/blob/main/SUPPORT.md).
+
+## Development
+
+### Typescript Definitions
+
+Starting with `v5.3.0`, this project has Typescript definitions included.
+
+#### Typescript Exclusions
+
+- We do not provide a DefinitelyTyped version of these definitions at this time
+- Predefined packages (see [Carrier Metadata](https://docs.easypost.com/docs/carrier-metadata) in our docs for more details)
+- Carrier service levels (see [Carrier Metadata](https://docs.easypost.com/docs/carrier-metadata) in our docs for more details)
+- Carrier list (see [Carrier Types](https://docs.easypost.com/docs/carrier-types) in our docs for more details)
+
+### Testing
+
+The test suite in this project was specifically built to produce consistent results on every run, regardless of when they run or who is running them. This project uses [Pollyjs](https://github.com/Netflix/pollyjs) (AKA: VCR) to record and replay HTTP requests and responses via "cassettes". When the suite is run, the HTTP requests and responses for each test function will be saved to a cassette if they do not exist already and replayed from this saved file if they do, which saves the need to make live API calls on every test run. If you receive errors about a cassette expiring, delete and re-record the cassette to ensure the data is up-to-date.
+
+**Sensitive Data:** We've made every attempt to include scrubbers for sensitive data when recording cassettes so that PII or sensitive info does not persist in version control; however, please ensure when recording or re-recording cassettes that prior to committing your changes, no PII or sensitive information gets persisted by inspecting the cassette.
+
+**Making Changes:** If you make an addition to this project, the request/response will get recorded automatically for you. When making changes to this project, you'll need to re-record the associated cassette to force a new live API call for that test which will then record the request/response used on the next run.
+
+**Test Data:** The test suite has been populated with various helpful fixtures that are available for use, each completely independent from a particular user **with the exception of the USPS carrier account ID** (see [Unit Test API Keys](#unit-test-api-keys) for more information) which has a fallback value of our internal testing user's ID. Some fixtures use hard-coded dates that may need to be incremented if cassettes get re-recorded (such as reports or pickups).
+
+#### Unit Test API Keys
+
+The following are required on every test run:
+
+- `EASYPOST_TEST_API_KEY`
+- `EASYPOST_PROD_API_KEY`
+
+Some tests may require an EasyPost user with a particular set of enabled features such as a `Partner` user when creating referrals. We have attempted to call out these functions in their respective docstrings. The following are required when you need to re-record cassettes for applicable tests:
+
+- `USPS_CARRIER_ACCOUNT_ID` (eg: one-call buying a shipment for non-EasyPost employees)
+- `PARTNER_USER_PROD_API_KEY` (eg: creating a referral user)
+- `REFERRAL_CUSTOMER_PROD_API_KEY` (eg: adding a credit card to a referral user)
+
+Your response: 
+[1] Logistics: Provides tools and APIs for managing shipping operations, including creating, purchasing, and tracking shipments within backend systems.
+
+[Instructions]
+Step 1: Determine topics mentioned in the document. 
+- The topic labels must be as GENERALIZABLE as possible. They must not be document-specific.
+- The topics must reflect a SINGLE topic instead of a combination of topics.
+- The new topics must have a level number, a short general label, and a topic description. 
+- The topics must be broad enough to accommodate future subtopics. 
+Step 2: Perform ONE of the following operations: 
+1. If there are already duplicates or relevant topics in the hierarchy, output those topics and stop here. 
+2. If the document contains no topic, return "None". 
+3. Otherwise, add your topic as a top-level topic. Stop here and output the added topic(s). DO NOT add any additional levels.
+
+[Document]
+{Document}
+
+Please ONLY return the relevant or modified topics at the top level in the hierarchy. Your response should be in the following format:
+[Topic Level] Topic Label: Topic Description
+
+Your response:

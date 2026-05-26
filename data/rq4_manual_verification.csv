@@ -1,0 +1,101 @@
+lib_repo,topicgpt_label,topic_desc_match,topic_npmlabel_match
+nextcloud/nextcloud-vue-dashboard,UI Libraries,True,True
+tabrindle/envinfo,Utilities,True,True
+postcss/postcss-calc,UI Libraries,False,
+jaredhanson/passport-oauth2,Plugins,True,False
+rapideditor/temaki,Plugins,False,True
+endojs/endo,Documentation,False,False
+iden3/wasmcurves,Security Tools,True,False
+gicentre/litvis,Documentation,True,False
+datavis-tech/json-templates,Parser,True,True
+github/eslint-plugin-github,Linting,True,True
+kamilkisiela/graphql-config,Configuration Tools,True,True
+estools/estraverse,Parser,True,True
+tunnckoCore/opensource,Versioning,False,False
+SortableJS/Sortable,UI Libraries,True,True
+node-fetch/node-fetch,Web Services,True,True
+tsconfig/bases,Configuration Tools,True,True
+mhart/StringStream,Utilities,True,True
+feross/cross-zip,Filesystem Tools,True,True
+faisalman/ua-parser-js,Utilities,True,True
+zooniverse/markdownz,Parser,True,True
+sindresorhus/import-local,Package management,True,True
+iambumblehead/esmock,Testing Tools,True,True
+remy/nodemon,Utilities,True,True
+remarkjs/remark-math,Plugins,True,False
+Automattic/node-canvas,Utilities,True,True
+xnimorz/use-debounce,Utilities,True,True
+PeculiarVentures/PKI.js,Security Tools,True,True
+whitlockjc/json-refs,Utilities,True,True
+speced/respec,Documentation,True,True
+yahoo/serialize-javascript,Data Serialization,True,True
+css-modules/postcss-modules-scope,UI Libraries,True,True
+standard/eslint-config-standard,Linting,True,True
+moscajs/aedes,WebSocket Libraries,True,True
+nextcloud/nextcloud-axios,Web Services,True,True (Good example)
+koajs/cors,Web Services,True,True
+mafintosh/csv-parser,Parser,True,True (Good example)
+TrySound/rollup-plugin-terser,Bundler,True,True
+rdf-ext/sparql-http-client,Web Services,True,True
+npm/normalize-package-data,Configuration Tools,True,True
+fastify/fastify,Web Frameworks,True,True (Good example)
+jslicense/spdx-license-ids,Package management,False,False
+intuit/auto,Versioning,True,False
+turbo87/eslint-plugin-chai-expect,Linting,True,True
+readmeio/oas-examples,Documentation,True,True
+wfcd/eslint-config,Linting,True,True
+appium/appium-adb,Utilities,True,True
+ioBroker/ioBroker.type-detector,Utilities,True,True
+mattphillips/deep-object-diff,Utilities,True,True
+Countly/countly-sdk-web,Logging Tools,True,True
+TooTallNate/node-plist,Parser,True,True
+electron/universal,Utilities,True,True
+sindresorhus/gulp-rev,Bundler,True,True
+sabberworm/karma-iframes,Testing Tools,True,True
+gruntjs/grunt-contrib-nodeunit,Testing Tools,True,True (Good example)
+adaltas/node-csv,Parser,True,True
+ReactTooltip/react-tooltip,UI Libraries,True,True
+gruntjs/grunt-contrib-connect,Web Services,True,True
+DeepLcom/deepl-node,i8n Libraries,True,True
+TypeStrong/ts-node,Compiler,True,True
+iden3/wasmbuilder,Compiler,True,True
+patternfly/patternfly-react,UI Libraries,True,True
+react-native-async-storage/async-storage,Database Tools,True,False
+jeffbski/wait-on,CLI Libraries,True,True
+Gudahtt/prettier-plugin-sort-json,Plugins,True,True
+rehypejs/rehype-slug,Plugins,True,True
+developit/mitt,Utilities,False,False
+jrdrg/eslint-plugin-sort-exports,Linting,True,True
+siddharthkp/bundlesize2,Bundler,True,True
+IonicaBizau/regex-parser.js,Parser,True,True
+mishoo/UglifyJS2,Parser,True,True
+placemarkio/togeojson,Parser,True,False
+pillarjs/router,Web Frameworks,True,True
+fastify/fastify-cookie,Plugins,True,True
+tailwindlabs/tailwindcss,UI Libraries,True,True
+travi/any,Testing Tools,True,True
+wanasit/chrono,Parser,True,True
+component-driven/cypress-axe,Testing Tools,True,True
+visgl/deck.gl,UI Libraries,True,True
+biomejs/biome,Linting,True,True
+mapbox/which-polygon,Location Services,True,True
+microsoft/TypeScript,Compiler,True,True (Good example)
+typicode/json-server,Web Frameworks,True,True
+pnpm/pnpm,Package management,True,True
+jakubpawlowicz/clean-css,UI Libraries,True,True
+stylelint-scss/stylelint-config-standard-scss,Linting,True,True
+postmanlabs/code-generators,Utilities,True,True
+rdfjs-base/namespace,Compiler,True,False
+sindresorhus/got,Web Services,True,True
+floating-ui/floating-ui,Utilities,False,False
+TryGhost/node-sqlite3,Database Tools,True,True
+lydell/eslint-plugin-simple-import-sort,Linting,True,True
+fastify/fastify-websocket,WebSocket Libraries,True,True
+http-party/node-http-proxy,Web Services,True,True
+floccusaddon/floccus,Utilities,True,True
+cypress-io/cypress-browserify-preprocessor,Bundler,True,True
+AzureAD/microsoft-authentication-library-for-js,Security Tools,True,True
+zloirock/core-js,Utilities,True,True
+Microsoft/playwright,Testing Tools,True,True
+ianstormtaylor/slate,Web Frameworks,True,True
+reactchartjs/react-chartjs-2,UI Libraries,True,True
