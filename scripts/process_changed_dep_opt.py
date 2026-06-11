@@ -1,16 +1,17 @@
 import os
-import re
 import yaml
 import requests
 import pandas as pd
 import json
 from pathlib import Path
-from urllib.parse import urlparse
-from constants import MAIN_GITHUB_TOKEN, TEMP_GITHUB_TOKEN
 from logging_config import get_logger
+from dotenv import load_dotenv
 
+import logging
 
-logger = get_logger()
+load_dotenv()
+
+logger = get_logger(level=logging.ERROR)
 
 
 DEPENDABOT_PATHS = {
@@ -19,6 +20,9 @@ DEPENDABOT_PATHS = {
 }
 
 session = requests.Session()
+
+MAIN_GITHUB_TOKEN = api_key = os.getenv("API_KEY")
+
 if MAIN_GITHUB_TOKEN:
     session.headers.update({"Authorization": f"Bearer {MAIN_GITHUB_TOKEN}"})
 session.headers.update({"Accept": "application/vnd.github.v3+json"})
@@ -187,8 +191,8 @@ def analyze_dependabot_yaml_changes_full(owner, repo, commit_sha):
 
 def main():
     ROOT_DIR = Path(__file__).resolve().parent.parent
-    file_path = ROOT_DIR / "data" / "clean_slow_actions2.xlsx"
-    temp_file_path = ROOT_DIR / "data" / "clean_slow_actions_temp2.xlsx"
+    file_path = ROOT_DIR / "data" / "non_sign_slow_actions.xlsx"
+    temp_file_path = ROOT_DIR / "data" / "non_sign_slow_actions_temp.xlsx"
 
     # Load Excel file
     df = pd.read_excel(file_path)
@@ -218,10 +222,12 @@ def main():
             changed_options = analyze_dependabot_yaml_changes_full(
                 owner, repo, commit_hash
             )
-        except yaml.scanner.ScannerError:
+        except yaml.scanner.ScannerError as ex:
             changed_options = []
-        except yaml.parser.ParserError:
+            logger.error(ex)
+        except yaml.parser.ParserError as ex:
             changed_options = []
+            logger.error(ex)
 
         # Save result to dataframe
         df.at[index, 'changed_options'] = json.dumps(changed_options)

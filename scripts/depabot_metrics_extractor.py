@@ -18,8 +18,9 @@ REPOS_DIR = ROOT_DIR / 'repos'
 REPOS_DIR.mkdir(parents=True, exist_ok=True)
 
 FILES_TO_PROCESS = {
-    "new_clean_acc_actions_final.xlsx": "metrics_acc_actions.csv",
-    "new_clean_slow_actions_final.xlsx": "metrics_slow_actions.csv"
+    # "new_clean_acc_actions_final.xlsx": "metrics_acc_actions.csv",
+    # "new_clean_acc_actions_final.xlsx": "metrics_acc_actions.csv",
+    "non_sign_slow_actions.xlsx": "non_sign_slow_actions_metrics_actions.csv"
 }
 
 # --- Utility Functions ---
